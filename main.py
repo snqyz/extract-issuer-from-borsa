@@ -28,7 +28,7 @@ URLS = [
 ]
 
 
-def load_from_csv_to_db(csv_path: Path) -> set[str]:
+def load_from_csv_to_db(csv_path: Path) -> dict[str, dict[str, str]]:
     isin_data = {}
     print("Loading ISINs to memory...")
     with csv_path.open(newline="", encoding="utf-8") as csvfile:
@@ -79,7 +79,7 @@ def extract_issuer(
         soup = BeautifulSoup(file.read_text(encoding="utf-8"), "lxml")
     else:
         user_agent = random.choice(USER_AGENTS)
-        headers = headers = {
+        headers = {
             "accept": "*/*",
             "accept-language": "en-US,en;q=0.9",
             "priority": "u=1, i",
@@ -146,70 +146,6 @@ def write_csv_to_isin_info(
         for isin, mkt in tqdm(isin_and_mkt):
             output = extract_issuer(isin=isin, mkt=mkt, already_loaded=already_loaded)
             writer.writerow([isin, *output.values()])
-
-
-def insert_mapping(
-    input_path: Path,
-    isin_info_path: Path,
-    mapping_path: Path,
-    output_path: Path,
-) -> bool:
-    input_df = pd.read_csv(
-        input_path,
-        header=1,
-        parse_dates=[1, 2, 3],
-        date_format="ISO8601",
-    )
-    input_df = input_df.loc[input_df["VenueOfPublication"].isin(["ETLX", "SEDX"])]
-
-    isin_info_df = pd.read_csv(isin_info_path)
-    mapping_df = pd.read_csv(mapping_path)
-
-    df = input_df.merge(
-        isin_info_df.rename(columns={"Nome": "Category"}),
-        left_on="MifidInstrumentID",
-        right_on="ISIN",
-        how="left",
-    ).merge(
-        mapping_df,
-        on="Category",
-        how="left",
-    )
-
-    dt_cols = df.select_dtypes(include=["datetime64[ns, UTC]"]).columns
-    for col in dt_cols:
-        df[col] = df[col].dt.tz_localize(None)
-
-    df["DayEvent"] = df["TradingDateTime"].dt.date
-
-    df = df.pivot_table(
-        index=[
-            "ISIN",
-            "Venue",
-            "Category",
-            "Emittente",
-            "Sottostanti",
-            "Type",
-            "SubType",
-            "DayEvent",
-        ],
-        values=["MifidQuantity", "MifidNotionalAmount"],
-        aggfunc="sum",
-    ).reset_index()
-
-    with pd.ExcelWriter(output_path, engine="xlsxwriter") as writer:
-        df.to_excel(writer, index=False, sheet_name="Data")
-
-        # Access the workbook and worksheet objects
-        workbook = writer.book
-        worksheet = writer.sheets["Data"]
-
-        # Define a format for numbers with comma as thousand separator and 2 decimal places
-        number_format = workbook.add_format({"num_format": "#,##0.00"})
-
-        # Apply the format to the appropriate columns
-        for col_num, value in enumerate(df.columns.values):
-            worksheet.set_column(col_num, col_num, None, number_format)
 
 
 def update_mappings(
@@ -382,19 +318,27 @@ def main() -> None:
     und_mapping_path = Path(__file__).parent / "und_mapping.csv"
     issuers_path = Path(__file__).parent / "issuers.csv"
 
+    # 1. download newest file
     download_file(save_folder=input_folder)
 
+    # 2. summarize CSVs and extract market (ETLX or SEDX)
     summarize_csvs(input_folder=input_folder, output_folder=intermediate_folder)
     isin_and_mkt = extract_isins_from_csvs(path=intermediate_folder)
 
+    # 3. load existing ISIN info
     loaded_isins = load_from_csv_to_db(csv_path=isin_info_path)
 
+    # 4. scrape additional data, if needed
     write_csv_to_isin_info(
         isin_and_mkt=isin_and_mkt,
         isin_info_path=isin_info_path,
         already_loaded=loaded_isins,
     )
+
+    # 5. create table for ISIN -> underlyings
     create_underlying_table(isin_info_path=isin_info_path, output_path=underlyings_path)
+
+    # 6. update existing CSVs with newly scraped data
     update_mappings(
         isin_info_path=isin_info_path,
         type_and_subtype_path=type_and_subtype_path,
@@ -402,14 +346,6 @@ def main() -> None:
         underlyings_path=underlyings_path,
         und_mapping_path=und_mapping_path,
     )
-
-    # output_path = Path(__file__).parent / "output.xlsx"
-    # insert_mapping(
-    #     input_path=input_path,
-    #     isin_info_path=isin_info_path,
-    #     mapping_path=mapping_path,
-    #     output_path=output_path,
-    # )
 
 
 if __name__ == "__main__":
