@@ -185,16 +185,22 @@ def update_mappings(
 
 def summarize_csvs(input_folder: Path, output_folder: Path) -> None:
     for input_file in input_folder.iterdir():
-        output_file = output_folder / input_file.name
+        output_file = output_folder / input_file.with_suffix(".csv").name
         if output_file.exists():
             print(f"{output_file.name!r} already exists, skipping...")
             continue
-        input_df = pd.read_csv(
-            input_file,
-            header=1,
-            parse_dates=[1, 2, 3],
-            date_format="ISO8601",
-        )
+        with tempfile.TemporaryDirectory() as tmpdir:
+            with zipfile.ZipFile(input_file, "r") as z:
+                z.extractall(tmpdir)
+
+            # Construct full paths
+            src_path = Path(tmpdir) / "Trades_WarrantCertificates.csv"
+            input_df = pd.read_csv(
+                src_path,
+                header=1,
+                parse_dates=[1, 2, 3],
+                date_format="ISO8601",
+            )
         input_df["DayEvent"] = input_df["TradingDateTime"].dt.date
         input_df = (
             input_df.loc[
@@ -243,12 +249,11 @@ def download_file(save_folder: Path) -> None:
         new_filename = pd.read_csv(src_path, header=1, nrows=3)["TradingDateTime"].iloc[
             0
         ][:10]
-        dst_path = save_folder / f"{new_filename}.csv"
+        dst_path = save_folder / f"{new_filename}.zip"
 
         # 2. Move & rename
-        shutil.move(src_path, dst_path)
+        shutil.move(zip_path, dst_path)
     print(f"Copied file to {dst_path}")
-    zip_path.unlink()
 
 
 def create_underlying_table(isin_info_path: Path, output_path: Path) -> None:
