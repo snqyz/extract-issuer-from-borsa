@@ -115,7 +115,7 @@ def extract_issuer(
         "eusipa_code": extract_from_title(soup, "EUSIPA Code"),
         "eusipa_name": extract_from_title(soup, "EUSIPA Name"),
         "issue_price": extract_from_title(soup, "Issue Price"),
-        "emittente": extract_from_title(soup, ["Nom de l'émetteur", "Issuer"]),
+        "emittente": extract_from_title(soup, ["Nom de l'émetteur", "Issuer Name"]),
         "sottostanti": extract_from_title(soup, "Name"),
     }
     tqdm.write(f"{isin}: {val}")
