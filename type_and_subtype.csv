@@ -1,105 +1,39 @@
 Category,Type,SubType
-LEVA FISSA LONG|||Fixed Leverage Certificate Long|||Call,Leverage,Fixed Leverage
-LEVA FISSA SHORT|||Fixed Leverage Certificate Short|||Put,Leverage,Fixed Leverage
-TURBO LONG|||Turbo Long|||Call,Leverage,Variable Leverage
-MINI FUTURE LONG|||Mini Future Long|||Call,Leverage,Warrant
-TURBO OPEN END LONG|||Turbo Open-End Long|||Call,Leverage,Variable Leverage
-PLAIN VANILLA PUT|||Plain Vanilla Warrant Put|||Put,Leverage,Warrant
-CONSTANT LEVERAGE SHORT|||Fixed Leverage Certificate Short|||Put,Leverage,Fixed Leverage
-TURBO SHORT|||Turbo Short|||Put,Leverage,Variable Leverage
-CONSTANT LEVERAGE LONG|||Fixed Leverage Certificate Long|||Call,Leverage,Fixed Leverage
-TURBO OPEN END SHORT|||Turbo Open-End Short|||Put,Leverage,Variable Leverage
-TURBO UNLIMITED SHORT|||Turbo Open-End Short|||Put,Leverage,Variable Leverage
-PLAIN VANILLA CALL|||Plain Vanilla Warrant Call|||Call,Leverage,Warrant
-TURBO UNLIMITED LONG|||Turbo Open-End Long|||Call,Leverage,Variable Leverage
-BENCHMARK|||Tracker|||Bull,Investment,Participation
-MINI FUTURE SHORT|||Mini Future Short|||Put,Leverage,Warrant
-MINI FUTURES OPEN END LONG|||Mini Future Open-End Long|||Call,Leverage,Warrant
-EXPRESS,Investment,Yield Enhancement
-DIGITALE|||Equity Protection with Coupon|||Bull,Investment,Capital Protection
-CASH COLLECT AUTOCALLABLE WORST OF|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-EQUITY PROTECTION|||Miscellaneous Capital Protection|||Bull,Investment,Capital Protection
-BONUS CAP|||Bonus Cap|||Bull,Investment,Capital Protection
-CAPITAL PROTECTION WITH COUPON|||Equity Protection with Coupon|||Bull,Investment,Capital Protection
-CAPITAL PROTECTION WITH PREMIUM|||Equity Protection with Coupon|||Bull,Investment,Capital Protection
-DOUBLE EXPRESS|||Express|||Bull,Investment,Yield Enhancement
-DIGITALE,Leverage,Warrant
-BONUS CAP,Investment,Capital Protection
-EQUITY PROTECTION WITHOUT CAP|||Equity Protection without Cap|||Bull,Investment,Capital Protection
-CASH COLLECT|||Miscellaneous Yield Enhancement|||Bull,Investment,Yield Enhancement
-EQUITY PROTECTION|||Equity Protection with Coupon|||Bull,Investment,Capital Protection
-EQUITY PROTECTION,Investment,Capital Protection
-CASH COLLECT|||Cash Collect|||Bull,Investment,Yield Enhancement
-STANDARD|||Equity Protection with Coupon|||Bull,Investment,Capital Protection
-MEMORY MULTI CASH COLLECT EXPRESS|||Express|||Bull,Investment,Yield Enhancement
-MEMORY MULTI CASH COLLECT BARRIER EXPRESS|||Express|||Bull,Investment,Yield Enhancement
-MULTI CEDOLA FISSA BARRIER EXPRESS|||Express|||Bull,Investment,Yield Enhancement
-BENCHMARK/TRACKER,Investment,Participation
-TRACKER|||Tracker|||Bull,Investment,Participation
-EXPRESS|||Express|||Bull,Investment,Yield Enhancement
-CASH COLLECT MEMORY AUTOCALLABLE WORST OF|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-PROTECTION WITH CAP|||Equity Protection with Cap|||Bull,Investment,Capital Protection
-CASH COLLECT,Investment,Yield Enhancement
-STRATEGIC TRACKER|||Tracker|||Bull,Investment,Participation
-CASH COLLECT AUTOCALLABLE|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-BONUS,Investment,Participation
-CALLABLE CASH COLLECT|||Cash Collect|||Bull,Investment,Yield Enhancement
-TWIN WIN,Investment,Participation
-BONUS CAP|||Miscellaneous Yield Enhancement|||Bull,Investment,Capital Protection
-CAPITAL PROTECTION WITHOUT CAP|||Equity Protection without Cap|||Bull,Investment,Capital Protection
-MISCELLANEOUS CAPITAL PROTECTION|||Miscellaneous Capital Protection|||Bull,Investment,Capital Protection
-BENCHMARK LEVA OPEN END LONG|||Fixed Leverage Certificate Long|||Call,Leverage,Fixed Leverage
-PHOENIX STEP DOWN PREMI FISSI|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-CREDIT LINKED NOTE,Investment,Credit Linked
-PREMIUM CASH COLLECT|||Miscellaneous Yield Enhancement|||Bull,Investment,Yield Enhancement
-CASH COLLECT AIRBAG MEMORY AUTOCALLABLE WORST OF|||Express|||Bull,Investment,Yield Enhancement
-PROTECTION CAP|||Equity Protection with Cap|||Bull,Investment,Capital Protection
-MULTI CASH COLLECT BARRIER EXPRESS|||Express|||Bull,Investment,Yield Enhancement
-BENCHMARK LEVA OPEN END SHORT|||Fixed Leverage Certificate Short|||Put,Leverage,Fixed Leverage
-CALLABLE REVERSE CONVERTIBLES|||Barrier Reverse Convertibles|||Bull,Investment,Yield Enhancement
-CALLABLE REVERSE CONVERTIBLE|||Reverse Convertibles|||Bull,Investment,Yield Enhancement
-STANDARD|||Miscellaneous Yield Enhancement|||Bull,Investment,Participation
-PHOENIX AUTOCALLABLE AIRBAG|||Express|||Bull,Investment,Yield Enhancement
-MEMORY CASH COLLECT BARRIER EXPRESS|||Express|||Bull,Investment,Yield Enhancement
-OUTPERFORMANCE COND PROT,Investment,Participation
-CAPITAL PROTECTION WITH COUPON|||Miscellaneous Capital Protection|||Bull,Investment,Capital Protection
-OUTPERFORMANCE,Investment,Participation
-CASH COLLECT|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-SWITCH|||Miscellaneous Yield Enhancement|||Bull,Investment,Participation
-AUTOCALLABLE EXPRESS|||Express|||Bull,Investment,Yield Enhancement
-MAX LONG BARRIER|||Bonus Cap|||Bull,Investment,Capital Protection
-MAX LONG BARRIER|||Miscellaneous Yield Enhancement|||Bull,Investment,Participation
-PREMI FISSI AIRBAG CASH COLLECT CALLABLE|||Cash Collect|||Bull,Investment,Yield Enhancement
-AIRBAG CASH COLLECT|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-CASH COLLECT STEP DOWN ONE STAR|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-CASH COLLECT AIRBAG AUTOCALLABLE|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-CASH COLLECT MEMORY PROTECTED|||Equity Protection with Coupon|||Bull,Investment,Yield Enhancement
-HYBRID CREDIT LINKED|||Hybrid Credit Linked Certificate|||Bull,Investment,Credit Linked
-CASH COLLECT WORST OF|||Cash Collect|||Bull,Investment,Yield Enhancement
-BENCHMARK OPEN END|||Tracker|||Bull,Investment,Participation
-TOP BONUS|||Bonus Cap|||Bull,Investment,Capital Protection
-AIRBAG CASH COLLECT AUTOCALLABLE|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-MINI FUTURES OPEN END SHORT|||Mini Future Open-End Short|||Put,Leverage,Warrant
-CASH COLLECT MEMORY AUTOCALLABLE|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-COVERED WARRANT,Leverage,Warrant
-FAST CASH COLLECT|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-BARRIER EXPRESS|||Express|||Bull,Investment,Yield Enhancement
-FIXED CASH COLLECT|||Cash Collect|||Bull,Investment,Yield Enhancement
-MULTI CASH COLLECT EXPRESS|||Cash Collect|||Bull,Investment,Yield Enhancement
-MEMORY CASH COLLECT STEP DOWN|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-CASH COLLECT AIRBAG MEMORY AUTOCALLABLE WORST OF|||Cash Collect Autocallable|||Bull,Investment,Yield Enhancement
-REVERSE BONUS CAP|||Reverse Bonus Cap|||Bear,Investment,Capital Protection
-MAXI COUPON MEMORY MULTI CASH COLLECT BARRIER EXPRESS|||Express|||Bull,Investment,Yield Enhancement
-AUTOCALLABLE|||Express|||Bull,Investment,Yield Enhancement
-DISCOUNT|||Discount|||Bull,Investment,Yield Enhancement
-PHOENIX AUTOCALLABLE|||Express|||Bull,Investment,Yield Enhancement
-PHOENIX SNOWBALL|||Express|||Bull,Investment,Yield Enhancement
-BONUS CAP|||Bonus|||Bull,Investment,Capital Protection
-AUTOCALLABLE REVERSE CONVERTIBLE|||Barrier Reverse Convertibles|||Bull,Investment,Yield Enhancement
-CAPITAL PROTECTION WITH PARTICIPATION|||Equity Protection without Cap|||Bull,Investment,Capital Protection
-PHOENIX REVERSE CONVERTIBLE|||Reverse Convertibles|||Bull,Investment,Yield Enhancement
-CEDOLA FISSA BARRIER EXPRESS|||Express|||Bull,Investment,Yield Enhancement
-LOW BARRIER CALLABLE|||Barrier Reverse Convertibles|||Bull,Investment,Yield Enhancement
-DISCOUNT WARRANT PUT|||Put Warrant Spread|||Put,Leverage,Warrant
-PHOENIX MEMORY AUTOCALL|||Express|||Bull,Investment,Yield Enhancement
-WORST OF MEMORY PHOENIX AUTOCALLABLE|||Express|||Bull,Investment,Yield Enhancement
+Barrier Reverse Convertibles,Investment,Yield Enhancement
+Bonus,Investment,Capital Protection
+Bonus Cap,Investment,Capital Protection
+Cash Collect,Investment,Yield Enhancement
+Cash Collect Autocallable,Investment,Yield Enhancement
+Credit Linked Certificate,Investment,Credit Linked
+Discount,Investment,Yield Enhancement
+Equity Protection with Cap,Investment,Capital Protection
+Equity Protection with Coupon,Investment,Capital Protection
+Equity Protection without Cap,Investment,Capital Protection
+Express,Investment,Yield Enhancement
+Express Protected,Investment,Capital Protection
+Fixed Leverage Certificate Long,Leverage,Fixed Leverage
+Fixed Leverage Certificate Short,Leverage,Fixed Leverage
+Hybrid Credit Linked Certificate,Investment,Credit Linked
+Mini Future Long,Leverage,Warrant
+Mini Future Open-End Long,Leverage,Warrant
+Mini Future Open-End Short,Leverage,Warrant
+Mini Future Short,Leverage,Warrant
+Miscellaneous Capital Protection,Investment,Capital Protection
+Miscellaneous Participation,Investment,Participation
+Miscellaneous Yield Enhancement,Investment,Yield Enhancement
+Outperformance Bonus,Investment,Participation
+Outperformance Cond. Prot without Cap,Investment,Participation
+Outperformance with Cap,Investment,Participation
+Plain Vanilla Warrant Call,Leverage,Warrant
+Plain Vanilla Warrant Put,Leverage,Warrant
+Put Warrant Spread,Leverage,Warrant
+Reverse Bonus Cap,Investment,Capital Protection
+Reverse Convertibles,Investment,Yield Enhancement
+Structured/Exotic Warrant Long,Leverage,Warrant
+Tracker,Investment,Participation
+Turbo Long,Leverage,Variable Leverage
+Turbo Open-End Long,Leverage,Variable Leverage
+Turbo Open-End Short,Leverage,Variable Leverage
+Turbo Short,Leverage,Variable Leverage
+Twin Win,Investment,Participation
+Twin Win Cap,Investment,Participation

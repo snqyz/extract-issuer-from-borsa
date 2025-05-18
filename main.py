@@ -1,5 +1,6 @@
 import csv
 import random
+import re
 import shutil
 import tempfile
 import time
@@ -11,17 +12,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Import your models
-from sqlalchemy import String, create_engine, select
-from sqlalchemy.orm import (
-    Mapped,
-    Session,
-    declarative_base,
-    mapped_column,
-)
 from tqdm import tqdm
-
-Base = declarative_base()
-
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
@@ -31,40 +22,22 @@ USER_AGENTS = [
     "Mozilla/5.0 (Linux; Android 11; SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Mobile Safari/537.36",
 ]
 
-URLS_BY_MKT = {
-    "SEDX": "https://www.borsaitaliana.it/borsa/cw-e-certificates/scheda/{}.html?lang=it",
-    "ETLX": "https://www.borsaitaliana.it/borsa/cw-e-certificates/eurotlx/scheda/{}.html?lang=it",
-}
+URLS = [
+    "https://live.euronext.com/en/ajax/getFactsheetInfoBlock/WARRT/{}-{}/fs_generalinfo_warrants_block",
+    "https://live.euronext.com/en/ajax/getFactsheetInfoBlock/WARRT/{}-{}/fs_underlying_block",
+]
 
 
-class Product(Base):
-    __tablename__ = "products"
-
-    isin: Mapped[str] = mapped_column(String, primary_key=True)
-    nome: Mapped[str] = mapped_column(String)
-    emittente: Mapped[str] = mapped_column(String)
-    sottostanti: Mapped[str] = mapped_column(String)
-
-
-engine = create_engine("sqlite:///strumenti.db", echo=False)
-Base.metadata.create_all(engine)
-
-
-def load_from_csv_to_db(csv_path: Path) -> None:
-    print("Loading ISINs to database...")
+def load_from_csv_to_db(csv_path: Path) -> set[str]:
+    isin_data = {}
+    print("Loading ISINs to memory...")
     with csv_path.open(newline="", encoding="utf-8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=",")
-        with Session(engine) as session:
-            for row in reader:
-                strumento = Product(
-                    isin=row["ISIN"],
-                    nome=row["Nome"],
-                    emittente=row["Emittente"],
-                    sottostanti=row["Sottostanti"],
-                )
-                session.merge(strumento)
-            session.commit()
-    print("Loaded ISINs to database")
+        for row in reader:
+            isin = row.pop("ISIN")
+            isin_data[isin] = row
+    print("Loaded ISINs to memory")
+    return isin_data
 
 
 def extract_isins_from_csvs(path: Path) -> list[tuple[str, str]]:
@@ -79,78 +52,100 @@ def extract_isins_from_csvs(path: Path) -> list[tuple[str, str]]:
     )
 
 
-def extract_from_title(
-    soup: BeautifulSoup,
-    title: str,
-    *,
-    is_title_bold: bool = True,
-) -> str | None:
-    if not is_title_bold:
+def extract_from_title(soup: BeautifulSoup, title: str | list[str]) -> str | None:
+    strings = title if isinstance(title, list) else [title]
+    for string in strings:
         label = soup.find(
             "td",
-            string=lambda text: text and title in text,
+            string=lambda text: text and string == text,
         )
-        if not label:
-            return None
-        return label.find_next_sibling("td").get_text(strip=True)
-    label = soup.find(
-        "strong",
-        string=lambda text: text and title in text,
-    )
-    if not label:
-        return None
-    return label.find_parent("td").find_next_sibling("td").get_text(strip=True)
+        if label:
+            return label.find_next_sibling("td").get_text(strip=True)
+    return None
 
 
-def extract_issuer(isin: str, mkt: str) -> tuple[str, str, str]:
-    with Session(engine) as session:
-        query = select(Product).where(Product.isin == isin)
-        product = session.execute(query).scalars().first()
-        if product:
-            return product.nome, product.emittente, product.sottostanti
+def extract_issuer(
+    isin: str,
+    mkt: str,
+    already_loaded: dict[str, dict[str, str]],
+) -> dict[str, str]:
+    if isin in already_loaded:
+        return already_loaded[isin]
 
     folder = Path(__file__).parent / "isins"
     folder.mkdir(parents=True, exist_ok=True)
     file = folder / f"{isin}.txt"
     if file.exists():
-        soup = BeautifulSoup(file.read_text(encoding="utf-8"))
+        soup = BeautifulSoup(file.read_text(encoding="utf-8"), "lxml")
     else:
-        url_to_fill = URLS_BY_MKT[mkt]
-        url = url_to_fill.format(isin)
         user_agent = random.choice(USER_AGENTS)
-        headers = {"User-Agent": user_agent}
-        try:
-            r = requests.get(url, headers=headers, timeout=60)
-        except requests.exceptions.ReadTimeout:
-            tqdm.write("Ci stanno tracciando! Stacca, stacca!")
-            time.sleep(30)
-            r = requests.get(url, headers=headers, timeout=60)
-        # file.write_text(r.text, encoding="utf-8")
-        soup = BeautifulSoup(r.text, "lxml")
-        t = random.random() * 3 + 2
+        headers = headers = {
+            "accept": "*/*",
+            "accept-language": "en-US,en;q=0.9",
+            "priority": "u=1, i",
+            "referer": "https://live.euronext.com/en/product/structured-products/XS2928979447-ETLX/market-information",
+            "sec-ch-ua": '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
+            "sec-ch-ua-mobile": "?1",
+            "sec-ch-ua-platform": '"Android"',
+            "sec-fetch-dest": "empty",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-site": "same-origin",
+            "user-agent": user_agent,
+            "x-requested-with": "XMLHttpRequest",
+        }
+        whole_data = ""
+        for url_to_fill in URLS:
+            url = url_to_fill.format(isin, mkt)
+            try:
+                r = requests.get(url, headers=headers, timeout=60)
+            except requests.exceptions.ReadTimeout:
+                tqdm.write("Ci stanno tracciando! Stacca, stacca!")
+                time.sleep(30)
+                r = requests.get(url, headers=headers, timeout=60)
+            whole_data += r.text
+        whole_data = whole_data.strip()
+        file.write_text(whole_data, encoding="utf-8")
+        soup = BeautifulSoup(whole_data, "lxml")
+        t = random.random() * 2 + 1
         time.sleep(t)
 
-    nome = extract_from_title(soup, "Tipologia ACEPI")
-    if not nome:
-        nome = f"{extract_from_title(soup, 'Nome Commerciale')}|||{extract_from_title(soup, 'Categoria di Borsa')}|||{extract_from_title(soup, 'Facolt&agrave')}"
-    emittente = extract_from_title(soup, "Emittente")
-    sottostanti = extract_from_title(soup, "Sottostante")
-    tqdm.write(f"{isin}: {nome, emittente, sottostanti}")
+    val = {
+        "nome": extract_from_title(soup, "Product"),
+        "strategy": extract_from_title(soup, "Strategy"),
+        "eusipa_code": extract_from_title(soup, "EUSIPA Code"),
+        "eusipa_name": extract_from_title(soup, "EUSIPA Name"),
+        "issue_price": extract_from_title(soup, "Issue Price"),
+        "emittente": extract_from_title(soup, ["Nom de l'émetteur", "Issuer"]),
+        "sottostanti": extract_from_title(soup, "Name"),
+    }
+    tqdm.write(f"{isin}: {val}")
 
-    return nome, emittente, sottostanti
+    return val
 
 
 def write_csv_to_isin_info(
     isin_and_mkt: list[tuple[str, str]],
     isin_info_path: Path,
+    already_loaded: dict[str, dict[str, str]],
 ) -> None:
     with isin_info_path.open(mode="w", newline="") as file:
         writer = csv.writer(file)
-        writer.writerow(["ISIN", "Nome", "Emittente", "Sottostanti"])
+        writer.writerow(
+            [
+                "ISIN",
+                "Nome",
+                "Strategia",
+                "EUSIPA Code",
+                "EUSIPA Name",
+                "Issue Price",
+                "Emittente",
+                "Sottostanti",
+            ],
+        )
 
         for isin, mkt in tqdm(isin_and_mkt):
-            output = extract_issuer(isin=isin, mkt=mkt)
-            writer.writerow([isin, *output])
+            output = extract_issuer(isin=isin, mkt=mkt, already_loaded=already_loaded)
+            writer.writerow([isin, *output.values()])
 
 
 def insert_mapping(
@@ -217,45 +212,39 @@ def insert_mapping(
             worksheet.set_column(col_num, col_num, None, number_format)
 
 
-def update_type_mapping(isin_info_path: Path, mapping_path: Path) -> None:
-    isin_info_df = pd.read_csv(isin_info_path)
-    type_subtype_df = pd.read_csv(mapping_path)
-
-    all_names = isin_info_df["Nome"]
-    new_names = isin_info_df.loc[
-        ~all_names.isin(type_subtype_df["Category"])
-        & (all_names != "None|||None|||None"),
-        "Nome",
-    ].drop_duplicates()
-
-    print(f"New names found {new_names.to_list()}")
-
-    type_subtype_df = pd.concat(
-        [
-            type_subtype_df,
-            new_names.to_frame(name="Category").assign(Type="NA", SubType="NA"),
-        ],
+def update_mappings(
+    isin_info_path: Path,
+    type_and_subtype_path: Path,
+    issuers_path: Path,
+    underlyings_path: Path,
+    und_mapping_path: Path,
+) -> None:
+    update_generic_mapping(
+        input_path=isin_info_path,
+        output_path=type_and_subtype_path,
+        input_col="Nome",
+        output_col="Category",
+        output_other_cols=["Type", "SubType"],
+        default_use_same=False,
     )
-    type_subtype_df.to_csv(mapping_path, index=False)
 
-    issuers_path = isin_info_path.with_name("issuers.csv")
-    issuers_df = pd.read_csv(issuers_path)
-    new_names = isin_info_df.loc[
-        ~isin_info_df["Emittente"].isin(type_subtype_df["Category"])
-        & isin_info_df["Emittente"].notna(),
-        "Nome",
-    ].drop_duplicates()
-    if new_names.empty:
-        return
-    print(f"New issuers found: {new_names.to_list()}")
-
-    issuers_df = pd.concat(
-        [
-            issuers_df,
-            new_names.to_frame(name="Original").assign(Issuer=lambda x: x["Original"]),
-        ],
+    update_generic_mapping(
+        input_path=isin_info_path,
+        output_path=issuers_path,
+        input_col="Emittente",
+        output_col="Original",
+        output_other_cols=["Issuer"],
+        default_use_same=True,
     )
-    issuers_df.to_csv(issuers_path, index=False)
+
+    update_generic_mapping(
+        input_path=underlyings_path,
+        output_path=und_mapping_path,
+        input_col="Sottostante",
+        output_col="Original",
+        output_other_cols=["Sottostante"],
+        default_use_same=True,
+    )
 
 
 def summarize_csvs(input_folder: Path, output_folder: Path) -> None:
@@ -323,23 +312,96 @@ def download_file(save_folder: Path) -> None:
         # 2. Move & rename
         shutil.move(src_path, dst_path)
     print(f"Copied file to {dst_path}")
+    zip_path.unlink()
+
+
+def create_underlying_table(isin_info_path: Path, output_path: Path) -> None:
+    isin_info_df = pd.read_csv(isin_info_path)
+
+    # Define the split function using regex
+    def split_underlyings(value):
+        return re.split(r"(?<!\d)/|/(?!\d)", str(value))
+
+    isin_info_df["underlying_list"] = isin_info_df["Sottostanti"].apply(
+        split_underlyings,
+    )
+
+    # Step 2: Explode the new column
+    df_long = isin_info_df.explode("underlying_list")
+
+    # Step 3: Optional cleanup
+    df_long = (
+        df_long[["ISIN", "underlying_list"]]
+        .rename(columns={"underlying_list": "Sottostante"})
+        .reset_index(drop=True)
+    )
+
+    df_long.to_csv(output_path, index=False)
+
+
+def update_generic_mapping(
+    input_path: Path,
+    output_path: Path,
+    input_col: str,
+    output_col: str,
+    output_other_cols: list[str],
+    *,
+    default_use_same: bool = True,
+) -> None:
+    input_df = pd.read_csv(input_path)
+    mapping_df = pd.read_csv(output_path)
+
+    all_names = input_df[input_col]
+    new_names = input_df.loc[
+        ~all_names.isin(mapping_df[output_col]) & (all_names.notna()),
+        input_col,
+    ].drop_duplicates()
+
+    print(f"New names found {new_names.to_list()}")
+
+    mapping_df = pd.concat(
+        [
+            mapping_df,
+            new_names.to_frame(name=output_col).assign(
+                {
+                    col: (lambda x: x[output_col] if default_use_same else None)
+                    for col in output_other_cols
+                },
+            ),
+        ],
+    )
+    mapping_df.to_csv(output_path, index=False)
 
 
 def main() -> None:
     input_folder = Path(__file__).parent / "input_csv"
     intermediate_folder = Path(__file__).parent / "intermediate_csv"
     isin_info_path = Path(__file__).parent / "isin_info.csv"
-    mapping_path = Path(__file__).parent / "type_and_subtype.csv"
+    type_and_subtype_path = Path(__file__).parent / "type_and_subtype.csv"
+    underlyings_path = Path(__file__).parent / "underlyings.csv"
+    und_mapping_path = Path(__file__).parent / "und_mapping.csv"
+    issuers_path = Path(__file__).parent / "issuers.csv"
 
-    # download_file(save_folder=input_folder)
+    download_file(save_folder=input_folder)
 
     summarize_csvs(input_folder=input_folder, output_folder=intermediate_folder)
     isin_and_mkt = extract_isins_from_csvs(path=intermediate_folder)
 
-    load_from_csv_to_db(csv_path=isin_info_path)
+    loaded_isins = load_from_csv_to_db(csv_path=isin_info_path)
 
-    write_csv_to_isin_info(isin_and_mkt=isin_and_mkt, isin_info_path=isin_info_path)
-    update_type_mapping(isin_info_path=isin_info_path, mapping_path=mapping_path)
+    write_csv_to_isin_info(
+        isin_and_mkt=isin_and_mkt,
+        isin_info_path=isin_info_path,
+        already_loaded=loaded_isins,
+    )
+    create_underlying_table(isin_info_path=isin_info_path, output_path=underlyings_path)
+    update_mappings(
+        isin_info_path=isin_info_path,
+        type_and_subtype_path=type_and_subtype_path,
+        issuers_path=issuers_path,
+        underlyings_path=underlyings_path,
+        und_mapping_path=und_mapping_path,
+    )
 
     # output_path = Path(__file__).parent / "output.xlsx"
     # insert_mapping(
