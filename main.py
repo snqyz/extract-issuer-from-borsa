@@ -128,7 +128,7 @@ def write_csv_to_isin_info(
     isin_info_path: Path,
     already_loaded: dict[str, dict[str, str]],
 ) -> None:
-    with isin_info_path.open(mode="w", newline="") as file:
+    with isin_info_path.open(mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(
             [
@@ -255,7 +255,7 @@ def create_underlying_table(isin_info_path: Path, output_path: Path) -> None:
     isin_info_df = pd.read_csv(isin_info_path)
 
     # Define the split function using regex
-    def split_underlyings(value):
+    def split_underlyings(value: str) -> list[str]:
         return re.split(r"(?<!\d)/|/(?!\d)", str(value))
 
     isin_info_df["underlying_list"] = isin_info_df["Sottostanti"].apply(
@@ -293,13 +293,22 @@ def update_generic_mapping(
         input_col,
     ].drop_duplicates()
 
-    print(f"New names found {new_names.to_list()}")
+    if new_names.empty:
+        print(
+            f"No new {input_col!r} found in {input_path.name!r} not in "
+            f"{output_path.name!r}",
+        )
+        return
+    print(
+        f"New {input_col!r} found in {input_path.name!r} not in {output_path.name!r}: "
+        f"{', '.join(repr(x) for x in new_names.to_list())}",
+    )
 
     mapping_df = pd.concat(
         [
             mapping_df,
             new_names.to_frame(name=output_col).assign(
-                {
+                **{
                     col: (lambda x: x[output_col] if default_use_same else None)
                     for col in output_other_cols
                 },
@@ -319,7 +328,7 @@ def main() -> None:
     issuers_path = Path(__file__).parent / "issuers.csv"
 
     # 1. download newest file
-    download_file(save_folder=input_folder)
+    # download_file(save_folder=input_folder)
 
     # 2. summarize CSVs and extract market (ETLX or SEDX)
     summarize_csvs(input_folder=input_folder, output_folder=intermediate_folder)
