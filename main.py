@@ -287,9 +287,9 @@ def update_generic_mapping(
     input_df = pd.read_csv(input_path)
     mapping_df = pd.read_csv(output_path)
 
-    all_names = input_df[input_col]
+    all_names = input_df[input_col].str.lower()
     new_names = input_df.loc[
-        ~all_names.isin(mapping_df[output_col]) & (all_names.notna()),
+        ~all_names.isin(mapping_df[output_col].str.lower()) & (all_names.notna()),
         input_col,
     ].drop_duplicates()
 
