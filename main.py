@@ -1,6 +1,5 @@
 import csv
 import random
-import re
 import shutil
 import tempfile
 import time
@@ -14,6 +13,7 @@ from bs4 import BeautifulSoup
 # Import your models
 from tqdm import tqdm
 
+BASE_FOLDER = Path(__file__).parent
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36",
@@ -72,7 +72,7 @@ def extract_issuer(
     if isin in already_loaded:
         return already_loaded[isin]
 
-    folder = Path(__file__).parent / "isins"
+    folder = BASE_FOLDER / "isins"
     folder.mkdir(parents=True, exist_ok=True)
     file = folder / f"{isin}.txt"
     if file.exists():
@@ -160,7 +160,6 @@ def update_mappings(
         output_path=type_and_subtype_path,
         input_col="Nome",
         output_col="Category",
-        output_other_cols=["Type", "SubType"],
         default_use_same=False,
     )
 
@@ -169,7 +168,6 @@ def update_mappings(
         output_path=issuers_path,
         input_col="Emittente",
         output_col="Original",
-        output_other_cols=["Issuer"],
         default_use_same=True,
     )
 
@@ -178,7 +176,6 @@ def update_mappings(
         output_path=und_mapping_path,
         input_col="Sottostante",
         output_col="Original",
-        output_other_cols=["Sottostante"],
         default_use_same=True,
     )
 
@@ -222,7 +219,7 @@ def summarize_csvs(input_folder: Path, output_folder: Path) -> None:
 
 
 def download_file(save_folder: Path) -> None:
-    zip_path = Path(__file__).parent / "downloaded_file.zip"
+    zip_path = BASE_FOLDER / "downloaded_file.zip"
 
     url = "https://marketdata.euronext.com/data-reporting-service/trades-file/download"
     original_filename = "Trades_WarrantCertificates.csv"
@@ -253,18 +250,15 @@ def download_file(save_folder: Path) -> None:
 
         # 2. Move & rename
         shutil.move(zip_path, dst_path)
-    print(f"Copied file to {dst_path}")
+    print(f"Copied file to {dst_path.relative_to(BASE_FOLDER)}")
 
 
 def create_underlying_table(isin_info_path: Path, output_path: Path) -> None:
     isin_info_df = pd.read_csv(isin_info_path)
 
-    # Define the split function using regex
-    def split_underlyings(value: str) -> list[str]:
-        return re.split(r"(?<!\d)/|/(?!\d)", str(value))
-
-    isin_info_df["underlying_list"] = isin_info_df["Sottostanti"].apply(
-        split_underlyings,
+    isin_info_df["underlying_list"] = isin_info_df["Sottostanti"].str.split(
+        r"(?<!\d)/|/(?!\d)",
+        regex=True,
     )
 
     # Step 2: Explode the new column
@@ -285,7 +279,6 @@ def update_generic_mapping(
     output_path: Path,
     input_col: str,
     output_col: str,
-    output_other_cols: list[str],
     *,
     default_use_same: bool = True,
 ) -> None:
@@ -315,7 +308,8 @@ def update_generic_mapping(
             new_names.to_frame(name=output_col).assign(
                 **{
                     col: (lambda x: x[output_col] if default_use_same else None)
-                    for col in output_other_cols
+                    for col in mapping_df.columns
+                    if col != output_col
                 },
             ),
         ],
@@ -324,16 +318,16 @@ def update_generic_mapping(
 
 
 def main() -> None:
-    input_folder = Path(__file__).parent / "input_csv"
-    intermediate_folder = Path(__file__).parent / "intermediate_csv"
-    isin_info_path = Path(__file__).parent / "isin_info.csv"
-    type_and_subtype_path = Path(__file__).parent / "type_and_subtype.csv"
-    underlyings_path = Path(__file__).parent / "underlyings.csv"
-    und_mapping_path = Path(__file__).parent / "und_mapping.csv"
-    issuers_path = Path(__file__).parent / "issuers.csv"
+    input_folder = BASE_FOLDER / "input_csv"
+    intermediate_folder = BASE_FOLDER / "intermediate_csv"
+    isin_info_path = BASE_FOLDER / "isin_info.csv"
+    type_and_subtype_path = BASE_FOLDER / "type_and_subtype.csv"
+    underlyings_path = BASE_FOLDER / "underlyings.csv"
+    und_mapping_path = BASE_FOLDER / "und_mapping.csv"
+    issuers_path = BASE_FOLDER / "issuers.csv"
 
-    # 1. download newest file
-    # download_file(save_folder=input_folder)
+    # 1. download newest file, saves the .zip in 'input_csv' with name as day
+    download_file(save_folder=input_folder)
 
     # 2. summarize CSVs and extract market (ETLX or SEDX)
     summarize_csvs(input_folder=input_folder, output_folder=intermediate_folder)
@@ -342,7 +336,7 @@ def main() -> None:
     # 3. load existing ISIN info
     loaded_isins = load_from_csv_to_db(csv_path=isin_info_path)
 
-    # 4. scrape additional data, if needed
+    # 4. compiles 'isin_info.csv', scraping additional data, if needed
     write_csv_to_isin_info(
         isin_and_mkt=isin_and_mkt,
         isin_info_path=isin_info_path,
