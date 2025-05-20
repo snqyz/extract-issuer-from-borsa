@@ -30,13 +30,13 @@ URLS = [
 
 def load_from_csv_to_db(csv_path: Path) -> dict[str, dict[str, str]]:
     isin_data = {}
-    print("Loading ISINs to memory...")
+    print("Loading ISINs metadata to memory...")
     with csv_path.open(newline="", encoding="utf-8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=",")
         for row in reader:
             isin = row.pop("ISIN")
             isin_data[isin] = row
-    print("Loaded ISINs to memory")
+    print("Loaded ISINs metadata to memory")
     return isin_data
 
 
@@ -143,7 +143,10 @@ def write_csv_to_isin_info(
             ],
         )
 
-        for isin, mkt in tqdm(isin_and_mkt):
+        for isin, mkt in tqdm(
+            isin_and_mkt,
+            bar_format="{l_bar}{bar}| {n:,}/{total:,} [{elapsed}<{remaining}, {rate_fmt}]",
+        ):
             output = extract_issuer(isin=isin, mkt=mkt, already_loaded=already_loaded)
             writer.writerow([isin, *output.values()])
 
@@ -307,7 +310,11 @@ def update_generic_mapping(
             mapping_df,
             new_names.to_frame(name=output_col).assign(
                 **{
-                    col: (lambda x: x[output_col] if default_use_same else None)
+                    col: (
+                        lambda x: x[output_col].str.title()
+                        if default_use_same
+                        else None
+                    )
                     for col in mapping_df.columns
                     if col != output_col
                 },
