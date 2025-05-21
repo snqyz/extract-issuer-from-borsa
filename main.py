@@ -31,7 +31,7 @@ URLS = [
 def load_from_csv_to_db(csv_path: Path) -> dict[str, dict[str, str]]:
     isin_data = {}
     print("Loading ISINs metadata to memory...")
-    with csv_path.open(newline="", encoding="utf-8") as csvfile:
+    with csv_path.open(newline="", encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=",")
         for row in reader:
             isin = row.pop("ISIN")
@@ -128,7 +128,7 @@ def write_csv_to_isin_info(
     isin_info_path: Path,
     already_loaded: dict[str, dict[str, str]],
 ) -> None:
-    with isin_info_path.open(mode="w", newline="", encoding="utf-8") as file:
+    with isin_info_path.open(mode="w", newline="", encoding="utf-8-sig") as file:
         writer = csv.writer(file)
         writer.writerow(
             [
@@ -217,7 +217,7 @@ def summarize_csvs(input_folder: Path, output_folder: Path) -> None:
             )
             .round(2)
         )
-        input_df.to_csv(output_file)
+        input_df.to_csv(output_file, encoding="utf-8-sig")
         print(f"Created {output_file.name!r}")
 
 
@@ -257,7 +257,7 @@ def download_file(save_folder: Path) -> None:
 
 
 def create_underlying_table(isin_info_path: Path, output_path: Path) -> None:
-    isin_info_df = pd.read_csv(isin_info_path)
+    isin_info_df = pd.read_csv(isin_info_path, encoding="utf-8-sig")
 
     isin_info_df["underlying_list"] = isin_info_df["Sottostanti"].str.split(
         r"(?<!\d)/|/(?!\d)",
@@ -274,7 +274,7 @@ def create_underlying_table(isin_info_path: Path, output_path: Path) -> None:
         .reset_index(drop=True)
     )
 
-    df_long.to_csv(output_path, index=False)
+    df_long.to_csv(output_path, index=False, encoding="utf-8-sig")
 
 
 def update_generic_mapping(
@@ -285,8 +285,8 @@ def update_generic_mapping(
     *,
     default_use_same: bool = True,
 ) -> None:
-    input_df = pd.read_csv(input_path)
-    mapping_df = pd.read_csv(output_path)
+    input_df = pd.read_csv(input_path, encoding="utf-8-sig")
+    mapping_df = pd.read_csv(output_path, encoding="utf-8-sig")
 
     all_names = input_df[input_col].str.lower()
     new_names = input_df.loc[
@@ -301,7 +301,7 @@ def update_generic_mapping(
         )
         return
     print(
-        f"New {input_col!r} found in {input_path.name!r} not in {output_path.name!r}: "
+        f"{len(new_names.to_list())} new {input_col!r} found in {input_path.name!r} not in {output_path.name!r}: "
         f"{', '.join(repr(x) for x in new_names.to_list())}",
     )
 
@@ -321,7 +321,7 @@ def update_generic_mapping(
             ),
         ],
     )
-    mapping_df.to_csv(output_path, index=False)
+    mapping_df.to_csv(output_path, index=False, encoding="utf-8-sig")
 
 
 def main() -> None:
