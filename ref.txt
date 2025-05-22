@@ -1,0 +1,1 @@
+From these underlyings/tickers in euronext, derive the company name, if it is a stock, otherwise keep as is :
