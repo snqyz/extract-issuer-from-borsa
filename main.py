@@ -6,7 +6,8 @@ import tempfile
 import time
 import zipfile
 from collections import Counter
-from datetime import datetime
+from collections.abc import Sequence
+from datetime import date, datetime
 from pathlib import Path
 
 import pandas as pd
@@ -74,17 +75,17 @@ def extract_from_title(soup: BeautifulSoup, title: str | list[str]) -> str | Non
     return None
 
 
-def parse_date(date_str):
+def parse_date(date_str: str) -> date | None:
     """Parses a date string (DD/MM/YYYY) into a datetime object."""
     if date_str:
         try:
-            return datetime.strptime(date_str, "%d/%m/%Y")
+            return datetime.strptime(date_str, "%d/%m/%Y").date()
         except ValueError:
             return None
     return None
 
 
-def determine_frequency(dates):
+def determine_frequency(dates: Sequence[date]) -> str:
     """
     Determines the frequency of events (e.g., weekly, monthly) given a list of dates.
     It looks for the most common difference in days between consecutive dates.
@@ -92,15 +93,15 @@ def determine_frequency(dates):
     if len(dates) < 2:
         return "N/A (less than 2 dates)"
 
-    diffs = []
     # Filter out None dates and sort to ensure proper calculation
     valid_dates = sorted([d for d in dates if d is not None])
 
     if len(valid_dates) < 2:
         return "N/A (less than 2 valid dates)"
 
-    for i in range(1, len(valid_dates)):
-        diffs.append((valid_dates[i] - valid_dates[i - 1]).days)
+    diffs = [
+        (valid_dates[i] - valid_dates[i - 1]).days for i in range(1, len(valid_dates))
+    ]
 
     if not diffs:
         return "N/A (no valid date differences)"
@@ -133,7 +134,7 @@ def parse_cd(soup: BeautifulSoup) -> dict[str, str | None]:
     coupon_pa = None
     coupon_frequency = None
     autocall_decrement = None
-    minimum_autocall_trigger = float("inf")
+    minimum_autocall_trigger = None
     initial_autocall_trigger = None
     autocall_frequency = None
     autocall_dates = []
@@ -174,14 +175,9 @@ def parse_cd(soup: BeautifulSoup) -> dict[str, str | None]:
         coupon_idx = -1
         trigger_autocall_idx = -1
 
-        try:
-            date_idx = headers.index("DATA RILEVAMENTO")
-            coupon_idx = headers.index("CEDOLA")
-            trigger_autocall_idx = headers.index("TRIGGER AUTOCALLABLE")
-        except ValueError as e:
-            print(f"Error: Missing expected column in 'Date rilevamento' table: {e}")
-            # Exit or handle gracefully if critical columns are missing
-            exit()
+        date_idx = headers.index("DATA RILEVAMENTO")
+        coupon_idx = headers.index("CEDOLA")
+        trigger_autocall_idx = headers.index("TRIGGER AUTOCALLABLE")
 
         coupon_dates = []
         coupon_amounts = []
@@ -279,7 +275,7 @@ def parse_cd(soup: BeautifulSoup) -> dict[str, str | None]:
     return {
         "sottostanti": sottostanti,
         "coupon_pa": (
-            round(coupon_pa, 2) if isinstance(coupon_pa, (float, int)) else coupon_pa
+            round(coupon_pa, 2) if isinstance(coupon_pa, (float, int)) else None
         ),
         "coupon_frequency": coupon_frequency,
         "autocall_frequency": autocall_frequency,
@@ -290,7 +286,7 @@ def parse_cd(soup: BeautifulSoup) -> dict[str, str | None]:
     }
 
 
-def get_sottostanti(soup):
+def get_sottostanti(soup: BeautifulSoup) -> str:
     companies = []
 
     try:
@@ -321,7 +317,7 @@ def get_sottostanti(soup):
     return "/".join(companies) if companies else None
 
 
-def extract_from_cd(isin: str) -> str | None:
+def extract_from_cd(isin: str) -> dict[str, str | None]:
     folder = BASE_FOLDER / "cd"
     folder.mkdir(parents=True, exist_ok=True)
     file = folder / f"{isin}.txt"
@@ -337,11 +333,28 @@ def extract_from_cd(isin: str) -> str | None:
             r.raise_for_status()
         except requests.RequestException as e:
             tqdm.write(f"Error fetching data for ISIN {isin} from CD: {e}")
-            return None
+            return {}
         file.write_text(r.text, encoding="utf-8")
         soup = BeautifulSoup(r.text, "lxml")
 
     return parse_cd(soup)
+
+
+def get_headers() -> dict[str, str]:
+    user_agent = random.choice(USER_AGENTS)
+    return {
+        "accept": "*/*",
+        "accept-language": "en-US,en;q=0.9",
+        "priority": "u=1, i",
+        "sec-ch-ua": '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
+        "sec-ch-ua-mobile": "?1",
+        "sec-ch-ua-platform": '"Android"',
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": user_agent,
+        "x-requested-with": "XMLHttpRequest",
+    }
 
 
 def extract_issuer(
@@ -358,35 +371,13 @@ def extract_issuer(
     if file.exists():
         soup = BeautifulSoup(file.read_text(encoding="utf-8"), "lxml")
     else:
-<<<<<<< HEAD
-        user_agent = random.choice(USER_AGENTS)
-        headers = {
-            "accept": "*/*",
-            "accept-language": "en-US,en;q=0.9",
-            "priority": "u=1, i",
-            "sec-ch-ua": '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
-            "sec-ch-ua-mobile": "?1",
-            "sec-ch-ua-platform": '"Android"',
-            "sec-fetch-dest": "empty",
-            "sec-fetch-mode": "cors",
-            "sec-fetch-site": "same-origin",
-            "user-agent": user_agent,
-            "x-requested-with": "XMLHttpRequest",
-        }
-=======
->>>>>>> 75b1eeeff61ba2f8cfe8e095810b6113dbc90ad6
         whole_data = ""
         for url_to_fill in URLS:
             url = url_to_fill.format(isin, mkt)
             try:
-<<<<<<< HEAD
-                r = requests.get(url, headers=headers, timeout=60)
-                r.raise_for_status()
-            except (requests.exceptions.ReadTimeout, requests.exceptions.HTTPError):
-=======
                 r = requests.get(url, headers=get_headers(), timeout=60)
+                r.raise_for_status()
             except requests.exceptions.ReadTimeout:
->>>>>>> 75b1eeeff61ba2f8cfe8e095810b6113dbc90ad6
                 tqdm.write("Ci stanno tracciando! Stacca, stacca!")
                 time.sleep(30)
                 r = requests.get(url, headers=get_headers(), timeout=60)
@@ -407,6 +398,7 @@ def extract_issuer(
     }
     if val["eusipa_code"] and val["eusipa_code"].startswith("1"):
         val.update(extract_from_cd(isin))
+        time.sleep(random.random() * 2 + 1)
 
     if not val.get("sottostanti"):
         val["sottostanti"] = extract_from_title(soup, "Name")
@@ -641,7 +633,7 @@ def main() -> None:
     intermediate_folder.mkdir(parents=True, exist_ok=True)
 
     # 1. download newest file, saves the .zip in 'input_csv' with name as day
-    # download_file(save_folder=input_folder)
+    download_file(save_folder=input_folder)
 
     # 2. summarize CSVs and extract market (ETLX or SEDX)
     summarize_csvs(input_folder=input_folder, output_folder=intermediate_folder)
