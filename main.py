@@ -69,7 +69,7 @@ def extract_issuer(
     mkt: str,
     already_loaded: dict[str, dict[str, str]],
 ) -> dict[str, str]:
-    if isin in already_loaded:
+    if isin.strip() in already_loaded:
         return already_loaded[isin]
 
     folder = BASE_FOLDER / "isins"
@@ -83,7 +83,6 @@ def extract_issuer(
             "accept": "*/*",
             "accept-language": "en-US,en;q=0.9",
             "priority": "u=1, i",
-            "referer": "https://live.euronext.com/en/product/structured-products/XS2928979447-ETLX/market-information",
             "sec-ch-ua": '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
             "sec-ch-ua-mobile": "?1",
             "sec-ch-ua-platform": '"Android"',
@@ -98,7 +97,8 @@ def extract_issuer(
             url = url_to_fill.format(isin, mkt)
             try:
                 r = requests.get(url, headers=headers, timeout=60)
-            except requests.exceptions.ReadTimeout:
+                r.raise_for_status()
+            except (requests.exceptions.ReadTimeout, requests.exceptions.HTTPError):
                 tqdm.write("Ci stanno tracciando! Stacca, stacca!")
                 time.sleep(30)
                 r = requests.get(url, headers=headers, timeout=60)
@@ -273,6 +273,8 @@ def create_underlying_table(isin_info_path: Path, output_path: Path) -> None:
         .rename(columns={"underlying_list": "Sottostante"})
         .reset_index(drop=True)
     )
+
+    df_long["Sottostante"] = df_long["Sottostante"].str.strip()
 
     df_long.to_csv(output_path, index=False, encoding="utf-8-sig")
 
