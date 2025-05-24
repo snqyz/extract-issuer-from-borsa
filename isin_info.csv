@@ -10948,3 +10948,711 @@ XS3025746267,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,U
 XS3028974502,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,10000.0,BNP PARIBAS ISSUANCE B.V.,DEBITO UNICREDIT SUB
 XS3031617247,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Intesa Sanpaolo S.p.A.,EURIBOR 3M
 XS3036074048,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Intesa Sanpaolo S.p.A.,EURIBOR 3M
+CH1268728040,Express,Bullish,1260,Express Certificates,,EFG INTERNATIONAL FINANCE,AirBnB Inc.
+CH1271352390,Express,Bullish,1260,Express Certificates,,LEONTEQ SECURITIES,MODERNA/NOVARTIS/SANOFI/SANDOZ
+CH1290287502,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,INTEL/ISP/VOLKS
+CH1308688642,Express,Bullish,1260,Express Certificates,1000.0,EFG INTERNATIONAL FINANCE,FBK/ISP/MB/STLA
+CH1308689376,Express,Bullish,1260,Express Certificates,1000.0,EFG INTERNATIONAL FINANCE,SXPP/SXKP/SXTP
+CH1308693246,Express,Bullish,1260,Express Certificates,1000.0,EFG INTERNATIONAL FINANCE,STMPAFP/TEN IM/UCG
+CH1322068649,Express,Bullish,1260,Express Certificates,1000.0,EFG INTERNATIONAL FINANCE,BURBERRY/KERING/LVMH
+CH1336220400,Express,Bullish,1260,Express Certificates,1000.0,EFG INTERNATIONAL FINANCE,A2A/ENEL/RWE/VEOLIA
+CH1336239731,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,EUROSTOXX50/FTSEMIB/NIKKEI225/S&P500
+CH1336243337,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,BPM/STLA/STM FR/UCG
+CH1336246066,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,BANCO BPM/MONCLER/NEXI/STELLANTIS
+CH1342434052,Express,Bullish,1260,Express Certificates,1000.0,EFG INTERNATIONAL FINANCE,BLOCK/NEXI/PAYPAL
+CH1349977657,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,BANCO BPM/ENI/STELLANTIS
+CH1358851512,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,ENI/INTESA SANPAOLO/UNICREDIT
+CH1358852767,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,AXA/INTESA
+CH1358857618,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,BPM/PROSHRS 20Y ETF/UCG
+CH1369848267,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,FINECO/MEDIOBANCA
+CH1369849398,Reverse Convertibles,Bullish,1230,Barrier Reverse Convertibles,1000.0,LEONTEQ SECURITIES,0% NLD GOV (01/15/2052)
+CH1369860791,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,EUROSTOXX50/FTSEMIB/NASDAQ100
+CH1369862227,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,GENERALI/DIASORIN
+CH1381834394,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,BANCO BPM/STM FR
+CH1390866460,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,RENAULT SA
+CH1400325218,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,ARM/ROBINHOOD
+CH1400331950,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,RENAULT SA
+CH1438098514,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,BPM/INTEL/NVIDIA/UCG
+CH1438098522,Express,Bullish,1260,Express Certificates,940.0,LEONTEQ SECURITIES,APPLE/NVIDIA/UCG
+CH1438099355,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,Siemens Energy AG
+CH1438099553,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,BURBERRY/KERING/MONC
+DE000FA05F52,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,11.55,SOCIETE GENERALE EFFEKTEN GMBH,NASDAQ-100
+DE000FA05G36,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,0.58,SOCIETE GENERALE EFFEKTEN GMBH,FTSE MIB INDEX
+DE000FA05GU8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.45,SOCIETE GENERALE EFFEKTEN GMBH,FTSE MIB INDEX
+DE000FA05GY0,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.25,SOCIETE GENERALE EFFEKTEN GMBH,FTSE MIB INDEX
+DE000FA05H27,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,4.07,SOCIETE GENERALE EFFEKTEN GMBH,DEUTSCHE BANK AG
+DE000FA05JC0,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,4.61,SOCIETE GENERALE EFFEKTEN GMBH,FERRARI IT
+DE000FA05JX6,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,2.82,SOCIETE GENERALE EFFEKTEN GMBH,Mediobanca
+DE000FA05KK1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.52,SOCIETE GENERALE EFFEKTEN GMBH,TELECOM ITALIA
+DE000FA0U5C4,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.57,SOCIETE GENERALE EFFEKTEN GMBH,Intesa Sanpaolo
+DE000HB60HY7,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000HB87R15,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000HB87R23,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000HB8LJ30,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000HC10148,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000HC10155,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000HC10163,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000HC3HDW5,Barrier Reverse Convertibles,Bullish,1230,Barrier Reverse Convertibles,,Unicredit Bank GmbH,ENI/ENEL/ISP/STLAM
+DE000HC7F6Q6,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,Terna Rete Elettrica Nazionale SpA
+DE000HC7PUT9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000HC83QB6,Cash Collect Autocallable,Bullish,1260,Express Certificates,900.0,Unicredit Bank GmbH,AXA/CITI/MEDIOBANCA
+DE000HC84G28,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,LUFTHANSA AG
+DE000HC8ALA8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000HC8ALB6,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000HC9XDW9,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,Unicredit Bank GmbH,SX7E/FTMIB/NDX/SPX
+DE000HD0L9P9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,META PLATFORMS
+DE000HD1T3Q1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,Banca Generali S.p.A.
+DE000HD37PW8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,Intesa Sanpaolo
+DE000HD3LH17,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,TELECOM ITALIA
+DE000HD3RF21,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,FERRARI/STELLANTIS/TESLA
+DE000HD3UTD3,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000HD3UU43,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,DAX
+DE000HD412L3,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,ENEL/STELLANTIS/VOLKSWAGEN
+DE000HD472G7,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,TENARIS SA
+DE000HD48F49,Bonus Cap,Bullish,1250,Capped Bonus Certificates,100.0,Unicredit Bank GmbH,STELLANTIS IT
+DE000HD497Z4,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000HD4NUS2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,FERRARI IT
+DE000HD60CK3,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,VISA
+DE000HD69PE9,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,BAYERISCHE MOTOREN W
+DE000HD6CGT7,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,BAYERISCHE MOTOREN W
+DE000HD6E1W5,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,MONCLER/ENEL/BPM
+DE000HD6QZK6,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Azimut Holding SpA
+DE000HD6QZL4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Azimut Holding SpA
+DE000HD732D1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000HD75R82,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,PALLADIUM
+DE000HD75S99,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,APPLE
+DE000HD86FC8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000HD8NA58,Bonus Cap,Bullish,1250,Capped Bonus Certificates,92.6,Unicredit Bank GmbH,EURO STOXX 50
+DE000HD8U6V4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Moncler SpA
+DE000HD8U6W2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Moncler SpA
+DE000HD8Y5T6,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,BKT 3 STOXX
+DE000HD8ZUM0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000HD8ZY15,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Intesa Sanpaolo
+DE000HD8ZYA7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000HD9A9M0,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,TENARIS SA
+DE000HD9JED5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,S AND P 500
+DE000HD9JFW2,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000HD9RBH5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000HD9WAY2,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000HV40UF9,Barrier Reverse Convertibles,Bullish,1230,Barrier Reverse Convertibles,,Unicredit Bank GmbH,NIKKEI225/FTSEMIB
+DE000HV4DAB9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,LUFTHANSA AG
+DE000HV4HCK7,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000MS0H0C0,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,MORGAN STANLEY B.V.,ENI/INTESA SANPAOLO/UNICREDIT
+DE000MS0H0Y4,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,MORGAN STANLEY B.V.,SOCIETE GENERALE/BNP PARIBAS/UNICREDIT
+DE000SF2GDE1,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,,SOCIETE GENERALE EFFEKTEN GMBH,DEUTSCHE TELEKOM
+DE000SJ0C915,Discount,Bullish,1200,Discount Certificates,84.68,SOCIETE GENERALE EFFEKTEN GMBH,Alphabet Inc. C
+DE000SJ0KRW5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.02,SOCIETE GENERALE EFFEKTEN GMBH,Intesa Sanpaolo
+DE000SJ0RT30,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.76,SOCIETE GENERALE EFFEKTEN GMBH,EURO STOXX Banks
+DE000SJ0RTL9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,1.26,SOCIETE GENERALE EFFEKTEN GMBH,BRENT CRUDE OIL
+DE000SJ0V9E5,Bonus Cap,Bullish,1250,Capped Bonus Certificates,84.5,SOCIETE GENERALE EFFEKTEN GMBH,Leonardo SpA
+DE000SJ0YPU4,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.86,SOCIETE GENERALE EFFEKTEN GMBH,NASDAQ-100
+DE000SJ0YR58,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.056,SOCIETE GENERALE EFFEKTEN GMBH,FTSE MIB INDEX
+DE000SJ1RD45,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,1.34,SOCIETE GENERALE EFFEKTEN GMBH,ENEL
+DE000SJ29Z98,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,8.92,SOCIETE GENERALE EFFEKTEN GMBH,GOLD
+DE000SJ7F0H0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.16,SOCIETE GENERALE EFFEKTEN GMBH,UNICREDIT
+DE000SJ7F2B9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.14,SOCIETE GENERALE EFFEKTEN GMBH,AMAZON INC
+DE000SJ7LN27,Discount,Bullish,1200,Discount Certificates,22.32,SOCIETE GENERALE EFFEKTEN GMBH,STMICROELECTRONICS IT
+DE000SQ1MRY6,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,,SOCIETE GENERALE EFFEKTEN GMBH,Baidu Inc
+DE000SU73HF6,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,4.38,SOCIETE GENERALE EFFEKTEN GMBH,FERRARI IT
+DE000SU9VQK5,Tracker,Bullish,1300,Tracker Certificates,12.34,SOCIETE GENERALE EFFEKTEN GMBH,NINTENDO CO LTD
+DE000SW89055,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,2.31,SOCIETE GENERALE EFFEKTEN GMBH,APPLE
+DE000SW9K5C4,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,1.77,SOCIETE GENERALE EFFEKTEN GMBH,APPLE
+DE000SX11RJ1,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,1.53,SOCIETE GENERALE EFFEKTEN GMBH,Alphabet Inc. C
+DE000SX57CB3,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,3.58,SOCIETE GENERALE EFFEKTEN GMBH,STMICROELECTRONICS IT
+DE000SX66QC2,Turbo Short,Bearish,2200,Knock-Out Warrants,4.56,SOCIETE GENERALE EFFEKTEN GMBH,S AND P 500
+DE000SX69E47,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,3.26,SOCIETE GENERALE EFFEKTEN GMBH,APPLE
+DE000SX6AHF1,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.22,SOCIETE GENERALE EFFEKTEN GMBH,UNICREDIT
+DE000SX6AHN5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.28,SOCIETE GENERALE EFFEKTEN GMBH,UNICREDIT
+DE000SX6LET6,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,0.61,SOCIETE GENERALE EFFEKTEN GMBH,Juventus FC SpA
+DE000SX7GNR9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.22,SOCIETE GENERALE EFFEKTEN GMBH,SAIPEM
+DE000SX7L9F8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.48,SOCIETE GENERALE EFFEKTEN GMBH,NEXI
+DE000SX7YVY1,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,20.58,SOCIETE GENERALE EFFEKTEN GMBH,INFINEON TECHNOLOGIE
+DE000SX8YXZ2,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,4.59,SOCIETE GENERALE EFFEKTEN GMBH,BAYER AG
+DE000SY2Y7D5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.06,SOCIETE GENERALE EFFEKTEN GMBH,APPLE
+DE000SY6H6B8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,2.08,SOCIETE GENERALE EFFEKTEN GMBH,ESSILORLUXOTTICA
+DE000SY9CNU7,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.16,SOCIETE GENERALE EFFEKTEN GMBH,MICROSTRATEGY INC
+DE000SY9WD72,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.27,SOCIETE GENERALE EFFEKTEN GMBH,Amplifon SpA
+DE000SY9WDW2,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.05,SOCIETE GENERALE EFFEKTEN GMBH,APPLE
+DE000UG03Z97,Bonus Cap,Bullish,1250,Capped Bonus Certificates,100.0,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000UG122P9,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,TENARIS SA
+DE000UG12XJ8,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,Unicredit Bank GmbH,ENI/POSTE ITALIANE
+DE000UG1BWU5,Turbo Long,Bullish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,BPER Banca S.p.A.
+DE000UG1BXQ1,Turbo Long,Bullish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,GENERALI
+DE000UG1F782,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,AMAZON INC
+DE000UG1F881,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,FinecoBank Banca
+DE000UG1F8D0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,FinecoBank Banca
+DE000UG1F949,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,NVIDIA Corp
+DE000UG1GPH5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,UNICREDIT
+DE000UG1N0Z0,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,TESLA INC
+DE000UG1QC98,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,EUR/JPY
+DE000UG20WF1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000UG20ZQ1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,BANCA POPOLARE DI SONDRIO
+DE000UG292L9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,Iveco Group N.V.
+DE000UG2HKA7,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,ADIDAS
+DE000UG2JT71,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG2JWQ4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,FERRARI IT
+DE000UG2QP50,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Exor Nv
+DE000UG2U3Y7,Bonus Cap,Bullish,1250,Capped Bonus Certificates,100.0,Unicredit Bank GmbH,American Airlines Group
+DE000UG2U417,Bonus Cap,Bullish,1250,Capped Bonus Certificates,100.0,Unicredit Bank GmbH,AMD
+DE000UG2Y8C8,Bonus Cap,Bullish,1250,Capped Bonus Certificates,100.0,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000UG31E23,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000UG31E49,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000UG31E98,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,EURO STOXX 50
+DE000UG31EA7,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,EURO STOXX 50
+DE000UG31LK1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG31MP8,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,DAX
+DE000UG31P20,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,UNICREDIT
+DE000UG31PL0,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,UNICREDIT
+DE000UG31QB9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,UNICREDIT
+DE000UG31QH6,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000UG31QJ2,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000UG31QK0,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000UG35XG5,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG35XH3,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG3BEY1,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,FERRARI IT
+DE000UG3BK36,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Leonardo SpA
+DE000UG3CRF0,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG3CRN4,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,LBMA Gold Price PM
+DE000UG3CS03,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000UG3CSU7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,UNICREDIT
+DE000UG3HL13,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG3HL21,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000UG3HL39,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000UG3JZU7,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,BPER Banca S.p.A.
+DE000UG3JZX1,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,Intesa Sanpaolo
+DE000UG3KET2,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,FERRARI IT
+DE000UG3KF73,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000UG3Q512,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,LOTTOMATICA GROUP
+DE000UG3Q5K6,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,SIEMENS AG
+DE000UG3T102,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Leonardo SpA
+DE000UG3VYP5,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000UG3Z1C1,Bonus Cap,Bullish,1250,Capped Bonus Certificates,90.99,Unicredit Bank GmbH,UNICREDIT
+DE000UG3Z2Y3,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,LBMA Gold Price PM
+DE000UG3Z5S8,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,S AND P 500
+DE000UG42BC6,Turbo Short,Bearish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000UG42FA1,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,Iveco Group N.V.
+DE000UG42GC5,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,SAIPEM
+DE000UG43H18,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Iveco Group N.V.
+DE000UG43Q82,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,TESLA INC
+DE000UG43SE4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Intesa Sanpaolo
+DE000UG44W83,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,LBMA Gold Price PM
+DE000UG44XA0,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG451T4,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,NVIDIA Corp
+DE000UG45379,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Intesa Sanpaolo
+DE000UG45395,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Intesa Sanpaolo
+DE000UG453H5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Leonardo SpA
+DE000UG45437,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000UG45486,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000UG454H3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000UG4BT02,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,INTESASANPAOLO/SOCIETEGENERALE/BPERBANCA
+DE000UG4BT28,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,BNP PARIBAS/INTESA SANP/SOCIETE GENERALE
+DE000UG4FL48,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,UNICREDIT
+DE000UG4FLF4,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,UNICREDIT
+DE000UG4LR85,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,Prysmian
+DE000UG4LS27,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Poste Italiane SpA
+DE000UG4LS35,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,Poste Italiane SpA
+DE000UG4LSK7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000UG4LSN1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000UG4LSP6,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000UG4RDE9,Turbo Long,Bullish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000UG4U3X7,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000UG4U4A3,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000UG4U4J4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,BAYERISCHE MOTOREN W
+DE000UG4U5E2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,ENI
+DE000UG4U645,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Italgas SpA
+DE000UG4X0W2,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,APPLE
+DE000UG4X0Y8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,APPLE
+DE000UG535E6,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,Prysmian
+DE000UG571H4,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,ENI/INTESA SANPAOLO
+DE000UG595N1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,SILVER
+DE000UG599W4,Turbo Long,Bullish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,Pirelli & C Ord Shs
+DE000UG5EMR7,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,LBMA Gold Price PM
+DE000UG5EPN9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,BPER Banca S.p.A.
+DE000UG5GMM3,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,APPLE
+DE000UG5JYL4,Turbo Long,Bullish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000UG5KDW3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Alphabet Inc. C
+DE000UG5KFK3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,Iveco Group N.V.
+DE000UG5KG62,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000UG5KGB0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000UG5VE46,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,Intesa Sanpaolo
+DE000UG5WJD5,Turbo Long,Bullish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG5Y3L7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG5Y3P8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG5Y3S2,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG62CM1,Turbo Long,Bullish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,Pirelli & C Ord Shs
+DE000UG62EN5,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG62EW6,Turbo Long,Bullish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,FTSE MIB INDEX
+DE000UG641A0,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,BKT 4 ESTOXX
+DE000UG67DT3,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,ENI
+DE000UG6BJA3,Turbo Long,Bullish,2200,Knock-Out Warrants,,Unicredit Bank GmbH,STMICROELECTRONICS IT
+DE000UG6BJD7,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,NASDAQ-100
+DE000UG6BLQ5,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,LBMA Gold Price PM
+DE000UG6GU28,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,AMD
+DE000UG6JME2,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,DAX
+DE000UG6N2B2,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,AMD
+DE000UG6NZC0,Express,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,BPER/ISP/MPS/SAIPEM
+DE000UG6NZD8,Express,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,AZM/BPER/ENI/SPM
+DE000UG6NZE6,Express,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,BMW/RNO/STLAM/TESLA
+DE000UG6NZH9,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,BMW/RNO/STLAM/TESLA
+DE000UG6NZL1,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,BPER/ISP/MPS/SAIPEM
+DE000UG6PTU0,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,LBMA Gold Price PM
+DE000UG6SPV0,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,STELLANTIS IT
+DE000UM0LQF1,Express,Bullish,1260,Express Certificates,1000.0,UBS AG,BPER/BPM/LUFTH/PORSCHE
+DE000UM4KCP4,Express,Bullish,1260,Express Certificates,1000.0,UBS AG,AXA/SANOFI/EON
+DE000UP4UM72,Express,Bullish,1260,Express Certificates,1000.0,UBS AG,AMZN/META/GOOGL/MSFT
+DE000VC08NR7,Plain Vanilla Warrant Put,Bearish,2100,Warrants,2.23,VONTOBEL FINANCIAL PRODUCTS GM,NVIDIA Corp
+DE000VC1EY44,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,1.18,VONTOBEL FINANCIAL PRODUCTS GM,INFINEON TECHNOLOGIE
+DE000VC1LCT1,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,0.05,VONTOBEL FINANCIAL PRODUCTS GM,ASML HOLDING
+DE000VC3DC98,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.32,VONTOBEL FINANCIAL PRODUCTS GM,S AND P 500
+DE000VC3DE88,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.84,VONTOBEL FINANCIAL PRODUCTS GM,LVMH
+DE000VC4B184,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.08,VONTOBEL FINANCIAL PRODUCTS GM,EUR/USD
+DE000VC4B2D1,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.33,VONTOBEL FINANCIAL PRODUCTS GM,EUR/USD
+DE000VC4B7C2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.02,VONTOBEL FINANCIAL PRODUCTS GM,LBMA Gold Price PM
+DE000VC68EZ3,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.57,VONTOBEL FINANCIAL PRODUCTS GM,BAYER AG
+DE000VC68N70,Express,Bullish,1260,Express Certificates,1000.0,VONTOBEL FINANCIAL PRODUCTS GM,AI/MICROSOFT/NVDA
+DE000VC6HV64,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,9.99,VONTOBEL FINANCIAL PRODUCTS GM,Vont 4X S VIX V6
+DE000VC6MF18,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,FORD/RENAULT/STELLANTIS
+DE000VC70A30,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.8,VONTOBEL FINANCIAL PRODUCTS GM,NVIDIA Corp
+DE000VC70A63,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.39,VONTOBEL FINANCIAL PRODUCTS GM,APPLE
+DE000VC70JK0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.11,VONTOBEL FINANCIAL PRODUCTS GM,EUR/USD
+DE000VC70KE1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,3.42,VONTOBEL FINANCIAL PRODUCTS GM,NVIDIA Corp
+DE000VC71ZA5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.42,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VC72065,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.16,VONTOBEL FINANCIAL PRODUCTS GM,STELLANTIS IT
+DE000VC72KN8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.94,VONTOBEL FINANCIAL PRODUCTS GM,LVMH
+DE000VC72WN3,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.15,VONTOBEL FINANCIAL PRODUCTS GM,LBMA Gold Price PM
+DE000VC735Y3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.23,VONTOBEL FINANCIAL PRODUCTS GM,APPLE
+DE000VC73BU0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.02,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VC73JG2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.16,VONTOBEL FINANCIAL PRODUCTS GM,SILVER
+DE000VC73TW8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.74,VONTOBEL FINANCIAL PRODUCTS GM,PORSCHE AG
+DE000VC746J1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.13,VONTOBEL FINANCIAL PRODUCTS GM,APPLE
+DE000VC75CM0,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,2.29,VONTOBEL FINANCIAL PRODUCTS GM,UNICREDIT
+DE000VC75CW9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,2.35,VONTOBEL FINANCIAL PRODUCTS GM,STELLANTIS IT
+DE000VC75TA9,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.29,VONTOBEL FINANCIAL PRODUCTS GM,BAYERISCHE MOTOREN W
+DE000VC76Q85,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,4.66,VONTOBEL FINANCIAL PRODUCTS GM,UNICREDIT
+DE000VC7REC7,Express,Bullish,1260,Express Certificates,1000.0,VONTOBEL FINANCIAL PRODUCTS GM,BPM/MPS
+DE000VC7Z7Q1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.28,VONTOBEL FINANCIAL PRODUCTS GM,GENERALI
+DE000VC7Z7T5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.01,VONTOBEL FINANCIAL PRODUCTS GM,Intesa Sanpaolo
+DE000VC7Z8J4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.26,VONTOBEL FINANCIAL PRODUCTS GM,Alphabet Inc. C
+DE000VC7Z8M8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.21,VONTOBEL FINANCIAL PRODUCTS GM,MICROSOFT
+DE000VC7Z9T1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.38,VONTOBEL FINANCIAL PRODUCTS GM,TESLA INC
+DE000VC7Z9X3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.39,VONTOBEL FINANCIAL PRODUCTS GM,AMAZON INC
+DE000VC7ZCJ9,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,10.48,VONTOBEL FINANCIAL PRODUCTS GM,UNICREDIT
+DE000VC7ZJU1,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.19,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VC7ZLU7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.16,VONTOBEL FINANCIAL PRODUCTS GM,DAX
+DE000VC9DHY0,Plain Vanilla Warrant Put,Bearish,2100,Warrants,1.37,VONTOBEL FINANCIAL PRODUCTS GM,NASDAQ-100
+DE000VC9DK19,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.75,VONTOBEL FINANCIAL PRODUCTS GM,DAX
+DE000VC9DLH7,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.16,VONTOBEL FINANCIAL PRODUCTS GM,NATURAL GAS
+DE000VD12B88,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.04,VONTOBEL FINANCIAL PRODUCTS GM,UNICREDIT
+DE000VD40DG2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.07,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VD40L90,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.83,VONTOBEL FINANCIAL PRODUCTS GM,NASDAQ-100
+DE000VD57015,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,STELLANTIS/ENEL/FINECOBANK/BANCO BPM
+DE000VD77419,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,0.4,VONTOBEL FINANCIAL PRODUCTS GM,STELLANTIS IT
+DE000VD778G9,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.33,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VD7VD99,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,WOLFSPEED
+DE000VD82YF2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.21,VONTOBEL FINANCIAL PRODUCTS GM,UNICREDIT
+DE000VD8MAQ3,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,ENEL/UCG/ENI/INTESA
+DE000VD8UQF5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.27,VONTOBEL FINANCIAL PRODUCTS GM,STELLANTIS IT
+DE000VD8WS74,Plain Vanilla Warrant Call,Bullish,2100,Warrants,1.6,VONTOBEL FINANCIAL PRODUCTS GM,NASDAQ-100
+DE000VD937W8,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,BPM/STLA/STM FR/UCG
+DE000VG03426,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.12,VONTOBEL FINANCIAL PRODUCTS GM,NATURAL GAS
+DE000VG1DLC1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.02,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VG1DLJ6,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.12,VONTOBEL FINANCIAL PRODUCTS GM,STELLANTIS IT
+DE000VG1DNW5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.02,VONTOBEL FINANCIAL PRODUCTS GM,BANCO BPM SPA
+DE000VG1S842,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.15,VONTOBEL FINANCIAL PRODUCTS GM,DOW JONES INDUSTRIAL
+DE000VG1TAY4,Turbo Short,Bearish,2200,Knock-Out Warrants,8.35,VONTOBEL FINANCIAL PRODUCTS GM,NASDAQ-100
+DE000VG1TKC9,Turbo Long,Bullish,2200,Knock-Out Warrants,0.3,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VG2FBF8,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,2.15,VONTOBEL FINANCIAL PRODUCTS GM,STMICROELECTRONICS FR
+DE000VG2J1J5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.03,VONTOBEL FINANCIAL PRODUCTS GM,UNICREDIT
+DE000VG2JUN4,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.44,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VG2KAV7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.1,VONTOBEL FINANCIAL PRODUCTS GM,DAX
+DE000VG4LA17,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.78,VONTOBEL FINANCIAL PRODUCTS GM,NVIDIA Corp
+DE000VG4LHL7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.14,VONTOBEL FINANCIAL PRODUCTS GM,Leonardo SpA
+DE000VG4LJX8,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.23,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VG4LMY0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.38,VONTOBEL FINANCIAL PRODUCTS GM,INTEL
+DE000VG649E4,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,9.98,VONTOBEL FINANCIAL PRODUCTS GM,Vont 7X S COPPER V6
+DE000VG655V5,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,BPM/BARCL/MPS/SG
+DE000VG6DRE3,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,INTESA/UNICREDIT
+DE000VG6KGV5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.1,VONTOBEL FINANCIAL PRODUCTS GM,Leonardo SpA
+DE000VG7DAC1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.25,VONTOBEL FINANCIAL PRODUCTS GM,NASDAQ-100
+DE000VG7DDS1,Turbo Short,Bearish,2200,Knock-Out Warrants,19.1,VONTOBEL FINANCIAL PRODUCTS GM,DAX
+DE000VG7DEG4,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,1.41,VONTOBEL FINANCIAL PRODUCTS GM,STMICROELECTRONICS FR
+DE000VG955K2,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.16,VONTOBEL FINANCIAL PRODUCTS GM,NETFLIX INC
+DE000VG9Y272,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.41,VONTOBEL FINANCIAL PRODUCTS GM,Siemens Energy AG
+DE000VG9ZFN6,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.19,VONTOBEL FINANCIAL PRODUCTS GM,ADIDAS
+DE000VG9ZXD0,Turbo Long,Bullish,2200,Knock-Out Warrants,1.38,VONTOBEL FINANCIAL PRODUCTS GM,NASDAQ-100
+DE000VG9ZXS8,Turbo Long,Bullish,2200,Knock-Out Warrants,0.62,VONTOBEL FINANCIAL PRODUCTS GM,STELLANTIS IT
+DE000VG9ZZC7,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.48,VONTOBEL FINANCIAL PRODUCTS GM,STMICROELECTRONICS FR
+DE000VG9ZZJ2,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.88,VONTOBEL FINANCIAL PRODUCTS GM,UNICREDIT
+DE000VG9ZZV7,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.04,VONTOBEL FINANCIAL PRODUCTS GM,Intesa Sanpaolo
+DE000VK04FL8,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,10.0,VONTOBEL FINANCIAL PRODUCTS GM,Vont 3X S VIX V5
+DE000VK16R79,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,CAMPARI/NVIDIA/STM FR
+DE000VK1WLJ0,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,10.0,VONTOBEL FINANCIAL PRODUCTS GM,Vont 7X L SX5E
+DE000VK28D22,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.07,VONTOBEL FINANCIAL PRODUCTS GM,DAX
+DE000VK2MUG6,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,2.02,VONTOBEL FINANCIAL PRODUCTS GM,Vont 2X L FVS1 V17
+DE000VK2SAQ4,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.19,VONTOBEL FINANCIAL PRODUCTS GM,COCOA FUTURE
+DE000VK3ATT4,Turbo Long,Bullish,2200,Knock-Out Warrants,0.69,VONTOBEL FINANCIAL PRODUCTS GM,DAX
+DE000VK3ATX6,Turbo Long,Bullish,2200,Knock-Out Warrants,6.45,VONTOBEL FINANCIAL PRODUCTS GM,NASDAQ-100
+DE000VK3WK80,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.22,VONTOBEL FINANCIAL PRODUCTS GM,UNICREDIT
+DE000VK419A4,Turbo Short,Bearish,2200,Knock-Out Warrants,0.41,VONTOBEL FINANCIAL PRODUCTS GM,S AND P 500
+DE000VK419B2,Turbo Short,Bearish,2200,Knock-Out Warrants,0.35,VONTOBEL FINANCIAL PRODUCTS GM,S AND P 500
+DE000VK4GQZ2,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,1.47,VONTOBEL FINANCIAL PRODUCTS GM,LBMA Gold Price PM
+DE000VK4GR58,Turbo Long,Bullish,2200,Knock-Out Warrants,0.1,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VK4GRJ4,Turbo Long,Bullish,2200,Knock-Out Warrants,2.64,VONTOBEL FINANCIAL PRODUCTS GM,S AND P 500
+DE000VK4GWV9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,9.06,VONTOBEL FINANCIAL PRODUCTS GM,NASDAQ-100
+DE000VK4LZB4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.09,VONTOBEL FINANCIAL PRODUCTS GM,NASDAQ-100
+DE000VK4LZC2,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.33,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VK4Q4Q5,Turbo Long,Bullish,2200,Knock-Out Warrants,0.01,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VK4Q596,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.14,VONTOBEL FINANCIAL PRODUCTS GM,Coinbase
+DE000VK4Y0R1,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,1.09,VONTOBEL FINANCIAL PRODUCTS GM,NASDAQ-100
+DE000VK4Y0U5,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,0.24,VONTOBEL FINANCIAL PRODUCTS GM,S AND P 500
+DE000VK4YXN7,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,0.06,VONTOBEL FINANCIAL PRODUCTS GM,WTI Light Sweet Crude Oil
+DE000VK4YXV0,Turbo Short,Bearish,2200,Knock-Out Warrants,0.48,VONTOBEL FINANCIAL PRODUCTS GM,NASDAQ-100
+DE000VM6HN55,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.07,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VM6R7D9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.22,VONTOBEL FINANCIAL PRODUCTS GM,DOW JONES INDUSTRIAL
+DE000VM6RX69,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.12,VONTOBEL FINANCIAL PRODUCTS GM,Leonardo SpA
+DE000VM90PR9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,9.68,VONTOBEL FINANCIAL PRODUCTS GM,EUR/JPY
+DE000VM90PZ2,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,6.47,VONTOBEL FINANCIAL PRODUCTS GM,EUR/JPY
+DE000VM9AVH0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.04,VONTOBEL FINANCIAL PRODUCTS GM,Leonardo SpA
+DE000VP8JC73,Express,Bullish,1260,Express Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,UNILEVER/ANHEUSER-BUSCH I/ADIDAS/DANONE
+DE000VQ4LSR9,Express,Bullish,1260,Express Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,XPENG/NIO
+DE000VU1HAC7,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,VONTOBEL FINANCIAL PRODUCTS GM,ENI
+DE000VU1RA80,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,VONTOBEL FINANCIAL PRODUCTS GM,EUR/USD
+DE000VU33DZ1,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,Vont 5X L BRENT FT V7
+DE000VU33FS1,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,Vont 7X S COPPER FT V4
+DE000VU4ASZ9,Mini Future Open-End Long,Bullish,2210,Mini-Futures,,VONTOBEL FINANCIAL PRODUCTS GM,FTSE MIB INDEX
+DE000VU5FGB1,Express,Bullish,1260,Express Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,PLUG POW/SOLAREDGE/FIRSTSOLAR/ENPHASE E
+DE000VU81SF0,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,4XS DAX
+DE000VV0QU03,Mini Future Open-End Long,Bullish,2210,Mini-Futures,,VONTOBEL FINANCIAL PRODUCTS GM,DAX
+DE000VV4TGU4,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,VONTOBEL FINANCIAL PRODUCTS GM,NYMEX WTI CRUDE OIL FUTURE
+DE000VX4ZGN4,Mini Future Open-End Long,Bullish,2210,Mini-Futures,,VONTOBEL FINANCIAL PRODUCTS GM,BRENT CRUDE OIL
+DE000VX56G86,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,VONTOBEL FINANCIAL PRODUCTS GM,Mercedes-Benz Group AG
+DE000VX56PK2,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,VONTOBEL FINANCIAL PRODUCTS GM,STELLANTIS IT
+DE000VX58615,Tracker,Bullish,1300,Tracker Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,Vontobel Nuclear Energy Index
+GB00BNWM5541,Express,Bullish,1260,Express Certificates,,GOLDMAN SACHS INTERNATIONAL,VOLKSWAGEN PREF
+GB00BSG2MJ81,Express,Bullish,1260,Express Certificates,100.0,GOLDMAN SACHS INTERNATIONAL,SWISS MARKET INDEX
+GB00BTC5BD50,Express,Bullish,1260,Express Certificates,100.0,GOLDMAN SACHS INTERNATIONAL,SWISS MARKET INDEX
+GB00BTLC6S77,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,GOLDMAN SACHS INTERNATIONAL,BANCA MONTE P. SIENA
+GB00BTLC6W14,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,GOLDMAN SACHS INTERNATIONAL,BANCO BPM SPA
+IT0005356503,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,,Unicredit S.p.A.,FONDO CPR INVEST - REACTIVE
+IT0005415762,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,,Banco BPM S.p.A.,EUROSTOXX SEL DIV30
+IT0005450769,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,,Banco BPM S.p.A.,EUROSTOXX SEL DIV30
+IT0005451676,Miscellaneous Yield Enhancement,Bullish,1299,Miscellaneous Yield Enhancement,100.0,Intesa Sanpaolo S.p.A.,BNP PARIBAS
+IT0005456121,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,,Unicredit S.p.A.,ENI/ENEL/INTESA
+IT0005499717,Tracker,Bullish,1300,Tracker Certificates,100.0,Intesa Sanpaolo S.p.A.,MSCI WORLD (USD NTR)
+IT0005533192,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,30.0,Intesa Sanpaolo S.p.A.,DAX FUTURES LEVERAGE LONG 7X
+IT0005536013,Express,Bullish,1260,Express Certificates,,Unicredit S.p.A.,UMICORE
+IT0005546517,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Unicredit S.p.A.,ENI
+IT0005556052,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,30.0,Intesa Sanpaolo S.p.A.,FTSE MIB DAILY FUTURES LEVERAGE LONG 5X
+IT0005558207,Express,Bullish,1260,Express Certificates,1000.0,Mediobanca Banca di Credito Fi,STELLANTIS/KERING
+IT0005580649,Express,Bullish,1260,Express Certificates,1000.0,Mediobanca Banca di Credito Fi,VOLKSWAGEN PREF
+IT0005580680,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,100.0,Intesa Sanpaolo S.p.A.,GENERALI/UNICREDIT
+IT0005585044,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Bper Banca S.P.A.,STOXX GLOBAL ESG LEADERS SELECT 50 EUR
+IT0005594756,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,Unicredit S.p.A.,CONTINENTAL/STLAM
+IT0005603771,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Intesa Sanpaolo S.p.A.,FTSE MIB INDEX
+IT0005608895,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Unicredit S.p.A.,EURIBOR 3M
+IT0005615510,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Intesa Sanpaolo S.p.A.,FTSE MIB INDEX
+IT0005615957,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Intesa Sanpaolo S.p.A.,Banca Mediolanum SpA
+IT0005618837,Express,Bullish,1260,Express Certificates,1000.0,Mediobanca Banca di Credito Fi,INTESA SANPAOLO/POSTE ITALIANE
+IT0005632390,Express,Bullish,1260,Express Certificates,1000.0,Unicredit S.p.A.,Intesa Sanpaolo
+IT0005632648,Express,Bullish,1260,Express Certificates,1000.0,Unicredit S.p.A.,FERRARI IT
+IT0005638892,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Intesa Sanpaolo S.p.A.,Banca Mediolanum SpA
+IT0005640138,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Banco BPM S.p.A.,NEXI
+IT0006762675,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,SXX EU600 UTIL/NIKK 225/ESXXBANK/RUSS200
+IT0006762931,Twin Win,Bullish,1340,Twin-Win Certificates,1000.0,NATIXIS STRUCTURED ISSUANCE SA,PORSCHE/STLA/ISP/UCG
+IT0006764978,Express,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,NIKE/INTEL/PAYPAL
+IT0006766676,Express,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,GENERALI/AXA/PRUD/AEGON
+IT0006767575,Express,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,NN/AT&T/DG/IBM
+IT0006767922,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,10000.0,MAREX FINANCIAL,DEBITO NEXI
+IT0006768128,Express Protected,Bullish,1199,Miscellaneous Capital Protection,1000.0,NATIXIS STRUCTURED ISSUANCE SA,MERCEDES/STLAM/VOW3
+IT0006768359,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,NATIXIS STRUCTURED ISSUANCE SA,SX5E/SXAP/KOSPI2/AS51/IBEX
+IT0006769019,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,NATIXIS STRUCTURED ISSUANCE SA,MPS/DB/BPER/BARC
+JE00BGBBC631,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,100000.0,GOLDMAN SACHS FIN CORP INT,DEBITO MEDIOBANCA SUB
+JE00BGBBLN38,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,,GOLDMAN SACHS FIN CORP INT,MSCI WORLD DIVERSIFIED DIV SELECT 50 IND
+JE00BLS34384,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,,GOLDMAN SACHS FIN CORP INT,STOXX Global Select Div 100 Eur
+JE00BS6B5W90,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,1000.0,GOLDMAN SACHS FIN CORP INT,EURO STOXX 50
+JE00BS6B8862,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,100000.0,GOLDMAN SACHS FIN CORP INT,DEBITO MEDIOBANCA SUB
+JE00BS6B9274,Express,Bullish,1260,Express Certificates,1000.0,GOLDMAN SACHS FIN CORP INT,Intesa Sanpaolo
+LU2330258448,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,,SOCIETE GENERALE EFFEKTEN GMBH,EURO STOXX AUTOMOBILES & PARTS NET RETUR
+NL0014610883,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NL0014917593,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,FERRARI IT
+NL0015447848,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,APPLE
+NLBNPIT10MW1,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB FUTURE
+NLBNPIT130J1,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,,BNP PARIBAS ISSUANCE B.V.,COPPER COMEX FUTURE
+NLBNPIT17X24,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,TENARIS SA
+NLBNPIT1EYO4,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,,BNP PARIBAS ISSUANCE B.V.,COPPER COMEX FUTURE
+NLBNPIT1JP38,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,GENERALI
+NLBNPIT1NZ89,Cash Collect Autocallable,Bullish,1260,Express Certificates,,BNP PARIBAS ISSUANCE B.V.,MODERNA/EXELIXIS INC/VERTEX PHARMA INC
+NLBNPIT1Q6O1,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,,BNP PARIBAS ISSUANCE B.V.,SUNRUN/SOLARDEDGE/SUNNOVA
+NLBNPIT1RKL1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,MICRON TECHNOLOGY IN
+NLBNPIT1U7Y2,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,STMICROELECTRONICS/TENARIS/INTESA
+NLBNPIT1U894,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,PLUG/SUNNOVA/SUNRUN
+NLBNPIT1UTI2,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,20.0,BNP PARIBAS ISSUANCE B.V.,EURO STOXX 50
+NLBNPIT1UTL6,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,20.0,BNP PARIBAS ISSUANCE B.V.,CAC 40
+NLBNPIT1UY73,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,FinecoBank Banca
+NLBNPIT1W1J4,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,BNP PARIBAS ISSUANCE B.V.,ENI/MONC/POSTE
+NLBNPIT1WFB2,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT1X8D1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT1YL33,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,TAIWAN SEMICONDUCTOR
+NLBNPIT1ZEJ1,Mini Future Short,Bearish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,Moncler SpA
+NLBNPIT1ZT83,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,FinecoBank Banca
+NLBNPIT20ZG5,Bonus Cap,Bullish,1250,Capped Bonus Certificates,,BNP PARIBAS ISSUANCE B.V.,TELECOM ITALIA
+NLBNPIT210F9,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,EURO STOXX 50
+NLBNPIT21ZR0,Mini Future Short,Bearish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,SILVER
+NLBNPIT235D1,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,AIRBNB/ROYAL CARIBBEAN INTERNATIONAL/TRI
+NLBNPIT248E2,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,BNP PARIBAS ISSUANCE B.V.,ENPH/SUNRUN/VEOLIA
+NLBNPIT24BR5,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+NLBNPIT24LK9,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,ENI
+NLBNPIT24MV4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,STELLANTIS IT
+NLBNPIT24XJ6,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,STELLANTIS IT
+NLBNPIT25KM4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,ENI
+NLBNPIT25L44,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,UNICREDIT
+NLBNPIT26FF6,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,Azimut Holding SpA
+NLBNPIT274Z3,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FERRARI IT
+NLBNPIT27E82,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FERRARI IT
+NLBNPIT27FN8,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT27JK6,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,ENEL
+NLBNPIT27N81,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,NETFLIX INC
+NLBNPIT27OC3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,GOLD
+NLBNPIT28M32,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,NOVO NORDISK B
+NLBNPIT28WU6,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FERRARI IT
+NLBNPIT292O9,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,20.0,BNP PARIBAS ISSUANCE B.V.,STMICROELECTRONICS FR
+NLBNPIT29EX6,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Palantir Tech Inc
+NLBNPIT29IR9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FERRARI IT
+NLBNPIT29S84,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,NOVO NORDISK B
+NLBNPIT2ARY3,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,CrowdStrike Holdings Ord shs
+NLBNPIT2ATM4,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,BPER Banca S.p.A.
+NLBNPIT2AX77,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,SILVER
+NLBNPIT2AZZ3,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,BANCO BPM SPA
+NLBNPIT2B4T1,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,20.0,BNP PARIBAS ISSUANCE B.V.,FERRARI IT
+NLBNPIT2BLZ1,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,NETFLIX INC
+NLBNPIT2C7J4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,S AND P 500
+NLBNPIT2CAK4,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,GENERALI
+NLBNPIT2CCS3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,UNICREDIT
+NLBNPIT2CDU7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Broadcom Ltd
+NLBNPIT2CS56,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,SAP
+NLBNPIT2CW68,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Alphabet Inc. C
+NLBNPIT2D583,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2D5F5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2D971,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FERRARI IT
+NLBNPIT2D9F7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Salvatore Ferragamo SpA
+NLBNPIT2D9M3,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,STELLANTIS IT
+NLBNPIT2DIK5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2DKD6,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Eli Lilly & Co
+NLBNPIT2EAQ7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,STMICROELECTRONICS FR
+NLBNPIT2EO74,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Intesa Sanpaolo
+NLBNPIT2ESS5,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,DAX
+NLBNPIT2F2L8,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2F9W0,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,NYMEX GAS 06/25
+NLBNPIT2FBL3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2FCK3,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2FEE2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2FEI3,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2FEJ1,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2FG81,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Davide Campari Milano
+NLBNPIT2FJC5,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,BPER Banca S.p.A.
+NLBNPIT2FKH2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,APPLE
+NLBNPIT2FLG2,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,NETFLIX INC
+NLBNPIT2FM00,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,TESLA INC
+NLBNPIT2FP56,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Interpump Group SpA
+NLBNPIT2FTM3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Mediobanca
+NLBNPIT2FTN1,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Mediobanca
+NLBNPIT2G3R2,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,DOW JONES INDUSTRIAL
+NLBNPIT2G9G2,Mini Future Short,Bearish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,UNICREDIT
+NLBNPIT2GAZ3,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,WALT DISNEY CO
+NLBNPIT2GBQ0,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,10.0,BNP PARIBAS ISSUANCE B.V.,BANCO BPM SPA
+NLBNPIT2GC19,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,36.81,BNP PARIBAS ISSUANCE B.V.,GOLD FUTURE
+NLBNPIT2GCW6,Mini Future Short,Bearish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,UNICREDIT
+NLBNPIT2GEW2,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,DOW JONES INDUSTRIAL
+NLBNPIT2GEZ5,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+NLBNPIT2GFU3,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,BRUNELLO CUCINELLI
+NLBNPIT2GM82,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,BNP PARIBAS ISSUANCE B.V.,BPER/ISP/MB/UCG
+NLBNPIT2GNX1,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,APPLE
+NLBNPIT2GQJ3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,NOVO NORDISK B
+NLBNPIT2GQW6,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,DiaSorin SpA
+NLBNPIT2GRF9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,APPLE
+NLBNPIT2GRK9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,AMD
+NLBNPIT2GRS2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,BioNTech SE ADR
+NLBNPIT2GT51,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,GOLD
+NLBNPIT2H0C9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,DiaSorin SpA
+NLBNPIT2HAL1,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,INTEL
+NLBNPIT2HDV4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,STMICROELECTRONICS FR
+NLBNPIT2HH47,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FERRARI IT
+NLBNPIT2HHH4,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,LDO/ERG/RACE/MONCL
+NLBNPIT2HHI2,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,RHEIN/LDO/SAAB/RR
+NLBNPIT2HQ79,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,Moncler SpA
+NLBNPIT2HSW0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Alphabet Inc. C
+NLBNPIT2HTZ1,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,SESA
+NLBNPIT2HU73,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,LVMH
+NLBNPIT2HYO5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,S AND P 500
+NLBNPIT2I368,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,STELLANTIS IT
+NLBNPIT2I3Y6,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,Bund Future
+NLBNPIT2I4B2,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2I673,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,STELLANTIS IT
+NLBNPIT2IAG9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,STMICROELECTRONICS FR
+NLBNPIT2IBP8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,STELLANTIS IT
+NLBNPIT2IGE1,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FERRARI IT
+NLBNPIT2IMM2,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,SAIPEM
+NLBNPIT2IO05,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,NYMEX WTI CRUDE OIL FUTURE
+NLBNPIT2J9H7,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,STMICROELECTRONICS FR
+NLBNPIT2JC32,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,RUSSELL 2000 INDEX
+NLBNPIT2JGD1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,APPLE
+NLBNPIT2JKF8,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+NLBNPIT2JLU5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FERRARI IT
+NLBNPIT2JPC4,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,ENI
+NLBNPIT2JS18,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,BANCO BPM SPA
+NLBNPIT2JT17,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,STELLANTIS IT
+NLBNPIT2JT58,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,STELLANTIS IT
+NLBNPIT2JT82,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,STELLANTIS IT
+NLBNPIT2JTA0,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,TENARIS SA
+NLBNPIT2JTH5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,UNICREDIT
+NLBNPIT2JXT2,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,NYMEX LS CRUDE 07/25
+NLBNPIT2JY93,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,BPER Banca S.p.A.
+NLBNPIT2JYU8,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,UNICREDIT
+NLBNPIT2K0D2,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,RUSSELL 2000 INDEX
+NLBNPIT2K109,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,BAE Systems PLC
+NLBNPIT2K455,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,DAX
+NLBNPIT2K4G7,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+NLBNPIT2K505,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,BPER Banca S.p.A.
+NLBNPIT2K5D1,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,IREN
+NLBNPIT2K7I6,Bonus Cap,Bullish,1250,Capped Bonus Certificates,,BNP PARIBAS ISSUANCE B.V.,TENARIS SA
+NLBNPIT2K984,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Azimut Holding SpA
+NLBNPIT2KA56,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,STELLANTIS IT
+NLBNPIT2KBC2,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,GOLD
+NLBNPIT2KI17,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,TELECOM ITALIA
+NLBNPIT2KI74,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2KKN0,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,Mediobanca
+NLBNPIT2KRQ8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,UNICREDIT
+NLBNPIT2KVT4,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,BBVA/BPER/COMMERZBANK
+NLBNPIT2KWT2,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2KY41,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,SESA
+NLBNPIT2L6A4,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,TECHNOPROBE SPA
+NLBNPIT2LA14,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,EURO STOXX 50
+NLBNPIT2LB88,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,EURO STOXX 50
+NLBNPIT2LE02,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,ALIBABA GROUP HOLDING LTD
+NLBNPIT2LGJ4,Mini Future Short,Bearish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,Siemens Energy AG
+NLBNPIT2LGZ0,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,EURO STOXX Banks
+NLBNPIT2LHO2,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,CAMECO CORP
+NLBNPIT2LNH4,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,ICE BRENT 09/25
+NLBNPIT2LNP7,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,Azimut Holding SpA
+NLBNPIT2LZM8,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,BNP PARIBAS ISSUANCE B.V.,SX7E/FTSEMIB/CAC/DAX
+NLBNPIT2LZT3,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,25.0,BNP PARIBAS ISSUANCE B.V.,BANCO BPM SPA
+NLBNPIT2LZW7,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,25.0,BNP PARIBAS ISSUANCE B.V.,TELECOM ITALIA
+NLBNPIT2M0O7,Mini Future Short,Bearish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,Iveco Group N.V.
+NLBNPIT2M295,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,Super Micro Computer
+NLBNPIT2M2K1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,Vistra Corp
+NLBNPIT2M2Y2,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2M311,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2M5R9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,DAX
+NLBNPIT2M626,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2M634,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2M642,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2M6M8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+NLBNPIT2M7C7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Azimut Holding SpA
+NLBNPIT2M7H6,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,BPER Banca S.p.A.
+NLBNPIT2M865,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,Poste Italiane SpA
+NLBNPIT2M8F8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,ASML HOLDING
+NLBNPIT2M998,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,Azimut Holding SpA
+NLBNPIT2M9M2,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,BPER Banca S.p.A.
+NLBNPIT2M9O8,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,BPER Banca S.p.A.
+NLBNPIT2MAG1,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,Intesa Sanpaolo
+NLBNPIT2MAH9,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,Intesa Sanpaolo
+NLBNPIT2MAI7,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,Intesa Sanpaolo
+NLBNPIT2MBN5,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,UNICREDIT
+NLBNPIT2MD69,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,BANCO BPM SPA
+NLBNPIT2MDY8,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,UNICREDIT
+NLBNPIT2MED0,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2MEF5,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2MER0,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,Iveco Group N.V.
+NLBNPIT2MH24,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,25.0,BNP PARIBAS ISSUANCE B.V.,Poste Italiane SpA
+NLBNPIT2MHX1,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,RHEINMETALL
+NLBNPIT2MIH2,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2MIK6,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,Hensoldt AG
+NLBNPIT2MIN0,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,NOVO NORDISK B
+NLBNPIT2MJ97,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,BNP PARIBAS ISSUANCE B.V.,BMPS/BPER/BPM/UCG
+NLBNPIT2MJI8,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,DAX
+NLBNPIT2MJK4,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,DAX
+NLBNPIT2MJS7,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,DAX
+NLBNPIT2MJT5,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,DAX
+NLBNPIT2MJV1,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,DAX
+NLBNPIT2MJZ2,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,DAX
+NLBNPIT2MKM8,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2MKQ9,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2MKZ0,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2ML44,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2MLJ2,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,DOW JONES INDUSTRIAL
+NLBNPIT2MLQ7,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+NLBNPIT2MLR5,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+NLBNPIT2MLS3,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+NLBNPIT2MLZ8,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+NLBNPIT2MM01,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+NLBNPIT2MM19,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+NLBNPIT2MM68,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,S AND P 500
+NLBNPIT2MM76,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,S AND P 500
+NLBNPIT2MMA9,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,S AND P 500
+NLBNPIT2MNP5,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,Iveco Group N.V.
+NLBNPIT2MOA5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,EURO STOXX 50
+NLBNPIT2MOE7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2MOF4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2MOJ6,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2MON8,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,FTSE MIB INDEX
+NLBNPIT2MPI5,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,DOW JONES INDUSTRIAL
+NLBNPIT2MQD4,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,S AND P 500
+NLBNPIT2MRB6,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,NASDAQ-100
+XS1898262149,Equity Protection with Cap,Bullish,1120,Capped Capital Protected,1000.0,Intesa Sanpaolo S.p.A.,Eurostoxx Utilities
+XS2120944124,Express,Bullish,1260,Express Certificates,,SG ISSUER,VOLKSWAGEN PREF
+XS2183773519,Equity Protection with Cap,Bullish,1120,Capped Capital Protected,1000.0,Intesa Sanpaolo S.p.A.,STOXX Europe 600 Health Care
+XS2348150595,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,,BNP PARIBAS ISSUANCE B.V.,GOLD
+XS2358509235,Express,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,ADIDAS/BNP/NIKE
+XS2358925027,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,,Mediobanca Banca di Credito Fi,DEBITOSAIPEMFINANCEINTER/EURIBOR3MESI
+XS2372809892,Express,Bullish,1260,Express Certificates,,BNP PARIBAS ISSUANCE B.V.,NOVARTIS/MERCK/SANDOZ
+XS2392604117,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,,BNP PARIBAS ISSUANCE B.V.,STELLANTIS IT
+XS2394940303,Cash Collect Autocallable,Bullish,1260,Express Certificates,,SG ISSUER,VOLKSWAGEN PREF
+XS2394976919,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,,SG ISSUER,DEBITO MEDIOBANCA SUB
+XS2394996784,Bonus Cap,Bullish,1250,Capped Bonus Certificates,,SG ISSUER,UNICREDIT
+XS2395005874,Cash Collect Autocallable,Bullish,1260,Express Certificates,,SG ISSUER,AIR FRANCE-KLM/PUMA/SIEMENS/VALEO
+XS2395045748,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,100000.0,SG ISSUER,DEBITO INTESA SANPAOLO SUB
+XS2395067478,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,SG ISSUER,ENI/UNICREDIT/STELLANTIS
+XS2395084218,Express,Bullish,1260,Express Certificates,100.0,SG ISSUER,GOOGL/MSFT/NVDIA
+XS2395097038,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,SG ISSUER,Adobe Systems Inc
+XS2395098945,Express,Bullish,1260,Express Certificates,100.0,SG ISSUER,BMPS/TIT/SPM
+XS2395100949,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,SG ISSUER,BANCO BPM/INTESA SANPAOLO
+XS2395142271,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,SG ISSUER,STMMI/ASML/IFX
+XS2395143329,Express,Bullish,1260,Express Certificates,1000.0,SG ISSUER,BPE/NEXI/STM/ITALGAS
+XS2395161149,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,SG ISSUER,MPS/FERRARI/BRUNELLO
+XS2406081898,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,,BNP PARIBAS ISSUANCE B.V.,DEBITO MEDIOBANCA SUB
+XS2445178622,Equity Protection with Cap,Bullish,1120,Capped Capital Protected,1000.0,Intesa Sanpaolo S.p.A.,STOXX Europe 600 Health Care
+XS2447781944,Tracker,Bullish,1300,Tracker Certificates,,BNP PARIBAS ISSUANCE B.V.,QARS TPS QUANTITAT ABSOLUTE RTN IND AMC
+XS2489588983,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,,Mediobanca Banca di Credito Fi,DEBITO INTESA SANPAOLO SUB
+XS2581836819,Cash Collect Autocallable,Bullish,1260,Express Certificates,,CITIGROUP GLOBAL MARKETS FUNDI,KERING/LVMH/HERMES
+XS2583390617,Express,Bullish,1260,Express Certificates,,CREDIT AGRICOLE CIB FCIAL SOL.,BASKET 3 STOXX EU 600
+XS2584331065,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,BNP PARIBAS ISSUANCE B.V.,ASML HOLDING
+XS2616878877,Express,Bullish,1260,Express Certificates,1000.0,BARCLAYS BANK PLC,STELLANTIS IT
+XS2623595498,Express,Bullish,1260,Express Certificates,1000.0,CITIGROUP GLOBAL MARKETS FUNDI,STLA/UCG/ENI/RACE
+XS2636415312,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,,Mediobanca Banca di Credito Fi,DEBITO ENEL
+XS2660401998,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,100000.0,CITIGROUP GLOBAL MARKETS HOLDI,DEBITO INTESA SANPAOLO SUB
+XS2660402459,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,100000.0,CITIGROUP GLOBAL MARKETS HOLDI,DEBITO MEDIOBANCA SUB
+XS2700582138,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,TUI1/LHA/EZJ
+XS2741481365,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,100.0,BNP PARIBAS ISSUANCE B.V.,ROCHE HOLDING/SANOFI
+XS2742939007,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,BANCO BPM/FERRARI/ENI/UNICREDIT
+XS2759147031,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,1000.0,BNP PARIBAS ISSUANCE B.V.,ENI
+XS2770634256,Express,Bullish,1260,Express Certificates,1000.0,CITIGROUP GLOBAL MARKETS FUNDI,AEGON/AXA
+XS2773931824,Express,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,INFINEON/NFLX/RIO
+XS2810832019,Express,Bullish,1260,Express Certificates,1000.0,CITIGROUP GLOBAL MARKETS HOLDI,Intesa Sanpaolo
+XS2861371644,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,KERING/LVMH
+XS2878490874,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,SG ISSUER,BPER/ISP/MB/UCG
+XS2881374040,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,ENI/TOTAL/IBER/ENEL
+XS2902308969,Express,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,INFINEON TECHNOLOGIE
+XS2905711623,Express,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,CITI/GS/WFC
+XS2906585430,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,KRAFT/PERNOD/NIKE
+XS2926287223,Equity Protection with Cap,Bullish,1120,Capped Capital Protected,100.0,BARCLAYS BANK PLC,NDX/FTSEMIB/IBEX/UKX
+XS2932953016,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Intesa Sanpaolo S.p.A.,EUROSTOXX SEL DIV30
+XS2935650825,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,ENI/A2A/SNAM/IBE
+XS2936372536,Express,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,S AND P/ ASX 200
+XS2959060901,Twin Win Cap,Bullish,1340,Twin-Win Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,SAP
+XS2966909454,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,1000.0,BARCLAYS BANK PLC,SGO/SIKA/DG/HEI/EN
+XS2967225611,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,BAMI/UCG/BMPS/BPER
+XS2976621396,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,UCG/LDO/CAMPARI
+XS2998120658,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,MB/INTESA/ENI/ENEL
+XS3006273661,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Intesa Sanpaolo S.p.A.,ENEL
+XS3021685980,Express,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,ENI/UCG/STLA/MPS
+XS3025682272,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,COMMERZ/MPS/BPM/BNP
