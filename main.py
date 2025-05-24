@@ -1,9 +1,12 @@
+import contextlib
 import csv
 import random
 import shutil
 import tempfile
 import time
 import zipfile
+from collections import Counter
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -31,6 +34,13 @@ URLS = [
 def load_from_csv_to_db(csv_path: Path) -> dict[str, dict[str, str]]:
     isin_data = {}
     print("Loading ISINs metadata to memory...")
+    if not csv_path.exists():
+        csv_path.write_text(
+            "ISIN,Nome,Strategy,EUSIPA Code,EUSIPA Name,Issue Price,Emittente,Sottostanti,Coupon P.A.,Coupon Frequency,Autocall Frequency,Autocall First Date,Autocall Decrement,Autocall Initial Trigger,Autocall Minimum Trigger\n",
+            encoding="utf-8-sig",
+        )
+        return isin_data
+
     with csv_path.open(newline="", encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=",")
         for row in reader:
@@ -64,6 +74,276 @@ def extract_from_title(soup: BeautifulSoup, title: str | list[str]) -> str | Non
     return None
 
 
+def parse_date(date_str):
+    """Parses a date string (DD/MM/YYYY) into a datetime object."""
+    if date_str:
+        try:
+            return datetime.strptime(date_str, "%d/%m/%Y")
+        except ValueError:
+            return None
+    return None
+
+
+def determine_frequency(dates):
+    """
+    Determines the frequency of events (e.g., weekly, monthly) given a list of dates.
+    It looks for the most common difference in days between consecutive dates.
+    """
+    if len(dates) < 2:
+        return "N/A (less than 2 dates)"
+
+    diffs = []
+    # Filter out None dates and sort to ensure proper calculation
+    valid_dates = sorted([d for d in dates if d is not None])
+
+    if len(valid_dates) < 2:
+        return "N/A (less than 2 valid dates)"
+
+    for i in range(1, len(valid_dates)):
+        diffs.append((valid_dates[i] - valid_dates[i - 1]).days)
+
+    if not diffs:
+        return "N/A (no valid date differences)"
+
+    # Identify the most common difference in days
+    most_common_diff = Counter(diffs).most_common(1)
+
+    if not most_common_diff:
+        return "Irregular"  # Should not happen if diffs is not empty
+
+    common_diff_days = most_common_diff[0][0]
+
+    # Map common differences to frequencies with a small tolerance
+    if 4 <= common_diff_days <= 10:  # Around 7 days
+        return "Weekly"
+    if 26 <= common_diff_days <= 35:  # Around 30 days
+        return "Monthly"
+    if 80 <= common_diff_days <= 100:  # Around 90-91 days (3 months)
+        return "Quarterly"
+    if 160 <= common_diff_days <= 200:  # Around 182-183 days (6 months)
+        return "Semiannual"
+    if 350 <= common_diff_days <= 380:  # Around 365 days (12 months)
+        return "Annual"
+    return f"Irregular (most common diff: {common_diff_days} days)"
+
+
+def parse_cd(soup: BeautifulSoup) -> dict[str, str | None]:
+    sottostanti = get_sottostanti(soup)
+    # --- 1. Derive Coupon P.A. ---
+    coupon_pa = None
+    coupon_frequency = None
+    autocall_decrement = None
+    minimum_autocall_trigger = float("inf")
+    initial_autocall_trigger = None
+    autocall_frequency = None
+    autocall_dates = []
+
+    # Find the "Date rilevamento" (Detection dates) table
+    # This table is identified by the heading "Date rilevamento" inside a panel-info div
+    date_relevamento_title = soup.find(
+        "h3",
+        class_="panel-title",
+        string=lambda text: text and "date rilevamento" in text.lower(),
+    )
+    if date_relevamento_title is None:
+        return {"sottostanti": sottostanti}
+
+    date_relevamento_panel = date_relevamento_title.find_parent(
+        "div",
+        class_="panel panel-info",
+    )
+
+    if (
+        date_relevamento_panel
+        and date_relevamento_panel.find("h3", class_="panel-title")
+        and date_relevamento_panel.find("h3", class_="panel-title").get_text(strip=True)
+        == "Date rilevamento"
+    ):
+        coupon_autocall_table = date_relevamento_panel.find(
+            "table",
+            class_="table table-striped",
+        )
+
+    if coupon_autocall_table:
+        headers = [
+            th.get_text(strip=True)
+            for th in coupon_autocall_table.find("thead").find_all("th")
+        ]
+
+        date_idx = -1
+        coupon_idx = -1
+        trigger_autocall_idx = -1
+
+        try:
+            date_idx = headers.index("DATA RILEVAMENTO")
+            coupon_idx = headers.index("CEDOLA")
+            trigger_autocall_idx = headers.index("TRIGGER AUTOCALLABLE")
+        except ValueError as e:
+            print(f"Error: Missing expected column in 'Date rilevamento' table: {e}")
+            # Exit or handle gracefully if critical columns are missing
+            exit()
+
+        coupon_dates = []
+        coupon_amounts = []
+        autocall_schedule_entries = []
+
+        for row in coupon_autocall_table.find("tbody").find_all("tr"):
+            cells = row.find_all("td")
+            if len(cells) > max(date_idx, coupon_idx, trigger_autocall_idx):
+                # Extract Coupon Data
+                date_str = cells[date_idx].get_text(strip=True)
+                coupon_text = cells[coupon_idx].get_text(strip=True)
+
+                parsed_date = parse_date(date_str)
+                if parsed_date and coupon_text:  # Get the first non-empty coupon rate
+                    coupon_dates.append(parsed_date)
+                    with contextlib.suppress(ValueError):
+                        coupon_amounts.append(
+                            float(
+                                coupon_text.replace("%", "").replace(",", ".").strip(),
+                            ),
+                        )
+
+                # Extract Autocall Data
+                autocall_trigger_text = cells[trigger_autocall_idx].get_text(strip=True)
+                if autocall_trigger_text:  # Only record if autocall trigger is present
+                    try:
+                        autocall_trigger = float(
+                            autocall_trigger_text.replace("%", "")
+                            .replace(",", ".")
+                            .strip(),
+                        )
+                        autocall_schedule_entries.append(
+                            {"date": parsed_date, "trigger": autocall_trigger},
+                        )
+                    except ValueError:
+                        pass  # Ignore unparseable autocall triggers
+
+        coupon_frequency = determine_frequency(coupon_dates)
+        coupon_amount = (
+            sum(coupon_amounts) / len(coupon_amounts) if coupon_amounts else None
+        )
+
+        if coupon_amount:
+            multiplier = 1
+            if "Weekly" in coupon_frequency:
+                multiplier = 52
+            elif "Monthly" in coupon_frequency:
+                multiplier = 12
+            elif "Quarterly" in coupon_frequency:
+                multiplier = 4
+            elif "Semiannual" in coupon_frequency:
+                multiplier = 2
+            elif "Annual" in coupon_frequency:
+                multiplier = 1
+            # If irregular or unknown, can't derive annual rate easily
+            elif "Irregular" in coupon_frequency or "N/A" in coupon_frequency:
+                coupon_pa = f"N/A (Irregular/Unknown Coupon Frequency), Period Rate: {coupon_amounts[0]:.2f}%"
+
+            if isinstance(coupon_pa, str):  # If it's already a descriptive string
+                pass
+            else:
+                coupon_pa = coupon_amount * multiplier
+
+        # Sort autocall entries by date for correct decrement calculation
+        autocall_schedule_entries.sort(
+            key=lambda x: x["date"] if x["date"] else datetime.min,
+        )
+
+        # Collect valid triggers for decrement calculation
+        valid_autocall_triggers_values = [
+            entry["trigger"]
+            for entry in autocall_schedule_entries
+            if entry["trigger"] is not None
+        ]
+
+        if len(valid_autocall_triggers_values) >= 2:
+            # Assuming decrement is consistent and calculated from the first two available triggers
+            # If triggers are descending, it's current - next. If ascending, it's next - current.
+            # For 'step down' it should be current - next.
+            autocall_decrement = (
+                valid_autocall_triggers_values[0] - valid_autocall_triggers_values[1]
+            )
+
+        if valid_autocall_triggers_values:
+            minimum_autocall_trigger = min(valid_autocall_triggers_values)
+            initial_autocall_trigger = valid_autocall_triggers_values[0]
+
+        autocall_dates = [
+            entry["date"]
+            for entry in autocall_schedule_entries
+            if entry["date"] is not None
+        ]
+        autocall_frequency = determine_frequency(autocall_dates)
+
+    return {
+        "sottostanti": sottostanti,
+        "coupon_pa": (
+            round(coupon_pa, 2) if isinstance(coupon_pa, (float, int)) else coupon_pa
+        ),
+        "coupon_frequency": coupon_frequency,
+        "autocall_frequency": autocall_frequency,
+        "autocall_first_date": autocall_dates[0] if autocall_dates else None,
+        "autocall_decrement": autocall_decrement,
+        "autocall_initial_trigger": initial_autocall_trigger,
+        "autocall_minimum_trigger": minimum_autocall_trigger,
+    }
+
+
+def get_sottostanti(soup):
+    companies = []
+
+    try:
+        # 1. Find the h3 tag that contains "Scheda Sottostante"
+        #    The lambda function handles potential extra text or non-breaking spaces around the title.
+        h3_title_tag = soup.find(
+            "h3",
+            string=lambda text: text and "Scheda Sottostante" in text,
+        )
+        # 2. Go up the tree to find the parent div with class 'panel panel-info'.
+        #    Use find_parent() instead of find_ancestor()
+        panel_div = h3_title_tag.find_parent("div", class_="panel-info")
+
+        # 3. Find the table within this identified panel div
+        table = panel_div.find("table")
+
+        # 4. Find all <tr> tags within the <tbody> of the table
+        rows = table.find("tbody").find_all("tr")
+
+        # 5. Iterate through rows and extract the text from the first <td>
+        for row in rows:
+            first_td = row.find("td")
+            if first_td:
+                companies.append(first_td.get_text(strip=True))
+    except AttributeError:
+        pass
+
+    return "/".join(companies) if companies else None
+
+
+def extract_from_cd(isin: str) -> str | None:
+    folder = BASE_FOLDER / "cd"
+    folder.mkdir(parents=True, exist_ok=True)
+    file = folder / f"{isin}.txt"
+    if file.exists():
+        soup = BeautifulSoup(file.read_text(encoding="utf-8"), "lxml")
+    else:
+        try:
+            r = requests.get(
+                f"https://www.certificatiederivati.it/db_bs_scheda_certificato.asp?isin={isin}",
+                headers=get_headers(),
+                timeout=60,
+            )
+            r.raise_for_status()
+        except requests.RequestException as e:
+            tqdm.write(f"Error fetching data for ISIN {isin} from CD: {e}")
+            return None
+        file.write_text(r.text, encoding="utf-8")
+        soup = BeautifulSoup(r.text, "lxml")
+
+    return parse_cd(soup)
+
+
 def extract_issuer(
     isin: str,
     mkt: str,
@@ -78,6 +358,7 @@ def extract_issuer(
     if file.exists():
         soup = BeautifulSoup(file.read_text(encoding="utf-8"), "lxml")
     else:
+<<<<<<< HEAD
         user_agent = random.choice(USER_AGENTS)
         headers = {
             "accept": "*/*",
@@ -92,16 +373,23 @@ def extract_issuer(
             "user-agent": user_agent,
             "x-requested-with": "XMLHttpRequest",
         }
+=======
+>>>>>>> 75b1eeeff61ba2f8cfe8e095810b6113dbc90ad6
         whole_data = ""
         for url_to_fill in URLS:
             url = url_to_fill.format(isin, mkt)
             try:
+<<<<<<< HEAD
                 r = requests.get(url, headers=headers, timeout=60)
                 r.raise_for_status()
             except (requests.exceptions.ReadTimeout, requests.exceptions.HTTPError):
+=======
+                r = requests.get(url, headers=get_headers(), timeout=60)
+            except requests.exceptions.ReadTimeout:
+>>>>>>> 75b1eeeff61ba2f8cfe8e095810b6113dbc90ad6
                 tqdm.write("Ci stanno tracciando! Stacca, stacca!")
                 time.sleep(30)
-                r = requests.get(url, headers=headers, timeout=60)
+                r = requests.get(url, headers=get_headers(), timeout=60)
             whole_data += r.text
         whole_data = whole_data.strip()
         file.write_text(whole_data, encoding="utf-8")
@@ -116,11 +404,34 @@ def extract_issuer(
         "eusipa_name": extract_from_title(soup, "EUSIPA Name"),
         "issue_price": extract_from_title(soup, "Issue Price"),
         "emittente": extract_from_title(soup, ["Nom de l'émetteur", "Issuer Name"]),
-        "sottostanti": extract_from_title(soup, "Name"),
     }
+    if val["eusipa_code"] and val["eusipa_code"].startswith("1"):
+        val.update(extract_from_cd(isin))
+
+    if not val.get("sottostanti"):
+        val["sottostanti"] = extract_from_title(soup, "Name")
+
     tqdm.write(f"{isin}: {val}")
 
     return val
+
+
+def get_headers() -> dict[str, str]:
+    user_agent = random.choice(USER_AGENTS)
+    return {
+        "accept": "*/*",
+        "accept-language": "en-US,en;q=0.9",
+        "priority": "u=1, i",
+        "referer": "https://live.euronext.com/en/product/structured-products/XS2928979447-ETLX/market-information",
+        "sec-ch-ua": '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
+        "sec-ch-ua-mobile": "?1",
+        "sec-ch-ua-platform": '"Android"',
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": user_agent,
+        "x-requested-with": "XMLHttpRequest",
+    }
 
 
 def write_csv_to_isin_info(
@@ -128,23 +439,14 @@ def write_csv_to_isin_info(
     isin_info_path: Path,
     already_loaded: dict[str, dict[str, str]],
 ) -> None:
-    with isin_info_path.open(mode="w", newline="", encoding="utf-8-sig") as file:
+    old_isins = set(already_loaded.keys())
+    isins_to_write = [
+        (isin, mkt) for isin, mkt in isin_and_mkt if isin not in old_isins
+    ]
+    with isin_info_path.open(mode="a", newline="", encoding="utf-8-sig") as file:
         writer = csv.writer(file)
-        writer.writerow(
-            [
-                "ISIN",
-                "Nome",
-                "Strategia",
-                "EUSIPA Code",
-                "EUSIPA Name",
-                "Issue Price",
-                "Emittente",
-                "Sottostanti",
-            ],
-        )
-
         for isin, mkt in tqdm(
-            isin_and_mkt,
+            isins_to_write,
             bar_format="{l_bar}{bar}| {n:,}/{total:,} [{elapsed}<{remaining}, {rate_fmt}]",
         ):
             output = extract_issuer(isin=isin, mkt=mkt, already_loaded=already_loaded)
@@ -335,8 +637,11 @@ def main() -> None:
     und_mapping_path = BASE_FOLDER / "und_mapping.csv"
     issuers_path = BASE_FOLDER / "issuers.csv"
 
+    input_folder.mkdir(parents=True, exist_ok=True)
+    intermediate_folder.mkdir(parents=True, exist_ok=True)
+
     # 1. download newest file, saves the .zip in 'input_csv' with name as day
-    download_file(save_folder=input_folder)
+    # download_file(save_folder=input_folder)
 
     # 2. summarize CSVs and extract market (ETLX or SEDX)
     summarize_csvs(input_folder=input_folder, output_folder=intermediate_folder)

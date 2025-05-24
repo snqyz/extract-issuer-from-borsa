@@ -2007,7 +2007,6 @@ RUSS200,Russell 2000 Index
 AT&T,AT&T Inc.
 DEBITO NEXI,Nexi SpA Corporate Debt
 KOSPI2,KOSPI 200 Index
-AS51,S&P/ASX 200 Index
 IBEX,IBEX 35 Index
 EURO STOXX AUTOMOBILES & PARTS NET RETUR,EURO STOXX Automobiles & Parts Net Return Index
 EXELIXIS INC,"Exelixis, Inc."
@@ -2027,6 +2026,8 @@ WFC,Wells Fargo & Company
 KRAFT,The Kraft Heinz Company
 PERNOD,Pernod Ricard SA
 S AND P,S&P 500 Index
-ASX 200,S&P/ASX 200 Index
 SIKA,Sika AG
 EN,Enel SpA
+SYDNEY ALL ORD,Sydney All Ord
+Stoxx Europe 600 Auto&Parts,Stoxx Europe 600 Auto&Parts
+KOSPI200 (COREA),Kospi200 (Corea)

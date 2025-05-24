@@ -11364,7 +11364,6 @@ IT0006766676,Express,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,GE
 IT0006767575,Express,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,NN/AT&T/DG/IBM
 IT0006767922,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,10000.0,MAREX FINANCIAL,DEBITO NEXI
 IT0006768128,Express Protected,Bullish,1199,Miscellaneous Capital Protection,1000.0,NATIXIS STRUCTURED ISSUANCE SA,MERCEDES/STLAM/VOW3
-IT0006768359,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,NATIXIS STRUCTURED ISSUANCE SA,SX5E/SXAP/KOSPI2/AS51/IBEX
 IT0006769019,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,NATIXIS STRUCTURED ISSUANCE SA,MPS/DB/BPER/BARC
 JE00BGBBC631,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,100000.0,GOLDMAN SACHS FIN CORP INT,DEBITO MEDIOBANCA SUB
 JE00BGBBLN38,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,,GOLDMAN SACHS FIN CORP INT,MSCI WORLD DIVERSIFIED DIV SELECT 50 IND
@@ -11647,7 +11646,6 @@ XS2906585430,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,K
 XS2926287223,Equity Protection with Cap,Bullish,1120,Capped Capital Protected,100.0,BARCLAYS BANK PLC,NDX/FTSEMIB/IBEX/UKX
 XS2932953016,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Intesa Sanpaolo S.p.A.,EUROSTOXX SEL DIV30
 XS2935650825,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,ENI/A2A/SNAM/IBE
-XS2936372536,Express,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,S AND P/ ASX 200
 XS2959060901,Twin Win Cap,Bullish,1340,Twin-Win Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,SAP
 XS2966909454,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,1000.0,BARCLAYS BANK PLC,SGO/SIKA/DG/HEI/EN
 XS2967225611,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,BAMI/UCG/BMPS/BPER
@@ -11656,3 +11654,5 @@ XS2998120658,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,M
 XS3006273661,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Intesa Sanpaolo S.p.A.,ENEL
 XS3021685980,Express,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,ENI/UCG/STLA/MPS
 XS3025682272,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,COMMERZ/MPS/BPM/BNP
+XS2936372536,Express,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,SYDNEY ALL ORD
+IT0006768359,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,NATIXIS STRUCTURED ISSUANCE SA,Euro Stoxx 50/Ibex 35/Stoxx Europe 600 Auto&Parts/SYDNEY ALL ORD/KOSPI200 (COREA)
