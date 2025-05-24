@@ -64,6 +64,50 @@ def extract_from_title(soup: BeautifulSoup, title: str | list[str]) -> str | Non
     return None
 
 
+def extract_from_cd(isin: str) -> str | None:
+    try:
+        r = requests.get(
+            f"https://www.certificatiederivati.it/db_bs_scheda_certificato.asp?isin={isin}",
+            timeout=60,
+        )
+        r.raise_for_status()
+    except requests.RequestException as e:
+        print(f"Error fetching data for ISIN {isin}: {e}")
+        return None
+
+    soup = BeautifulSoup(r.text, "lxml")
+
+    companies = []
+
+    try:
+        # 1. Find the h3 tag that contains "Scheda Sottostante"
+        #    The lambda function handles potential extra text or non-breaking spaces around the title.
+        h3_title_tag = soup.find(
+            "h3",
+            string=lambda text: text and "Scheda Sottostante" in text,
+        )
+        # 2. Go up the tree to find the parent div with class 'panel panel-info'.
+        #    Use find_parent() instead of find_ancestor()
+        panel_div = h3_title_tag.find_parent("div", class_="panel-info")
+
+        # 3. Find the table within this identified panel div
+        table = panel_div.find("table")
+
+        # 4. Find all <tr> tags within the <tbody> of the table
+        rows = table.find("tbody").find_all("tr")
+
+        # 5. Iterate through rows and extract the text from the first <td>
+        for row in rows:
+            first_td = row.find("td")
+            if first_td:
+                companies.append(first_td.get_text(strip=True))
+    except AttributeError as e:
+        tqdm.write(f"Error processing ISIN {isin} from CD: {e}")
+        return None
+
+    return "/".join(companies) if companies else None
+
+
 def extract_issuer(
     isin: str,
     mkt: str,
@@ -116,7 +160,7 @@ def extract_issuer(
         "eusipa_name": extract_from_title(soup, "EUSIPA Name"),
         "issue_price": extract_from_title(soup, "Issue Price"),
         "emittente": extract_from_title(soup, ["Nom de l'émetteur", "Issuer Name"]),
-        "sottostanti": extract_from_title(soup, "Name"),
+        "sottostanti": extract_from_cd(isin) or extract_from_title(soup, "Name"),
     }
     tqdm.write(f"{isin}: {val}")
 
@@ -128,23 +172,14 @@ def write_csv_to_isin_info(
     isin_info_path: Path,
     already_loaded: dict[str, dict[str, str]],
 ) -> None:
-    with isin_info_path.open(mode="w", newline="", encoding="utf-8-sig") as file:
+    old_isins = set(already_loaded.keys())
+    isins_to_write = [
+        (isin, mkt) for isin, mkt in isin_and_mkt if isin not in old_isins
+    ]
+    with isin_info_path.open(mode="a", newline="", encoding="utf-8-sig") as file:
         writer = csv.writer(file)
-        writer.writerow(
-            [
-                "ISIN",
-                "Nome",
-                "Strategia",
-                "EUSIPA Code",
-                "EUSIPA Name",
-                "Issue Price",
-                "Emittente",
-                "Sottostanti",
-            ],
-        )
-
         for isin, mkt in tqdm(
-            isin_and_mkt,
+            isins_to_write,
             bar_format="{l_bar}{bar}| {n:,}/{total:,} [{elapsed}<{remaining}, {rate_fmt}]",
         ):
             output = extract_issuer(isin=isin, mkt=mkt, already_loaded=already_loaded)
@@ -274,6 +309,8 @@ def create_underlying_table(isin_info_path: Path, output_path: Path) -> None:
         .reset_index(drop=True)
     )
 
+    df_long["Sottostante"] = df_long["Sottostante"].str.strip()
+
     df_long.to_csv(output_path, index=False, encoding="utf-8-sig")
 
 
@@ -332,6 +369,9 @@ def main() -> None:
     underlyings_path = BASE_FOLDER / "underlyings.csv"
     und_mapping_path = BASE_FOLDER / "und_mapping.csv"
     issuers_path = BASE_FOLDER / "issuers.csv"
+
+    input_folder.mkdir(parents=True, exist_ok=True)
+    intermediate_folder.mkdir(parents=True, exist_ok=True)
 
     # 1. download newest file, saves the .zip in 'input_csv' with name as day
     download_file(save_folder=input_folder)
