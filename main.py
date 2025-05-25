@@ -37,7 +37,7 @@ def load_from_csv_to_db(csv_path: Path) -> dict[str, dict[str, str]]:
     print("Loading ISINs metadata to memory...")
     if not csv_path.exists():
         csv_path.write_text(
-            "ISIN,Nome,Strategy,EUSIPA Code,EUSIPA Name,Issue Price,Emittente,Sottostanti,Coupon P.A.,Coupon Frequency,Autocall Frequency,Autocall First Date,Autocall Decrement,Autocall Initial Trigger,Autocall Minimum Trigger\n",
+            "ISIN,Nome,Strategy,EUSIPA Code,EUSIPA Name,Issue Price,Emittente,Issue Date,Expiry Date,Sottostanti,Coupon P.A.,Coupon Frequency,Autocall Frequency,Autocall First Date,Autocall Decrement,Autocall Initial Trigger,Autocall Minimum Trigger\n",
             encoding="utf-8-sig",
         )
         return isin_data
@@ -63,7 +63,12 @@ def extract_isins_from_csvs(path: Path) -> list[tuple[str, str]]:
     )
 
 
-def extract_from_title(soup: BeautifulSoup, title: str | list[str]) -> str | None:
+def extract_from_title(
+    soup: BeautifulSoup,
+    title: str | list[str],
+    *,
+    datetime_format: str | None = None,
+) -> str | None:
     strings = title if isinstance(title, list) else [title]
     for string in strings:
         label = soup.find(
@@ -71,7 +76,10 @@ def extract_from_title(soup: BeautifulSoup, title: str | list[str]) -> str | Non
             string=lambda text: text and string == text,
         )
         if label:
-            return label.find_next_sibling("td").get_text(strip=True)
+            value = label.find_next_sibling("td").get_text(strip=True)
+            if datetime_format:
+                value = datetime.strptime(value, datetime_format).date()
+            return value
     return None
 
 
@@ -254,13 +262,12 @@ def parse_cd(soup: BeautifulSoup) -> dict[str, str | None]:
         ]
 
         if len(valid_autocall_triggers_values) >= 2:
-            # Calculate average decrement between consecutive triggers, excluding the last one
-            diffs = [
-                valid_autocall_triggers_values[i]
-                - valid_autocall_triggers_values[i + 1]
-                for i in range(len(valid_autocall_triggers_values) - 2)
-            ]
-            autocall_decrement = sum(diffs) / len(diffs) if diffs else None
+            # Assuming decrement is consistent and calculated from the first two available triggers
+            # If triggers are descending, it's current - next. If ascending, it's next - current.
+            # For 'step down' it should be current - next.
+            autocall_decrement = (
+                valid_autocall_triggers_values[0] - valid_autocall_triggers_values[1]
+            )
 
         if valid_autocall_triggers_values:
             minimum_autocall_trigger = min(valid_autocall_triggers_values)
@@ -358,7 +365,7 @@ def get_headers() -> dict[str, str]:
     }
 
 
-def extract_issuer(
+def extract_data_for_isin(
     isin: str,
     mkt: str,
     already_loaded: dict[str, dict[str, str]],
@@ -396,12 +403,23 @@ def extract_issuer(
         "eusipa_code": extract_from_title(soup, "EUSIPA Code"),
         "eusipa_name": extract_from_title(soup, "EUSIPA Name"),
         "issue_price": extract_from_title(soup, "Issue Price"),
-        "emittente": extract_from_title(soup, ["Nom de l'émetteur", "Issuer Name"]),
+        "emittente": extract_from_title(
+            soup,
+            ["Nom de l'émetteur", "Issuer Name", "Nom émetteur"],
+        ),
+        "issue_date": extract_from_title(
+            soup,
+            "Issue Date",
+            datetime_format="%d/%m/%Y",
+        ),
+        "expiry_date": extract_from_title(
+            soup,
+            "Expiry Date",
+            datetime_format="%d/%m/%Y",
+        ),
     }
     if val["eusipa_code"] and val["eusipa_code"].startswith("1"):
         val.update(extract_from_cd(isin))
-        if t is None:
-            time.sleep(random.random() * 2 + 1)
 
     if not val.get("sottostanti"):
         val["sottostanti"] = extract_from_title(soup, "Name")
@@ -426,7 +444,11 @@ def write_csv_to_isin_info(
             isins_to_write,
             bar_format="{l_bar}{bar}| {n:,}/{total:,} [{elapsed}<{remaining}, {rate_fmt}]",
         ):
-            output = extract_issuer(isin=isin, mkt=mkt, already_loaded=already_loaded)
+            output = extract_data_for_isin(
+                isin=isin,
+                mkt=mkt,
+                already_loaded=already_loaded,
+            )
             writer.writerow([isin, *output.values()])
 
 
@@ -569,11 +591,17 @@ def update_generic_mapping(
     input_df = pd.read_csv(input_path, encoding="utf-8-sig")
     mapping_df = pd.read_csv(output_path, encoding="utf-8-sig")
 
-    all_names = input_df[input_col].str.lower()
+    all_names = input_df[input_col].str.lower().str.strip()
     new_names = input_df.loc[
-        ~all_names.isin(mapping_df[output_col].str.lower()) & (all_names.notna()),
+        ~all_names.isin(mapping_df[output_col].str.lower().str.strip())
+        & (all_names.notna()),
         input_col,
     ].drop_duplicates()
+    new_names = new_names.to_frame(name=output_col)
+    new_names["lower"] = new_names[output_col].str.lower()
+    new_names = new_names.drop_duplicates(subset="lower").drop(columns=["lower"])
+
+    new_names_list = new_names[output_col].to_list()
 
     if new_names.empty:
         print(
@@ -582,26 +610,20 @@ def update_generic_mapping(
         )
         return
     print(
-        f"{len(new_names.to_list())} new {input_col!r} found in {input_path.name!r} not in {output_path.name!r}: "
-        f"{', '.join(repr(x) for x in new_names.to_list())}",
+        f"{len(new_names_list)} new {input_col!r} found in {input_path.name!r} not in {output_path.name!r}: "
+        f"{', '.join(repr(x) for x in new_names_list)}",
     )
+    other_cols = [col for col in mapping_df.columns if col != output_col]
+    new_names = new_names.assign(
+        **{
+            col: (lambda x: x[output_col] if default_use_same else None)
+            for col in other_cols
+        },
+    )
+    for col in other_cols:
+        new_names.loc[new_names[col].str.isupper(), col] = new_names[col].str.title()
 
-    mapping_df = pd.concat(
-        [
-            mapping_df,
-            new_names.to_frame(name=output_col).assign(
-                **{
-                    col: (
-                        lambda x: x[output_col].str.title()
-                        if default_use_same
-                        else None
-                    )
-                    for col in mapping_df.columns
-                    if col != output_col
-                },
-            ),
-        ],
-    )
+    mapping_df = pd.concat([mapping_df, new_names])
     mapping_df.to_csv(output_path, index=False, encoding="utf-8-sig")
 
 
