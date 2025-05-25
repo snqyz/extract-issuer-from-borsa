@@ -294,7 +294,7 @@ def parse_cd(soup: BeautifulSoup) -> dict[str, str | None]:
     }
 
 
-def get_sottostanti(soup: BeautifulSoup) -> str:
+def get_sottostanti(soup: BeautifulSoup) -> str | None:
     companies = []
 
     try:
@@ -418,7 +418,7 @@ def extract_data_for_isin(
             datetime_format="%d/%m/%Y",
         ),
     }
-    if val["eusipa_code"] and val["eusipa_code"].startswith("1"):
+    if val["eusipa_code"]:  # and val["eusipa_code"].startswith("1"):
         val.update(extract_from_cd(isin))
 
     if not val.get("sottostanti"):
