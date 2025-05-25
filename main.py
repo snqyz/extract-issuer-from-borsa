@@ -254,12 +254,13 @@ def parse_cd(soup: BeautifulSoup) -> dict[str, str | None]:
         ]
 
         if len(valid_autocall_triggers_values) >= 2:
-            # Assuming decrement is consistent and calculated from the first two available triggers
-            # If triggers are descending, it's current - next. If ascending, it's next - current.
-            # For 'step down' it should be current - next.
-            autocall_decrement = (
-                valid_autocall_triggers_values[0] - valid_autocall_triggers_values[1]
-            )
+            # Calculate average decrement between consecutive triggers, excluding the last one
+            diffs = [
+                valid_autocall_triggers_values[i]
+                - valid_autocall_triggers_values[i + 1]
+                for i in range(len(valid_autocall_triggers_values) - 2)
+            ]
+            autocall_decrement = sum(diffs) / len(diffs) if diffs else None
 
         if valid_autocall_triggers_values:
             minimum_autocall_trigger = min(valid_autocall_triggers_values)
