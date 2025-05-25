@@ -368,6 +368,7 @@ def extract_issuer(
     folder = BASE_FOLDER / "isins"
     folder.mkdir(parents=True, exist_ok=True)
     file = folder / f"{isin}.txt"
+    t = None
     if file.exists():
         soup = BeautifulSoup(file.read_text(encoding="utf-8"), "lxml")
     else:
@@ -398,7 +399,8 @@ def extract_issuer(
     }
     if val["eusipa_code"] and val["eusipa_code"].startswith("1"):
         val.update(extract_from_cd(isin))
-        time.sleep(random.random() * 2 + 1)
+        if t is None:
+            time.sleep(random.random() * 2 + 1)
 
     if not val.get("sottostanti"):
         val["sottostanti"] = extract_from_title(soup, "Name")
