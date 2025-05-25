@@ -13,7 +13,7 @@ AAPL,Apple Inc.
 ABBOTT LABORATORIES,Abbott Laboratories
 ABBVIE,AbbVie Inc.
 ABBVIE INC,AbbVie Inc.
-ABINBEV,Anheuser-Busch InBev SA/NV
+ABINBEV,Anheuser-Busch InBev
 ABN,ABN Amro
 ABNB,Airbnb Inc.
 ACA,Crédit Agricole S.A.
@@ -46,16 +46,16 @@ AirBnB Inc.,Airbnb Inc.
 AIRBUS,Airbus SE
 AIRFRANCE,Air France-KLM
 AIRFRANCE-KLM,Air France-KLM
-AKZO NOBEL NV,Akzo Nobel N.V.
-ALBE,Albemarle Corporation
+AKZO NOBEL NV,Akzo Nobel
+ALBE,Albemarle
 ALC,Alcon Inc.
 ALCOA,Alcoa Corporation
 ALGEBRIS FINANCIAL CREDIT FUND,ALGEBRIS FINANCIAL CREDIT FUND
-ALIBABA,Alibaba Group Holding Ltd.
-ALIBABA (ADR),Alibaba Group Holding Ltd.
-ALIBABA ADR,Alibaba Group Holding Ltd.
-ALIBABA GROUP,Alibaba Group Holding Ltd.
-ALIBABA GROUP HOLDING LTD,Alibaba Group Holding Ltd.
+ALIBABA,Alibaba (CN)
+ALIBABA (ADR),Alibaba (CN)
+ALIBABA ADR,Alibaba (CN)
+ALIBABA GROUP,Alibaba (CN)
+ALIBABA GROUP HOLDING LTD,Alibaba (CN)
 ALLEGRO TRANSAT FUND,ALLEGRO TRANSAT FUND
 ALLIANZ,Allianz SE
 ALLX COMETA AMC IDX,ALLX COMETA AMC IDX
@@ -71,10 +71,10 @@ Alphabet Inc. C,Alphabet Inc.
 ALSTOM,Alstom SA
 ALTRIA,Altria Group Inc.
 ALV,Allianz SE
-AMAT,Applied Materials Inc.
+AMAT,Applied Materials
 AMAZON,Amazon.com Inc.
 AMAZON INC,Amazon.com Inc.
-AMD,Advanced Micro Devices Inc.
+AMD,Advanced Micro Devices
 AMER AIR,American Airlines Group
 AMERIC AIR,American Airlines Group
 AMERICAN A,American Airlines Group
@@ -96,23 +96,23 @@ ANGLO,Anglo American plc
 ANGLO AM,Anglo American plc
 ANGLO AMERICAN,Anglo American plc
 ANGLOAMER,Anglo American plc
-ANH-BUS,Anheuser-Busch InBev SA/NV
+ANH-BUS,Anheuser-Busch InBev
 APMOLLER,A.P. Møller - Mærsk A/S
 APPLE,Apple Inc.
-APPLIED MAT,Applied Materials Inc.
-APPLIED MATERIALS IN,Applied Materials Inc.
+APPLIED MAT,Applied Materials
+APPLIED MATERIALS IN,Applied Materials
 ARCEL,ArcelorMittal
 ARCELOR MITTAL,ArcelorMittal
 ARCELORMITTAL,ArcelorMittal
 ARCLMT,ArcelorMittal
-ARM,Arm Holdings plc
-ARM HOLDINGS,Arm Holdings plc
-ARM HOLDINGS UW,Arm Holdings plc
-ASAHI,Asahi Group Holdings Ltd.
+ARM,ARM Holdings ADR
+ARM HOLDINGS,ARM Holdings ADR
+ARM HOLDINGS UW,ARM Holdings ADR
+ASAHI,Asahi Group
 ASM,ASM International N.V.
 ASML,ASML Holding N.V.
 ASML HOLDING,ASML Holding N.V.
-Aston Martin Lagonda,Aston Martin Lagonda Global Holdings PLC
+Aston Martin Lagonda,Aston Martin
 ASTRA,AstraZeneca PLC
 ASTRAZ,AstraZeneca PLC
 ASTRAZENECA,AstraZeneca PLC
@@ -125,18 +125,18 @@ AZIMUT HOLDING,Azimut Holding SpA
 Azimut Holding SpA,Azimut Holding SpA
 AZN,AstraZeneca PLC
 B CUCINELLI,Brunello Cucinelli S.p.A.
-B GENER,Banca Generali S.p.A.
-BABA,Alibaba Group Holding Ltd.
-BAE,BAE Systems plc
+B GENER,Banca Generali
+BABA,Alibaba (CN)
+BAE,BAE System
 BAIDU,Baidu Inc.
 Baidu Inc,Baidu Inc.
 BAIDU INC. (ADR),Baidu Inc.
 BAIDU(ADR),Baidu Inc.
-BALLARD,Ballard Power Systems Inc.
-BALLARD POW SYS,Ballard Power Systems Inc.
+BALLARD,Ballard Power Systems
+BALLARD POW SYS,Ballard Power Systems
 BAMI,Banco BPM SpA
 BANCA FINECO,FinecoBank S.p.A.
-Banca Generali S.p.A.,Banca Generali S.p.A.
+Banca Generali S.p.A.,Banca Generali
 Banca Mediolanum SpA,Banca Mediolanum SpA
 BANCA MONTE P. SIENA,Banca Monte dei Paschi di Siena S.p.A.
 BANCA POPOLARE DI SONDRIO,Banca Popolare di Sondrio S.p.A.
@@ -160,8 +160,8 @@ BAS,BASF SE
 BASF,BASF SE
 BASF AG,BASF SE
 BASKET 9 EU SHARES,BASKET 9 EU SHARES
-BAT,British American Tobacco p.l.c.
-BATS,British American Tobacco p.l.c.
+BAT,British American Tobacco
+BATS,British American Tobacco
 BAY,Bayer AG
 BAYER,Bayer AG
 BAYER AG,Bayer AG
@@ -169,22 +169,22 @@ BAYER AG,Bayer AG
 BAYERISCHE MOTOREN W,Bayerische Motoren Werke AG (BMW)
 BAYN,Bayer AG
 BBG TRANSATLANTIC TECH TITANS 2023DECR5%,BBG TRANSATLANTIC TECH TITANS 2023DECR5%
-BBVA,Banco Bilbao Vizcaya Argentaria S.A.
-BBVA.,Banco Bilbao Vizcaya Argentaria S.A.
-BC,"Booking Holdings Inc. (BC is a ticker for Booking sometimes, or Brunswick. BKNG is more specific)"
+BBVA,Banco Bilbao Vizcaya Argentaria
+BBVA.,Banco Bilbao Vizcaya Argentaria
+BC,Booking Holdings
 BE Semiconductor Industries,BE Semiconductor Industries N.V.
-BERKSH,Berkshire Hathaway Inc.
-BERKSHIRE HATHAWAY B,Berkshire Hathaway Inc. B
+BERKSH,Berkshire Hathaway
+BERKSHIRE HATHAWAY B,Berkshire Hathaway
 BEYOND MEAT,Beyond Meat Inc.
 BEYOND MEAT INC,Beyond Meat Inc.
-BHP,BHP Group
+BHP,Bhp Billiton
 BIDU,Baidu Inc.
 BILIBILI,Bilibili Inc.
 BIOGEN,Biogen Inc.
 BIOMARIN PHARMACEUTICAL,BioMarin Pharmaceutical Inc.
 BIONTECH,BioNTech SE
 BioNTech SE ADR,BioNTech SE
-BKNG,Booking Holdings Inc.
+BKNG,Booking Holdings
 BKT 2 STOXX EUR 600,BKT 2 STOXX EUR 600
 BKT DEBT ISP-UCG-MB,BKT DEBT ISP-UCG-MB
 BKT DEBT RNO-STLA,BKT DEBT RNO-STLA
@@ -228,10 +228,10 @@ BNPIPAT5,BNPIPAT5
 BNPPARIBAS,BNP Paribas S.A.
 BOEING,The Boeing Company
 BOND XS1487495316_SAIPEM FINANCE_2023,BOND XS1487495316_SAIPEM FINANCE_2023
-BOOKING,Booking Holdings Inc.
-BOOKING HOLDINGS INC,Booking Holdings Inc.
+BOOKING,Booking Holdings
+BOOKING HOLDINGS INC,Booking Holdings
 BOSS,Hugo Boss AG
-BOSTON SCIENTIFIC CORP,Boston Scientific Corporation
+BOSTON SCIENTIFIC CORP,Boston Scientific
 BOUYGUES,Bouygues S.A.
 BP,BP p.l.c.
 BP PLC,BP p.l.c.
@@ -243,7 +243,7 @@ BPM,Banco BPM SpA
 BRBY,Burberry Group plc
 BRCUC,Brunello Cucinelli S.p.A.
 BREMBO,Brembo S.p.A.
-BRENT CRUDE OIL,BRENT CRUDE OIL
+BRENT CRUDE OIL,Brent Crude Generic 1st
 Bristol-Myers Squibb Co,Bristol Myers Squibb Company
 BROAD,Broadcom Inc.
 BROADCOM,Broadcom Inc.
@@ -257,7 +257,7 @@ BT GROUP,BT Group plc
 Bund Future,Bund Future
 BURB,Burberry Group plc
 BURBERRY,Burberry Group plc
-BUZZI,Buzzi Unicem S.p.A.
+BUZZI,Buzzi Unicem
 Buzzi Unicem SpA,Buzzi Unicem S.p.A.
 BYD,BYD Company Limited
 BYD Company Limited,BYD Company Limited
@@ -265,8 +265,8 @@ C3 AI,C3.ai Inc.
 C3.AI,C3.ai Inc.
 C3.ai Inc,C3.ai Inc.
 CA,Crédit Agricole S.A.
-CAC,CAC 40
-CAC 40,CAC 40
+CAC,CAC40
+CAC 40,CAC40
 CAMECO CORP,Cameco Corporation
 CAMPAR,Davide Campari-Milano N.V.
 CAMPARI,Davide Campari-Milano N.V.
@@ -276,36 +276,36 @@ CAPGEMINI,Capgemini SE
 CAPRI,Capri Holdings Limited
 CAPRI HOLDINGS,Capri Holdings Limited
 CARLSBERG,Carlsberg A/S
-CARN,Carnival Corporation & plc
-CARNIVAL,Carnival Corporation & plc
-Carnival Corp,Carnival Corporation & plc
-CARNIVAL PLC,Carnival Corporation & plc
+CARN,Carnival (GBP)
+CARNIVAL,Carnival (GBP)
+Carnival Corp,Carnival (GBP)
+CARNIVAL PLC,Carnival (GBP)
 CARR,Carrier Global Corporation
 CATERPILLAR INC,Caterpillar Inc.
 CBK,Commerzbank AG
-CCL,Carnival Corporation & plc
-CEG,Constellation Energy Group
+CCL,Carnival (GBP)
+CEG,Constellation Energy
 CELLNEX TE,Cellnex Telecom S.A.
-CFR,Compagnie Financière Richemont SA
-CHEVR,Chevron Corporation
+CFR,Cie Financiere Richemont
+CHEVR,Chevron
 CHF,CHF
 CHILRGCAPETF,CHILRGCAPETF
-CI,Cigna Group
+CI,Cigna
 CIE,Compagnie de Saint-Gobain S.A.
-CIE DE SAINT-,Compagnie Financière Richemont SA
-CIE FINANCIERE,Compagnie Financière Richemont SA
-CIE RICHEMONT,Compagnie Financière Richemont SA
+CIE DE SAINT-,Cie Financiere Richemont
+CIE FINANCIERE,Cie Financiere Richemont
+CIE RICHEMONT,Cie Financiere Richemont
 CISCO,Cisco Systems Inc.
 CISCO SYSTEMS,Cisco Systems Inc.
 CITI,Citigroup Inc.
 CITIGROUP,Citigroup Inc.
 CITIGROUP INC.,Citigroup Inc.
 CL1,CL1 (Typically WTI Crude Oil Front Month Future)
-CLEVELAND-CLIFFS,Cleveland-Cliffs Inc.
+CLEVELAND-CLIFFS,Cleveland Cliffs
 CMCSA,Comcast Corporation
-CME,CME Group Inc.
-CNC,Centene Corporation
-CNH,CNH Industrial N.V.
+CME,CME Group
+CNC,Centene
+CNH,CNH Industrial
 COCA,The Coca-Cola Company
 COCA COLA CO,The Coca-Cola Company
 COCACOLA,The Coca-Cola Company
@@ -320,8 +320,8 @@ COMCAST,Comcast Corporation
 COMMER,Commerzbank AG
 COMMERZ,Commerzbank AG
 COMMERZBANK,Commerzbank AG
-COMPAGNIE FINANCIÃˆRE RICHEMONT,Compagnie Financière Richemont SA
-COMPAGNIE FINANCIERE RICHEMONT,Compagnie Financière Richemont SA
+COMPAGNIE FINANCIÃˆRE RICHEMONT,Cie Financiere Richemont
+COMPAGNIE FINANCIERE RICHEMONT,Cie Financiere Richemont
 CONOCOPHILLIPS,ConocoPhillips
 CONSTELL,"Constellation Brands (or Constellation Energy, more context needed, assuming Brands based on typical finance lists)"
 CONSUMER DISCR SEL SECTOR SPDR FUND ETF,CONSUMER DISCR SEL SECTOR SPDR FUND ETF
@@ -331,37 +331,37 @@ CONTINENTAL AG,Continental AG
 COP,ConocoPhillips
 COPPER COMEX FUTURE,COPPER COMEX FUTURE
 COPPER FUTURE MAR 25,COPPER FUTURE MAR 25
-COSTC,Costco Wholesale Corporation
-COSTCO WHOLESALE CORPORATION,Costco Wholesale Corporation
+COSTC,Costco Wholesale
+COSTCO WHOLESALE CORPORATION,Costco Wholesale
 COTTON FUTURE,COTTON FUTURE
-COVESTRO AG,Covestro AG
+COVESTRO AG,Covestro
 CPR,Capri Holdings Limited
 CPRI,Capri Holdings Limited
 CREDIT AGR,Crédit Agricole S.A.
 CREDIT AGRIC,Crédit Agricole S.A.
 CREDIT AGRICOLE,Crédit Agricole S.A.
 CREDIT SUISSE,Credit Suisse Group AG
-CRISPR THERAPEUTICS AG,CRISPR Therapeutics AG
-CRM,Salesforce Inc.
+CRISPR THERAPEUTICS AG,CRISPR Therapeutics
+CRM,Salesforce
 CrowdStrike Holdings Ord shs,CrowdStrike Holdings Inc.
 CS,Credit Suisse Group AG
 CSI 1000,CSI 1000
 CSI 300,CSI 300
-CSI SMALLCAP 500 INDEX,CSI SMALLCAP 500 INDEX
+CSI SMALLCAP 500 INDEX,CSI Smallcap 500
 CSIQ,Canadian Solar Inc.
 CUCINELLI,Brunello Cucinelli S.p.A.
 CUMMINS,Cummins Inc.
-CVS Caremark Corp,CVS Health Corporation
-CVX,Chevron Corporation
+CVS Caremark Corp,CVS Health
+CVX,Chevron
 CYBER,CYBER
 Cyber Security Performance Index,Cyber Security Performance Index
 D BANK,Deutsche Bank AG
-DAIMLER TRUCK HOLDING,Daimler Truck Holding AG
+DAIMLER TRUCK HOLDING,Daimler Truck
 DANIELI & C,Danieli & C. Officine Meccaniche S.p.A.
 DANONE,Danone S.A.
-DASS,"Dassault Systèmes SE (or Dassault Aviation, DASS is often Systèmes)"
-DASSA,Dassault Aviation SA
-Dassault Aviation Ord Shs,Dassault Aviation SA
+DASS,Dassault Systemes
+DASSA,Dassault Aviation
+Dassault Aviation Ord Shs,Dassault Aviation
 Davide Campari Milano,Davide Campari-Milano N.V.
 DAVIDE CAMPARI-MILANO,Davide Campari-Milano N.V.
 DAX,DAX
@@ -408,13 +408,13 @@ DEBT AAL,DEBT AAL
 DEBT AMERICAN AIRLINES,DEBT AMERICAN AIRLINES
 DEBT NEXI,DEBT NEXI
 DEBT XEROX CORP,DEBT XEROX CORP
-DEERE CO,Deere & Company
+DEERE CO,Deere
 DEL HERO,Delivery Hero SE
 DELHERO,Delivery Hero SE
 DELIVERY HERO,Delivery Hero SE
 DELL,Dell Technologies Inc.
 DELL TECHNOLOGIES INC,Dell Technologies Inc.
-DELTA,Delta Air Lines Inc.
+DELTA,Delta Air Lines
 DEU,Deutsche Bank AG
 DEU B,Deutsche Bank AG
 DEU BANK,Deutsche Bank AG
@@ -433,7 +433,7 @@ DHERO,Delivery Hero SE
 DHL,DHL
 DIA,Diageo plc
 DIAGEO,Diageo plc
-DIAMAN GLOBAL FOCUS TR EUR AMC INDEX,DIAMAN GLOBAL FOCUS TR EUR AMC INDEX
+DIAMAN GLOBAL FOCUS TR EUR AMC INDEX,Diaman Power Profit TR EUR
 DIAS,DiaSorin S.p.A.
 DIASORIN,DiaSorin S.p.A.
 DiaSorin SpA,DiaSorin S.p.A.
@@ -442,18 +442,18 @@ DIS,The Walt Disney Company
 DISNEY,The Walt Disney Company
 DJ600 TOTAL RETURN,DJ600 TOTAL RETURN
 DOCUSIGN,DocuSign Inc.
-DOMINION,Dominion Energy Inc.
+DOMINION,Dominion Energy
 DoorDash Inc,DoorDash Inc.
-DOW JONES INDUSTRIAL,DOW JONES INDUSTRIAL
-DOW JONES INDUSTRIAL AVERAGE TR INDEX,DOW JONES INDUSTRIAL AVERAGE TR INDEX
-DOWJONESINDUSTRIAL,DOWJONESINDUSTRIAL
-DSM,DSM-Firmenich AG
+DOW JONES INDUSTRIAL,Dow Jones Ind. Average
+DOW JONES INDUSTRIAL AVERAGE TR INDEX,Dow Jones Ind. Average
+DOWJONESINDUSTRIAL,Dow Jones Ind. Average
+DSM,DSM Firmenich
 DTELEK,Deutsche Telekom AG
-DTG,Daimler Truck Holding AG
+DTG,Daimler Truck
 DYN FINECO FUND,DYN FINECO FUND
 E.ON,E.ON SE
-EASYJ,EasyJet plc
-EASYJET,EasyJet plc
+EASYJ,Easy Jet
+EASYJET,Easy Jet
 EBAY,eBay Inc.
 EDF,Électricité de France S.A.
 EISXX 50 H&F IDX,EISXX 50 H&F IDX
@@ -461,7 +461,7 @@ EL,Estée Lauder Companies Inc.
 ELECTRONIC ARTS,Electronic Arts Inc.
 ELI LILLY,Eli Lilly and Company
 Eli Lilly & Co,Eli Lilly and Company
-ELV,Elevance Health Inc.
+ELV,Elevance Health
 EMBRACER,Embracer Group AB
 E-MINI NASDAQ-100 FUTURES,E-MINI NASDAQ-100 FUTURES
 ENDESA,Endesa S.A.
@@ -564,7 +564,7 @@ F LOCKER,Foot Locker Inc.
 FASTLY,Fastly Inc.
 "FASTLY, INC. - CLASS A",Fastly Inc.
 FBK,Meta Platforms Inc.
-FEDEX CORP,FedEx Corporation
+FEDEX CORP,Fedex
 FER,Ferrari N.V.
 FERRAGA,Salvatore Ferragamo S.p.A.
 FERRAGAMO,Salvatore Ferragamo S.p.A.
@@ -581,9 +581,9 @@ FIRST SOLUTIONS AI GLOBAL EQUITY INDEX,FIRST SOLUTIONS AI GLOBAL EQUITY INDEX
 FIRST SOLUTIONS CED DYNAMIC ALLOCATION I,FIRST SOLUTIONS CED DYNAMIC ALLOCATION I
 FIRST SOLUTIONS MULTI THEMATIC TRENDS IN,FIRST SOLUTIONS MULTI THEMATIC TRENDS IN
 FL,Foot Locker Inc.
-FME,Fresenius Medical Care AG & Co. KGaA
+FME,Fresenius Medical Care
 FMIB,FMIB
-FNV,Franco-Nevada Corporation (FNV is a gold royalty/streaming company)
+FNV,Franco-Nevada
 FOOT,Foot Locker Inc.
 FOOT LOCKER,Foot Locker Inc.
 FORD,Ford Motor Company
@@ -593,8 +593,8 @@ FORT,Fortum Oyj
 FORTINET,Fortinet Inc.
 FORTUM,Fortum Oyj
 FRAMONT GLOBAL TOTAL RETURN INDEX,FRAMONT GLOBAL TOTAL RETURN INDEX
-FREE,Iliad S.A. (Free is Iliad's brand)
-FRESH,HelloFresh SE
+FREE,Iliad
+FRESH,Hello Fresh
 FSLR,First Solar Inc.
 FTBRENT,FTBRENT
 FTMIB,FTMIB
@@ -653,16 +653,16 @@ HANG SENG CHINA ENTERPRISES TR,HANG SENG CHINA ENTERPRISES TR
 HANG SENG CHINA ENTR,HANG SENG CHINA ENTR
 HANG SENG INDEX,HANG SENG INDEX
 HANG SENG TECH,HANG SENG TECH
-HAPAG,Hapag-Lloyd AG
-Hapag-Lloyd AG,Hapag-Lloyd AG
+HAPAG,Hapag Lloyd
+Hapag-Lloyd AG,Hapag Lloyd
 HC,"HC (Too generic, could be Hilton, Haleon etc.)"
 HEALTH CARE,"HEALTH CARE (Sector name, kept as is)"
-HEI,Heidelberg Materials AG
-HEIDE,Heidelberg Materials AG
-HEIDELBERG,Heidelberg Materials AG
+HEI,Heidelberg Materials
+HEIDE,Heidelberg Materials
+HEIDELBERG,Heidelberg Materials
 HEIN,The Kraft Heinz Company
 HEINEKEN,Heineken N.V.
-HELLOFR,HelloFresh SE
+HELLOFR,Hello Fresh
 Hensoldt AG,Hensoldt AG
 HER,Hera S.p.A.
 HERA,Hera S.p.A.
@@ -691,7 +691,7 @@ INFIN,Infineon Technologies AG
 INFINEON,Infineon Technologies AG
 INFINEON TECHNOLOGIE,Infineon Technologies AG
 Infrastrutture Wireless Italiane SpA,Infrastrutture Wireless Italiane S.p.A.
-ING,ING Groep N.V.
+ING,Ing Groep
 INT,Intel Corporation
 INT. CONSOL. AIRLINE,International Airlines Group
 INTC,Intel Corporation
@@ -749,27 +749,27 @@ JP MORGAN CHASE CO,JPMorgan Chase & Co.
 JPM,JPMorgan Chase & Co.
 JPY,JPY
 JSTEAT,Just Eat Takeaway
-JULIUS,Julius Bär Gruppe AG
-JULIUS BAR,Julius Bär Gruppe AG
+JULIUS,Julius Baer
+JULIUS BAR,Julius Baer
 Juventus FC SpA,Juventus F.C. S.p.A.
-K+S,K+S AG
+K+S,K + S
 KER,Kering SA
 KERING,Kering SA
-KINROSS,Kinross Gold Corporation
+KINROSS,Kinross Gold
 KKR & CO,KKR & Co. Inc.
 KO,The Coca-Cola Company
-KON PHILIPS,Koninklijke Philips N.V.
-KONINKLE,Koninklijke Philips N.V.
-KONINKLIJKE PHILI,Koninklijke Philips N.V.
+KON PHILIPS,Koninklijke KPN
+KONINKLE,Koninklijke KPN
+KONINKLIJKE PHILI,Koninklijke KPN
 KOSPI 200 INDEX,KOSPI 200 Index
 KRAFT HEINZ,The Kraft Heinz Company
-KUENHE,Kuehne + Nagel International AG
+KUENHE,Kuehne & Nagel
 KWEB,KWEB
 LAM,Lam Research Corporation
 LBMA GOLD PRICE,LBMA GOLD PRICE
 LBMA Gold Price PM,LBMA Gold Price PM
 LDO,Leonardo S.p.A.
-Lenovo Group Limited,Lenovo Group Limited
+Lenovo Group Limited,Lenovo
 LEO,Leonardo S.p.A.
 LEO ALPH BOND CO IDX,LEO ALPH BOND CO IDX
 LEO BLUE ECONOMY IDX,LEO BLUE ECONOMY IDX
@@ -783,8 +783,8 @@ LEONTEQ ER INDEX GS INDIA FUND,LEONTEQ ER INDEX GS INDIA FUND
 LEONTEQ MULTI ASSET ETF 6%RC INDEX,LEONTEQ MULTI ASSET ETF 6%RC INDEX
 LevDAX x7 (TR),LevDAX x7 (TR)
 LHA,Deutsche Lufthansa AG
-LI AUTO,Li Auto Inc.
-LI AUTO ADR,Li Auto Inc.
+LI AUTO,Li Auto (HK)
+LI AUTO ADR,Li Auto (HK)
 LILLY,Eli Lilly and Company
 LLY,Eli Lilly and Company
 LOGITECH,Logitech International S.A.
@@ -797,8 +797,8 @@ LUFT,Deutsche Lufthansa AG
 LUFTHANSA,Deutsche Lufthansa AG
 LUFTHANSA AG,Deutsche Lufthansa AG
 LUXOTTICA,EssilorLuxottica SA
-LVMH,LVMH Moët Hennessy Louis Vuitton SE
-LVMH MOET HENNESSY LOUIS VUITTON,LVMH Moët Hennessy Louis Vuitton SE
+LVMH,LVMH Louis Vuitton
+LVMH MOET HENNESSY LOUIS VUITTON,LVMH Louis Vuitton
 LYFT INC,Lyft Inc.
 MACYS,Macy's Inc.
 MACY'S,Macy's Inc.
@@ -816,9 +816,9 @@ MBG,Mercedes-Benz Group AG
 MBPS,"MBPS (likely Banca Monte dei Paschi di Siena, but MPS is more common)"
 MBSUB,MBSUB
 MC,Mastercard Incorporated
-MCDNLDS,McDonald's Corporation
-MCDON,McDonald's Corporation
-MCDONALD,McDonald's Corporation
+MCDNLDS,McDonald's
+MCDON,McDonald's
+MCDONALD,McDonald's
 MEDIAFOREUROPE N.V.,MediaForEurope N.V.
 Mediobanca,Mediobanca S.p.A.
 MEDTRONIC,Medtronic plc
@@ -854,9 +854,9 @@ MONC,Moncler S.p.A.
 MONCL,Moncler S.p.A.
 MONCLER,Moncler S.p.A.
 Moncler SpA,Moncler S.p.A.
-MOND,Mondelez International Inc.
+MOND,Mondelez
 MP,"MP (Too generic, could be MP Materials, Mediolanum, etc.)"
-MPC,Marathon Petroleum Corporation
+MPC,Marathon Petroleum
 MPS,Banca Monte dei Paschi di Siena S.p.A.
 MRNA,Moderna Inc.
 MSCI EM IDX,MSCI EM IDX
@@ -894,7 +894,7 @@ MUENCHENER RUECKVE,Münchener Rückversicherungs-Gesellschaft AG (Munich Re)
 MUV2,Münchener Rückversicherungs-Gesellschaft AG (Munich Re)
 MXEF,MXEF
 MXWO,MXWO
-N225,N225
+N225,Nikkei 225 Index
 NASDAQ,NASDAQ100
 NASDAQ 100,NASDAQ100
 NASDAQ 100 TR,NASDAQ100
@@ -910,17 +910,17 @@ NDA,"NDA (Too generic, could be Nabors, Nordea, etc.)"
 NDX,NDX
 NEE,NextEra Energy Inc.
 NEL ASA,Nel ASA
-NEM,Newmont Corporation
-NEST,Nestlé S.A.
-NESTE,Neste Oyj
-NESTLÃˆ,Nestlé S.A.
-NESTLE,Nestlé S.A.
-NESTLE SA,Nestlé S.A.
+NEM,Newmont Mining
+NEST,Nestlé
+NESTE,Neste OYJ
+NESTLÃˆ,Nestlé
+NESTLE,Nestlé
+NESTLE SA,Nestlé
 NETFLIX,Netflix Inc.
 NETFLIX INC,Netflix Inc.
-NEW,Newmont Corporation
-NEWM,Newmont Corporation
-NEWMONT,Newmont Corporation
+NEW,Newmont Mining
+NEWM,Newmont Mining
+NEWMONT,Newmont Mining
 NEXI,Nexi S.p.A.
 NEXT,Next plc
 NEXTERA,NextEra Energy Inc.
@@ -932,7 +932,7 @@ NIKKEI,Nikkei 225 Index
 NIKKEI 225,Nikkei 225 Index
 NIKKEI 225 NET TOTAL RETURN INDEX,NIKKEI 225 NET TOTAL RETURN INDEX
 NIKKEI 225 TOTAL RETURN INDEX,NIKKEI 225 TOTAL RETURN INDEX
-NIKKEI225,NIKKEI225
+NIKKEI225,Nikkei 225 Index
 NINTENDO,Nintendo Co. Ltd.
 NIO,NIO Inc.
 NIO ADR,NIO Inc.
@@ -942,12 +942,12 @@ NKE,NIKE Inc.
 NKY,NKY
 NN,NN Group N.V.
 NN GROUP,NN Group N.V.
-NOC,Northrop Grumman Corporation
+NOC,Northrop Grumman
 NOKIA,Nokia Oyj
 NOKIA OYJ,Nokia Oyj
 NORDEX,Nordex SE
 Nordex SE,Nordex SE
-NORW,Norwegian Cruise Line Holdings Ltd.
+NORW,Norwegian Cruise
 NOVART,Novartis AG
 NOVARTIS,Novartis AG
 NOVAVAX,Novavax Inc.
@@ -1007,9 +1007,9 @@ PARAMOUNT,Paramount Global
 PATH,UiPath Inc.
 PAYPAL,PayPal Holdings Inc.
 PayPal Holdings Inc,PayPal Holdings Inc.
-PDD,PDD Holdings Inc.
-PELOT,Peloton Interactive Inc.
-Peloton Interactive INC,Peloton Interactive Inc.
+PDD,PDD Holdings (Pinduoduo)
+PELOT,Peloton Interactive
+Peloton Interactive INC,Peloton Interactive
 PEPSI,PepsiCo Inc.
 PEPSICO,PepsiCo Inc.
 PEPSICO INC,PepsiCo Inc.
@@ -1020,7 +1020,7 @@ PFIZ,Pfizer Inc.
 PFIZER,Pfizer Inc.
 PFIZER INC,Pfizer Inc.
 PIAGGIO & C,Piaggio & C. S.p.A.
-PINDUODUO,PDD Holdings Inc.
+PINDUODUO,PDD Holdings (Pinduoduo)
 PINT,Pioneer Natural Resources Company (Acquired by ExxonMobil)
 PIRC,Pirelli & C. S.p.A.
 PIRELLI,Pirelli & C. S.p.A.
@@ -1045,9 +1045,9 @@ POSTE ITALIANE,Poste Italiane S.p.A.
 Poste Italiane SpA,Poste Italiane S.p.A.
 PPAL,PayPal Holdings Inc.
 PROCTER & GAMBLE,Procter & Gamble Company
-PROSHARES 20+ Y ETF,PROSHARES 20+Y ETF
-PROSHARES 20+Y ETF,PROSHARES 20+Y ETF
-PROSHR ETF,PROSHARES 20+Y ETF
+PROSHARES 20+ Y ETF,ProShares Ultra 20+ Year Treasury
+PROSHARES 20+Y ETF,ProShares Ultra 20+ Year Treasury
+PROSHR ETF,ProShares Ultra 20+ Year Treasury
 PRU,Prudential plc
 PRUD,Prudential plc
 PRUDENTIAL,Prudential plc
@@ -1064,13 +1064,13 @@ QUALCOMM,Qualcomm Incorporated
 QUALCOMM Inc,Qualcomm Incorporated
 R LAUREN,Ralph Lauren Corporation
 RACE,Ferrari N.V.
-RAIFF,Raiffeisen Bank International AG
-RAIFFEI,Raiffeisen Bank International AG
-RAIFFEISE,Raiffeisen Bank International AG
+RAIFF,Raiffeisen Bank
+RAIFFEI,Raiffeisen Bank
+RAIFFEISE,Raiffeisen Bank
 RALPH,Ralph Lauren Corporation
 RALPH LAUREN,Ralph Lauren Corporation
 RALPHL,Ralph Lauren Corporation
-RBI,Raiffeisen Bank International AG
+RBI,Raiffeisen Bank
 REALEST SEL SECT ETF,REALEST SEL SECT ETF
 REALREAL,The RealReal Inc.
 Recordati Industria Chimica e Farmaceuti,Recordati Industria Chimica e Farmaceutica S.p.A.
@@ -1093,40 +1093,40 @@ RHEINMET,Rheinmetall AG
 RHEINMETALL,Rheinmetall AG
 RHM,Rheinmetall AG
 RHMG,Rheinmetall AG
-RICHEM,Compagnie Financière Richemont SA
-RICHEMONT,Compagnie Financière Richemont SA
+RICHEM,Cie Financiere Richemont
+RICHEMONT,Cie Financiere Richemont
 RIO,Rio Tinto Group
 RIO TINTO,Rio Tinto Group
-RIOT,Riot Platforms Inc.
+RIOT,Riot Platforms
 RIOTINTO,Rio Tinto Group
 RIVIAN,Rivian Automotive Inc.
 RIVIAN AUTOMOTIVE,Rivian Automotive Inc.
 RL,Ralph Lauren Corporation
 RMS,"RMS (Could be various, e.g. Hermes International ticker on some exchanges. Hermes is already listed. Keep as is.)"
 RNO,Renault S.A.
-ROBINHOOD,Robinhood Markets Inc.
-Robinhood Markets Inc,Robinhood Markets Inc.
+ROBINHOOD,Robinhood Markets
+Robinhood Markets Inc,Robinhood Markets
 ROBLOX,Roblox Corporation
 ROBLOX Corp,Roblox Corporation
 ROCHE,Roche Holding AG
 ROCHE HOLDING,Roche Holding AG
 ROCHE HOLDING AG,Roche Holding AG
-ROLLS ROYCE HOLD,Rolls-Royce Holdings plc
-ROYAL,Royal Caribbean Group
-ROYAL C,Royal Caribbean Group
-RR,Rolls-Royce Holdings plc
+ROLLS ROYCE HOLD,Rolls Royce
+ROYAL,Royal Caribbean
+ROYAL C,Royal Caribbean
+RR,Rolls Royce
 RTY,RTY
 RUN,RUN AI STRATEG ALLOCATION AMC IND
 RUN AI STRATEG ALLOCATION AMC IND,RUN AI STRATEG ALLOCATION AMC IND
-RUSS 2000,RUSSELL 2000 INDEX
-RUSSELL 2000 INDEX,RUSSELL 2000 INDEX
+RUSS 2000,Russell 2000 Index
+RUSSELL 2000 INDEX,Russell 2000 Index
 RWE,RWE AG
 RYANAIR,Ryanair Holdings plc
 S,"S (Too generic, could be SentinelOne, formerly Sprint, etc.)"
-S AND P 500,S&P 500
-S&P 500,S&P 500
-S&P 500 GROSS TOTAL,S&P 500 GROSS TOTAL
-S&P 500 NET TR,S&P 500 NET TR
+S AND P 500,S&P 500 Index
+S&P 500,S&P 500 Index
+S&P 500 GROSS TOTAL,S&P 500 Index
+S&P 500 NET TR,S&P 500 Index
 S&P EUR50 SYN5% IDX,S&P EUR50 SYN5% IDX
 S&P EUUSAJAP100 NET02050 PARISALIGNSEL5%,S&P EUUSAJAP100 NET02050 PARISALIGNSEL5%
 S&P GLBL CLEAN ENERGY 3.5% DECREMENT IND,S&P GLBL CLEAN ENERGY 3.5% DECREMENT IND
@@ -1135,7 +1135,7 @@ S&P GSCI GOLD INDEX ER,S&P GSCI GOLD INDEX ER
 S&P GSCI INDUSTRIAL METALS (ER) INDEX,S&P GSCI INDUSTRIAL METALS (ER) INDEX
 S&P NEXTGENERATIONEU RECOVERY EQU 5% DEC,S&P NEXTGENERATIONEU RECOVERY EQU 5% DEC
 S&P TRANS 100 ESGSEL QUALWEIGH 5%DEC IND,S&P TRANS 100 ESGSEL QUALWEIGH 5%DEC IND
-S&P500,S&P500
+S&P500,S&P 500 Index
 S&P500(NETRETURN)INDEX-EUR,S&P500(NETRETURN)INDEX-EUR
 SAAB,Saab AB
 SAABB,Saab AB
@@ -1145,8 +1145,8 @@ SAFRAN,Safran S.A.
 SAINT-GOBAIN,Compagnie de Saint-Gobain S.A.
 SAIP,Saipem S.p.A.
 SAIPEM,Saipem S.p.A.
-SALES,Salesforce Inc.
-SALESFORCE.COM INC,Salesforce Inc.
+SALES,Salesforce
+SALESFORCE.COM INC,Salesforce
 SALVATORE FERRAGAMO,Salvatore Ferragamo S.p.A.
 Salvatore Ferragamo SpA,Salvatore Ferragamo S.p.A.
 SAMSUNG,Samsung Electronics Co. Ltd.
@@ -1165,12 +1165,12 @@ SDGP INDEX,SDGP INDEX
 SEDG,SolarEdge Technologies Inc.
 SESA,Sesa S.p.A.
 SFER,Salvatore Ferragamo S.p.A.
-SG,Société Générale S.A.
+SG,Société Générale
 SGO,Compagnie de Saint-Gobain S.A.
 SHANGHAI SHENZHEN CSI 300 INDEX,SHANGHAI SHENZHEN CSI 300 INDEX
 SHELL,Shell plc
 Shell Plc,Shell plc
-SHOP,Shopify Inc.
+SHOP,Shopify
 ShortDAX x7 (TR),ShortDAX x7 (TR)
 SIE,Siemens AG
 SIEM,Siemens AG
@@ -1185,16 +1185,16 @@ SMART DEF ZC FINECO FUND,SMART DEF ZC FINECO FUND
 SMART GLOB DEF ZC FINECO AM,SMART GLOB DEF ZC FINECO AM
 SMC,Super Micro Computer Inc.
 SMCI,Super Micro Computer Inc.
-SMI,SMI
+SMI,SMI Swiss
 SNAM,Snam S.p.A.
 SNAM SPA,Snam S.p.A.
 SNAP,Snap Inc.
 SNPS,Synopsys Inc.
-SOC GEN,Société Générale S.A.
-SOCGEN,Société Générale S.A.
-SOCIETE GENERALE,Société Générale S.A.
-SOCIETEGENER,Société Générale S.A.
-SOCIETEGENERALE,Société Générale S.A.
+SOC GEN,Société Générale
+SOCGEN,Société Générale
+SOCIETE GENERALE,Société Générale
+SOCIETEGENER,Société Générale
+SOCIETEGENERALE,Société Générale
 SOFI,SoFi Technologies Inc.
 SOL MAGN7EQW CNTR IDX,SOL MAGN7EQW CNTR IDX
 SOLACT ADV HUM ROB,SOLACT ADV HUM ROB
@@ -1378,10 +1378,10 @@ THEAM QUANT EQUITY EU DISTRIB 4% FUND,THEAM QUANT EQUITY EU DISTRIB 4% FUND
 THEAM QUANT WOR CLIM CARBOFFSETPLAN FUND,THEAM QUANT WOR CLIM CARBOFFSETPLAN FUND
 THEMATIC ETF BASKET,THEMATIC ETF BASKET
 THERMO FISHER SCIENTIFIC,Thermo Fisher Scientific Inc.
-THYSSENKRUPP AG,Thyssenkrupp AG
+THYSSENKRUPP AG,Thyssenkrupp
 TIT,Telecom Italia S.p.A.
-TKA,Thyssenkrupp AG
-TKAG,Thyssenkrupp AG
+TKA,Thyssenkrupp
+TKAG,Thyssenkrupp
 TMF UP,TMF UP
 TN 30Y FUTURE,TN 30Y FUTURE
 TOKYO ELEC,Tokyo Electron Limited
@@ -1420,15 +1420,15 @@ UNA,Unilever PLC
 UNDER ARM,Under Armour Inc.
 UNDER ARMOUR,Under Armour Inc.
 UNDER ARMOUR A,Under Armour Inc.
-UNH,UnitedHealth Group Incorporated
+UNH,United Health
 UNICREDIT,UniCredit S.p.A.
 UNILEVER,Unilever PLC
-UNIPOL,Unipol Gruppo S.p.A.
+UNIPOL,Unipol Gruppo Finanziario
 UNITED,United Airlines Holdings Inc.
 UNITED AIR,United Airlines Holdings Inc.
 UNITED PARCEL SERVICE,United Parcel Service Inc.
-UNITEDHEAL,UnitedHealth Group Incorporated
-UnitedHealth Group Inc,UnitedHealth Group Incorporated
+UNITEDHEAL,United Health
+UnitedHealth Group Inc,United Health
 Unity Software,Unity Software Inc.
 UNSOFTW,Unity Software Inc.
 US STRIPS (02/2054),US STRIPS (02/2054)
@@ -1443,19 +1443,19 @@ VALEO,Valeo SE
 VALERO,Valero Energy Corporation
 VALORI SICAV GLOB FLEX BOND FUND,VALORI SICAV GLOB FLEX BOND FUND
 VanEck Defense UCITS ETF,VanEck Defense UCITS ETF
-VEO,Veolia Environnement S.A.
-VEOLIA,Veolia Environnement S.A.
-VEOLIA ENV,Veolia Environnement S.A.
-VEOLIA ENVIRON,Veolia Environnement S.A.
-VEOLIA ENVIRONNEMENT,Veolia Environnement S.A.
+VEO,Veolia Env.
+VEOLIA,Veolia Env.
+VEOLIA ENV,Veolia Env.
+VEOLIA ENVIRON,Veolia Env.
+VEOLIA ENVIRONNEMENT,Veolia Env.
 VER,Verbund AG
 VERBUND,Verbund AG
 VESTAS,Vestas Wind Systems A/S
 VESTAS WIND,Vestas Wind Systems A/S
 VF,VF Corporation
 VIATRIS,Viatris Inc.
-VICTORIAS SECR,Victoria's Secret & Co.
-VICTORIAS SECRET,Victoria's Secret & Co.
+VICTORIAS SECR,Victoria's Secret
+VICTORIAS SECRET,Victoria's Secret
 VIE,Vinci SA
 VINCI,Vinci SA
 VIPSHOP H LIMITED ADR,Vipshop Holdings Limited
@@ -1667,18 +1667,18 @@ WARNER BROS,Warner Bros. Discovery Inc.
 WARNER BROS DISCOVERY,Warner Bros. Discovery Inc.
 WAYFAIR,Wayfair Inc.
 WEBUILD SPA,Webuild S.p.A.
-WELLS,Wells Fargo & Company
+WELLS,Wells Fargo & Co
 WK KELLOGG,WK Kellogg Co
 WOLF,Wolfspeed Inc.
 WOLFSPEED,Wolfspeed Inc.
 WORLD,WORLD (Too generic)
-WORLDL,Worldline SA
-Worldline SA,Worldline SA
+WORLDL,Worldline
+Worldline SA,Worldline
 WTI,WTI
 WTI CRUDE FUTURE APR24,WTI CRUDE FUTURE APR24
-WTI CRUDE OIL,WTI CRUDE OIL
-WTI CRUDE OIL FT,WTI CRUDE OIL FT
-WTI Light Sweet Crude Oil,WTI Light Sweet Crude Oil
+WTI CRUDE OIL,WTI
+WTI CRUDE OIL FT,WTI
+WTI Light Sweet Crude Oil,WTI
 XIAOMI,Xiaomi Corporation
 Xiaomi Corp,Xiaomi Corporation
 XLF UP,XLF UP
@@ -1690,8 +1690,8 @@ ZOOM,Zoom Video Communications Inc.
 ZURICH,Zurich Insurance Group AG
 ZURICH INSUR,Zurich Insurance Group AG
 ZURN,Zurich Insurance Group AG
-NESTLÈ,Nestlé S.A.
-COMPAGNIE FINANCIÈRE RICHEMONT,Compagnie Financière Richemont SA
+NESTLÈ,Nestlé
+COMPAGNIE FINANCIÈRE RICHEMONT,Cie Financiere Richemont
 BLINK CHARGING,Blink Charging
 CHARGEPOINT,Chargepoint
 VARTA,Varta
@@ -1701,15 +1701,15 @@ LEONTEQ EUROPEAN HIGH YIELD BONDS 4%RC I,Leonteq European High Yield Bonds 4%Rc 
 LEONTEQ 4%RC INDEX ON PIMCO GIS INCOME F,Leonteq 4%Rc Index On Pimco Gis Income F
 SNAP INC.,Snap Inc.
 DEBITO AIR FRANCE KLM,Debito Air France Klm
-PHILIPS,Koninklijke Philips N.V.
+PHILIPS,Koninklijke KPN
 UC EUROPEAN HEALTH AND LIFESTYLE INDEX,Uc European Health And Lifestyle Index
-KÜHNE+NAGE,Kühne+Nage
+KÜHNE+NAGE,Kuehne & Nagel
 THESWATCHG,The Swatch Group
 CLARIANT,Clariant
 VONTOBEL,Vontobel
-PRADA,Prada
+PRADA,Prada (HK)
 SALVATORE FER,Salvatore Ferragamo S.p.A.
-ROLLSROYC,Rolls-Royce Holdings plc
+ROLLSROYC,Rolls Royce
 HARLEYDAVIDSON,Harley-Davidson
 ESX50,EURO STOXX 50 Index
 NSQ,NASDAQ100
@@ -1741,7 +1741,7 @@ INVES,Invesco Ltd.
 JEFF,Jefferies
 KKR,KKR & Co. Inc. 
 C3.A,C3.ai Inc.
-BAE Systems PLC,BAE Systems plc
+BAE Systems PLC,BAE System
 AZMT,Azimut Holding SpA
 SCOR,Scor
 MTU,MTU Aero Engines
@@ -1753,7 +1753,7 @@ SOLACTIVE NEW MOBILITY 16% RISK CONTROL,Solactive New Mobility 16% Risk Control
 SOLACTIVE SPACE ECONOMY 14% RISK CONT 5%,Solactive Space Economy 14% Risk Cont 5%
 DEBITO VOLKSWAGEN,Debito Volkswagen
 JUST EAT,Just Eat Takeaway
-HELLOFRESH,HelloFresh
+HELLOFRESH,Hello Fresh
 MONTEPASCHI,Banca Monte dei Paschi di Siena S.p.A.
 CR AGRIC,Crédit Agricole S.A.
 Former Charter Communications Parent Inc,Former Charter Communications Parent Inc
@@ -1770,7 +1770,7 @@ MSCI EUROPE ESG LEADERS INDEX EUR,MSCI EUROPE ESG LEADERS INDEX EUR
 LEONTEQ GLBL HYDROGEN TECH 15%RC IND,LEONTEQ GLBL HYDROGEN TECH 15%RC IND
 REN,RWE AG
 TOYOTA,Toyota Motor Corporation
-MCDONALDS,McDonald's Corporation
+MCDONALDS,McDonald's
 COPPER,COPPER
 BSK DEB FORD,BSK DEB FORD
 JLR,Tata Motors Limited (Jaguar Land Rover Parent)
@@ -1784,14 +1784,14 @@ ENPHASE ENERGY,"Enphase Energy, Inc."
 SNOWFLAKE INC,Snowflake Inc.
 OCC PETROLEUM,OCC PETROLEUM
 DEVONENER,Devon Energy Corporation
-PETROBRASADR,Petróleo Brasileiro S.A. (Petrobras) ADR
+PETROBRASADR,Petroleo Brasileiro
 VIVENDI,Vivendi SE
 HAVAS,Havas SA
 LOUIS HACHETTE,LOUIS HACHETTE
 Vont 4X S NFLX V6,Vont 4X S NFLX V6
 Vont 7X S COPPER FT V4,Vont 7X S COPPER FT V4
 Vont 5X L ISP V2,Vont 5X L ISP V2
-HOOD,Robinhood Markets Inc.
+HOOD,Robinhood Markets
 AIR FR,Air France-KLM
 D LUFT,Deutsche Lufthansa AG
 CARL,Carlsberg A/S
@@ -1799,9 +1799,9 @@ PERN,Pernod Ricard SA
 ICE ENDEX DUTCH TTF NAT GAS FT 08/23,ICE ENDEX DUTCH TTF NAT GAS FT 08/23
 VT JP EQ STR AMC IDX,VT JP EQ STR AMC IDX
 AIRFRA,Air France-KLM
-COSTCO,Costco Wholesale Corporation
+COSTCO,Costco Wholesale
 DOLLAR,"Dollar Tree, Inc."
-MONDE,Mondelez International Inc.
+MONDE,Mondelez
 TARG,Target Corporation
 KPN,KPN N.V.
 Vont 3X L ENI V2,Vont 3X L ENI V2
@@ -1820,7 +1820,7 @@ KHC,The Kraft Heinz Company
 PG,The Procter & Gamble Company
 BIONT,BioNTech SE
 XLF,XLF
-LEGR,Legrand SA
+LEGR,Legrand
 NAT,Nordic American Tanker Shipping Ltd
 DATADOG,"Datadog, Inc."
 E-MINI S&P 500 FUTURES,E-MINI S&P 500 FUTURES
@@ -1839,17 +1839,17 @@ UNITED AIRL,"United Airlines Holdings, Inc."
 GILEAD,"Gilead Sciences, Inc."
 DOLLAR GENERAL,Dollar General Corporation
 SMART GLOB DEF ZC FINECO FUND,SMART GLOB DEF ZC FINECO FUND
-KOREA KOSPI 200 INDE,KOREA KOSPI 200 INDE
+KOREA KOSPI 200 INDE,KOSPI 200 Index
 SLB,Schlumberger Limited
 POSTE AND ESTX BANK,POSTE AND ESTX BANK
 DEBGSUB,DEBGSUB
 EUR3M,EURIBOR 3M
 DEB AIR FRA,DEBITO AIR FRANCE
 DEB TELEC ITA,DEBITO TELECOM ITALIA
-BLOOMBERG COMMODITY INDEX,BLOOMBERG COMMODITY INDEX
+BLOOMBERG COMMODITY INDEX,Bloomberg Commodity
 ZOOM VIDEO COMMUNICATIONS,ZOOM VIDEO COMMUNICATIONS
-ADV MICRO DEVICES,Advanced Micro Devices Inc.
-CNH INDUSTR,CNH Industrial N.V.
+ADV MICRO DEVICES,Advanced Micro Devices
+CNH INDUSTR,CNH Industrial
 STMICROELE,STMicroelectronics N.V.
 ADM,Archer-Daniels-Midland
 FTSE ITALIA PIR PMI,FTSE ITALIA PIR PMI
@@ -1860,10 +1860,10 @@ GENRL ELEC,General Electric
 VERNO,VERNO
 ARCELOR,ArcelorMittal
 SGOB,SGOB
-HEIDEL,Heidelberg Materials AG
+HEIDEL,Heidelberg Materials
 XPENG,XPENG
 MERCK & CO,MERCK & CO
-BHP LTD ADR,BHP Group
+BHP LTD ADR,Bhp Billiton
 GEELY AUTOM,Geely Automobile Holdings
 Vont 7X L LIVE CATTLE FT,Vont 7X L LIVE CATTLE FT
 MARATHON DIG,Marathon Digital Holdings
@@ -1872,7 +1872,7 @@ SOL QUANTUM IDX,SOL QUANTUM IDX
 UBISOFT ENTERTAINMENT,UBISOFT ENTERTAINMENT
 BEYOND,Beyond Meat Inc.
 Vont 5X S RHM V4,Vont 5X S RHM V4
-HEID,Heidelberg Materials AG
+HEID,Heidelberg Materials
 FORVIA,FORVIA
 Vont 7X L PALLADIUM V7,Vont 7X L PALLADIUM V7
 Vont 5X S MSFT V10,Vont 5X S MSFT V10
@@ -1892,10 +1892,10 @@ EUROSTOXXBANKS,EUROSTOXXBANKS
 ST,STMicroelectronics N.V.
 CAMP,Davide Campari-Milano N.V.
 PAL,Palantir Technologies Inc.
-FCX,Freeport-McMoRan
+FCX,Freeport McMoRan
 EXELON,Exelon Corporation
 BWX TECHNOLOGIES,BWX TECHNOLOGIES
-NORWEGIAN CRUISE LINE,NORWEGIAN CRUISE LINE
+NORWEGIAN CRUISE LINE,Norwegian Cruise
 AIR,Airbus
 MTX,Materialise NV
 HO,Hermès International
@@ -1909,20 +1909,20 @@ VOW,Volkswagen AG
 INTL,Intel Corporation
 ABN AMRO,ABN AMRO
 LEVI,Levi Strauss & Co.
-RUSSEL,RUSSELL 2000 INDEX
+RUSSEL,Russell 2000 Index
 XOM,Exxon Mobil Corporation
 BASKET 3 STOXX EU 600,BASKET 3 STOXX EU 600
-LI,Li Auto
+LI,Li Auto (HK)
 NTES,NetEase Inc.
 ALLIA,Allianz SE
 AGEA,Ageas SA/NV
 STL,Stellantis N.V.
-DAL,Delta Air Lines Inc.
+DAL,Delta Air Lines
 Under Armour Inc-Class A,Under Armour Inc.
-PROSH 20+ Y ETF,PROSHARES 20+Y ETF
+PROSH 20+ Y ETF,ProShares Ultra 20+ Year Treasury
 MET,MetLife Inc.
 PORSCHE VZ,Porsche AG
-BEST,BEST Inc.
+BEST,Best Buy
 HUMANA,Humana Inc.
 Rivian Automotive Inc.,Rivian Automotive Inc.
 MAZDA,Mazda Motor Corporation
@@ -1943,7 +1943,7 @@ MICHELIN,Compagnie Générale des Établissements Michelin
 NEXT GENERATION ESG LEADERS,NEXT GENERATION ESG LEADERS
 WALTDI,The Walt Disney Company
 MBENZ,Mercedes-Benz Group AG
-CHEVRON CORPORATION,Chevron Corporation
+CHEVRON CORPORATION,Chevron
 DEBITO BANCO BPM,DEBITO BANCO BPM
 ERICSS,Ericsson
 STMICROELEC,STMicroelectronics N.V.
@@ -1951,8 +1951,8 @@ XPENG INC.,XPeng Inc.
 BASKET 10 EU SHARES,BASKET 10 EU SHARES
 ESTEELAUDER,Estée Lauder Companies Inc.
 ASM INTERNATIONAL,ASM International N.V.
-MCD,McDonald's Corporation
-CPG,Compass Group PLC
+MCD,McDonald's
+CPG,Compass
 KLG,Koninklijke DSM-Firmenich N.V.
 Sartorius AG,Sartorius AG
 MICRON T,Micron Technology Inc.
@@ -1978,9 +1978,9 @@ SAPM,Saipem S.p.A.
 SANDOZ,Sandoz
 SXKP,STOXX Europe 600 Telecommunications
 SXTP,STOXX Europe 600 Telecommunications
-STMPAFP,STMicroelectronics NV
+STMPAFP,STMicroelectronics N.V.
 TEN IM,Tenaris S.A.
-PROSHRS 20Y ETF,PROSHARES 20+Y ETF
+PROSHRS 20Y ETF,ProShares Ultra 20+ Year Treasury
 0% NLD GOV (01/15/2052),0% Nld Gov (01/15/2052)
 BKT 3 STOXX,STOXX Europe 600 Daily Leverage 3
 NINTENDO CO LTD,Nintendo Co. Ltd.
@@ -1991,12 +1991,12 @@ LUFTH,Deutsche Lufthansa AG
 Vont 7X S COPPER V6,Vont 7X S Copper V6
 Vont 7X L SX5E,Vont 7X L Sx5E
 Vont 2X L FVS1 V17,Vont 2X L Fvs1 V17
-ANHEUSER-BUSCH I,Anheuser-Busch InBev SA/NV
+ANHEUSER-BUSCH I,Anheuser-Busch InBev
 FIRSTSOLAR,First Solar Inc.
 ENPHASE E,"Enphase Energy, Inc."
 4XS DAX,DAX 40
 Vontobel Nuclear Energy Index,Vontobel Nuclear Energy Performance Index
-FONDO CPR INVEST - REACTIVE,CPR Invest - Reactive Fund
+FONDO CPR INVEST - REACTIVE,CPR Invest - Reactive
 DAX FUTURES LEVERAGE LONG 7X,DAX Futures x7 Leveraged Long
 UMICORE,Umicore SA
 FTSE MIB DAILY FUTURES LEVERAGE LONG 5X,FTSE MIB x5 Daily Leveraged Long Futures
@@ -2012,7 +2012,7 @@ EURO STOXX AUTOMOBILES & PARTS NET RETUR,EURO STOXX Automobiles & Parts Net Retu
 EXELIXIS INC,"Exelixis, Inc."
 VERTEX PHARMA INC,Vertex Pharmaceuticals Incorporated
 SOLARDEDGE,"SolarEdge Technologies, Inc."
-ROYAL CARIBBEAN INTERNATIONAL,Royal Caribbean Group
+ROYAL CARIBBEAN INTERNATIONAL,Royal Caribbean
 TRI,Thomson Reuters Corporation
 IREN,Iren SpA
 TECHNOPROBE SPA,Technoprobe SpA
@@ -2020,9 +2020,9 @@ NVDIA,NVIDIA Corporation
 BRUNELLO,Brunello Cucinelli S.p.A.
 QARS TPS QUANTITAT ABSOLUTE RTN IND AMC,QARS TPS Quantitative Absolute Return Index AMC
 TUI1,TUI AG
-EZJ,easyJet plc
+EZJ,Easy Jet
 IBER,Iberdrola SA
-WFC,Wells Fargo & Company
+WFC,Wells Fargo & Co
 KRAFT,The Kraft Heinz Company
 PERNOD,Pernod Ricard SA
 S AND P,S&P 500 Index
@@ -2030,4 +2030,430 @@ SIKA,Sika AG
 EN,Enel SpA
 SYDNEY ALL ORD,Sydney All Ord
 Stoxx Europe 600 Auto&Parts,Stoxx Europe 600 Auto&Parts
-KOSPI200 (COREA),Kospi200 (Corea)
+KOSPI200 (COREA),KOSPI 200 Index
+PDD Holdings (Pinduoduo),PDD Holdings (Pinduoduo)
+Leonteq China Multi Asset 10% RC,Leonteq China Multi Asset 10% RC
+Pirelli & C,Pirelli & C
+Cie Financiere Richemont,Cie Financiere Richemont
+STMicroelectronics (PA),STMicroelectronics N.V.
+WTI Crude Future generic 1st,WTI
+Brent Crude Generic 1st,Brent Crude Generic 1st
+Easy Jet,Easy Jet
+Norwegian Cruise,Norwegian Cruise
+British Petroleum,British Petroleum
+Société Générale,Société Générale
+0% Bundesrepublik Deutschland,0% Bundesrepublik Deutschland
+Alphabet cl. C,Alphabet cl. C
+0.5% France Govt (05/25/2072),0.5% France Govt (05/25/2072)
+ProShares Ultra 20+ Year Treasury,ProShares Ultra 20+ Year Treasury
+Advanced Micro Devices,Advanced Micro Devices
+Xerox,Xerox
+Global Equity High Dividend,Global Equity High Dividend
+LVMH Louis Vuitton,LVMH Louis Vuitton
+United Airlines,United Airlines
+Fresenius Medical Care,Fresenius Medical Care
+Robinhood Markets,Robinhood Markets
+Banco Bilbao Vizcaya Argentaria,Banco Bilbao Vizcaya Argentaria
+Leonteq Multi Asset ETF 6%RC,Leonteq Multi Asset ETF 6%RC
+2.45% BTPS Italia (09/01/50),2.45% BTPS Italia (09/01/50)
+Banca MPS,Banca MPS
+Thyssenkrupp,Thyssenkrupp
+Leonteq Excess Return Index on DNCA Alpha Bonds,Leonteq Excess Return Index on DNCA Alpha Bonds
+Direxion Daily 20+ Year Treasury Bull 3X Shares,Direxion Daily 20+ Year Treasury Bull 3X Shares
+STMicroelectronics (MI),STMicroelectronics N.V.
+"GE Aerospace + 0,25 GE Vernova","GE Aerospace + 0,25 GE Vernova"
+Peloton Interactive,Peloton Interactive
+Aston Martin,Aston Martin
+Eurostoxx Automobiles & Parts,Eurostoxx Automobiles & Parts
+S&P 500 NT- EurUsd,S&P 500 NT- EurUsd
+Eurostoxx 50 NR,Eurostoxx 50 NR
+Solactive Magnificent Seven Equal Weighted CNTR,Solactive Magnificent Seven Equal Weighted CNTR
+Solactive China Dragons 7,Solactive China Dragons 7
+Msci World,Msci World
+Algebris Financial Credit Funds,Algebris Financial Credit Funds
+Veolia Env.,Veolia Env.
+Kinross Gold,Kinross Gold
+Barrick Mining,Barrick Mining
+Ferrari (US),Ferrari N.V.
+Worldline,Worldline
+Mara Holdings,Mara Holdings
+Riot Platforms,Riot Platforms
+Rolls Royce,Rolls Royce
+United Health,United Health
+Salesforce,Salesforce
+Hello Fresh,Hello Fresh
+Porsche Holding SE,Porsche AG
+Nestlé,Nestlé
+Booking Holdings,Booking Holdings
+Sound Hound AI,Sound Hound AI
+Raiffeisen Bank,Raiffeisen Bank
+General Mills,General Mills
+Mondelez,Mondelez
+BAE System,BAE System
+Occidental Petroleum,Occidental Petroleum
+Solactive Advanced Humanoid Robotics,Solactive Advanced Humanoid Robotics
+SMI Swiss,SMI Swiss
+Pinterest,Pinterest
+KUEHNE & NAGEL,Kuehne & Nagel
+Ap Moeller - Maersk,Ap Moeller - Maersk
+Hapag Lloyd,Hapag Lloyd
+First Solutions AI Global Equity,First Solutions AI Global Equity
+GGC Global Growth Component,GGC Global Growth Component
+Vestas Wind Systems,Vestas Wind Systems
+First Solutions MRM Algo,First Solutions MRM Algo
+First Solutions 4Invest Alpha Liquidity,First Solutions 4Invest Alpha Liquidity
+First Solutions CED Dynamic Allocation,First Solutions CED Dynamic Allocation
+STOXX Europe ESG Leaders Select 30,STOXX Europe ESG Leaders Select 30
+Eurostoxx Select Dividend 30,Eurostoxx Select Dividend 30
+Stoxx Europe 600 Utilities Index,Stoxx Europe 600 Utilities Index
+STOXX Europe Sustainability Select 30,STOXX Europe Sustainability Select 30
+STOXX Global Select Dividend 100,STOXX Global Select Dividend 100
+Euro Istoxx 50 Electric Vehicles Tilted Nr Decrement 5%,Euro Istoxx 50 Electric Vehicles Tilted Nr Decrement 5%
+UC Next Generation Energy,UC Next Generation Energy
+Stoxx Global Esg Leaders Select 50,Stoxx Global Esg Leaders Select 50
+Stoxx Europe Esg Enviromental Leaders Select 30,Stoxx Europe Esg Enviromental Leaders Select 30
+Hang Seng C.E.,Hang Seng C.E.
+Eurostoxx Technology,Eurostoxx Technology
+Eurostoxx HealthCare,Eurostoxx HealthCare
+Stoxx Europe 600,Stoxx Europe 600
+Eurostoxx 50 Esg,Eurostoxx 50 Esg
+UC European Essence,UC European Essence
+EuroStoxx Esg-X Select Dividend 30,EuroStoxx Esg-X Select Dividend 30
+UC European Quintessence,UC European Quintessence
+Ing Groep,Ing Groep
+National Grid,National Grid
+Coca Cola,Coca Cola
+Valori Sicav - Global Flexible Bond,Valori Sicav - Global Flexible Bond
+Goldman Sachs,Goldman Sachs
+iShares China Large-Cap Etf,iShares China Large-Cap Etf
+Russell 2000,Russell 2000 Index
+Teva Pharmaceutical,Teva Pharmaceutical
+Berkshire Hathaway,Berkshire Hathaway
+Costco Wholesale,Costco Wholesale
+Johnson & Johnson,Johnson & Johnson
+British American Tobacco,British American Tobacco
+McDonald's,McDonald's
+iShares MSCI Brazil,iShares MSCI Brazil
+Stoxx Europe 600 Oil&Gas,Stoxx Europe 600 Oil&Gas
+ARM Holdings ADR,ARM Holdings ADR
+Constellation Energy,Constellation Energy
+Istoxx Global Esg Dividend Trend,Istoxx Global Esg Dividend Trend
+STOXX Global Infrastructure Select 30,STOXX Global Infrastructure Select 30
+CAC40,CAC40
+Ballard Power Systems,Ballard Power Systems
+Tapestry,Tapestry
+Applied Materials,Applied Materials
+Elevance Health,Elevance Health
+Centene,Centene
+Dominion Energy,Dominion Energy
+MSCI World Net TR USD,MSCI World Net TR USD
+Dassault Aviation,Dassault Aviation
+Eurostoxx Insurance,Eurostoxx Insurance
+Msci Emu Selecg Esg 50 Equal Weighted 5% Decrement,Msci Emu Selecg Esg 50 Equal Weighted 5% Decrement
+MSCI Euro Climate Select 50 Paris Aligned 5% Decrement,MSCI Euro Climate Select 50 Paris Aligned 5% Decrement
+Msci Emerging Markets 9% Risk Control 2% Decrement,Msci Emerging Markets 9% Risk Control 2% Decrement
+Euro Istoxx 50 Low Carbon NR Decrement 3.75%,Euro Istoxx 50 Low Carbon NR Decrement 3.75%
+"Euro Istoxx Ocean Care 40 Nr Decrement 3,5%","Euro Istoxx Ocean Care 40 Nr Decrement 3,5%"
+iSTOXX AI Global Artificial Intelligence High Dividend 30,iSTOXX AI Global Artificial Intelligence High Dividend 30
+Msci World Esg Leaders Select Top 100 3% Decrement,Msci World Esg Leaders Select Top 100 3% Decrement
+Bloomberg Infation European Equity Winners 2022 Decrement 5%,Bloomberg Infation European Equity Winners 2022 Decrement 5%
+Euro Istoxx Esg Leaders 50 Nr Decrement 5%,Euro Istoxx Esg Leaders 50 Nr Decrement 5%
+"Istoxx Europe 600 ESG-X NR Decrement 4,75%","Istoxx Europe 600 ESG-X NR Decrement 4,75%"
+Euro iSTOXX Megatrends Select 30 NR Decrement 3%,Euro iSTOXX Megatrends Select 30 NR Decrement 3%
+Zoom Video,Zoom Video
+Solactive Us Pharma 10% Risk Control 3% Decrement Net,Solactive Us Pharma 10% Risk Control 3% Decrement Net
+Stoxx Europe 600 ESG-X,Stoxx Europe 600 ESG-X
+Solactive Big Data Europe Low Volatility AR 5%,Solactive Big Data Europe Low Volatility AR 5%
+Solactive Digital Entertainment 14% Risk Control 5% Decrement,Solactive Digital Entertainment 14% Risk Control 5% Decrement
+Shanghai Shenzhen CSI 300,Shanghai Shenzhen CSI 300
+Solactive Atlantic Deep Value Select Index,Solactive Atlantic Deep Value Select Index
+Lyft,Lyft Inc.
+Solactive Asia 30 5%,Solactive Asia 30 5%
+NXP Semiconductors,NXP Semiconductors
+S&P NextGenerationEU Recovery Equity 5% Decrement NTR,S&P NextGenerationEU Recovery Equity 5% Decrement NTR
+Logitech International,Logitech International
+Covestro,Covestro
+Akzo Nobel,Akzo Nobel
+UPS,Ups
+Fedex,Fedex
+S&P Global Clean Energy 3.5% Decrement,S&P Global Clean Energy 3.5% Decrement
+Boston Scientific,Boston Scientific
+S&P EuroUSAJapan 100 Net Zero 2050 Paris-Aligned Select 5% Decrement,S&P EuroUSAJapan 100 Net Zero 2050 Paris-Aligned Select 5% Decrement
+Solactive Semiconductor Equipment 2021 AR 5%,Solactive Semiconductor Equipment 2021 AR 5%
+Euro Istoxx 50 Artificial Intelligence Tilted Nr decrement 5%,Euro Istoxx 50 Artificial Intelligence Tilted Nr decrement 5%
+Solactive Cloud Computing 14% Risk Control 5% Decrement,Solactive Cloud Computing 14% Risk Control 5% Decrement
+Euronext Euro Large Cap Biodiversity Leaders 30 Decrement 5%,Euronext Euro Large Cap Biodiversity Leaders 30 Decrement 5%
+"Mercedes Benz+ 0,5 Daimler Truck","Mercedes Benz+ 0,5 Daimler Truck"
+Munich Re,Munich Re
+Euro Istoxx 50 Recovery Tilted Nr Decrement 5%,Euro Istoxx 50 Recovery Tilted Nr Decrement 5%
+Unipol Gruppo Finanziario,Unipol Gruppo Finanziario
+Banca Generali,Banca Generali
+Msci Global Select Esg Multiple-Factor 4% Decrement,Msci Global Select Esg Multiple-Factor 4% Decrement
+MSCI ACWI Investable Market Innovation Quality Sustainable 100 Select 10% Risk Control 3% Decrement,MSCI ACWI Investable Market Innovation Quality Sustainable 100 Select 10% Risk Control 3% Decrement
+Solactive Luxury 2021 Decrement 5%,Solactive Luxury 2021 Decrement 5%
+CSI Smallcap 500,CSI Smallcap 500
+Hang Seng,Hang Seng
+S&P Transatlantic 100 ESG Select Equal Weight 5% Decrement,S&P Transatlantic 100 ESG Select Equal Weight 5% Decrement
+iSTOXX Total GR Decrement 2.64,iSTOXX Total GR Decrement 2.64
+iSTOXX Eni GR Decrement 0.55,iSTOXX Eni GR Decrement 0.55
+iSTOXX Credit Agricole GR Decrement 0.86,iSTOXX Credit Agricole GR Decrement 0.86
+iSTOXX Telefonica GR Decrement 0.45,iSTOXX Telefonica GR Decrement 0.45
+Dax Kurs,Dax Kurs
+DSM Firmenich,DSM Firmenich
+Deere,Deere
+Bloomberg Metaverse Decrement 5%,Bloomberg Metaverse Decrement 5%
+Theam Quant-Equity Europe Climate Care I MD DISTRIBUTION,Theam Quant-Equity Europe Climate Care I MD DISTRIBUTION
+BNP Paribas Technology Balanced,BNP Paribas Technology Balanced
+Solactive Europe,Solactive Europe
+Solactive 5G 14% Risk Control 5% decrement,Solactive 5G 14% Risk Control 5% decrement
+Euro Istoxx 50 Future Healthcare Tilted Nr Decrement 5%,Euro Istoxx 50 Future Healthcare Tilted Nr Decrement 5%
+Solactive Cyber Security 15% Risk Control 4% Decrement Net,Solactive Cyber Security 15% Risk Control 4% Decrement Net
+Euro Istoxx 50 Sharing Economy Tilted Nr Decrement 5%,Euro Istoxx 50 Sharing Economy Tilted Nr Decrement 5%
+MSCI Eurozone Social Select 30 decrement 5%,MSCI Eurozone Social Select 30 decrement 5%
+"Euro Istoxx 50 Esg Nr Decrement 4,75%","Euro Istoxx 50 Esg Nr Decrement 4,75%"
+MSCI World IMI Digital health Select 5% Risk Control,MSCI World IMI Digital health Select 5% Risk Control
+Sony,Sony
+Bloomberg Europe & US Top Pharmaceuticals 2022 Decrement 5%,Bloomberg Europe & US Top Pharmaceuticals 2022 Decrement 5%
+BNP Paribas Smart Food Classic Cap EUR I MD 4%,BNP Paribas Smart Food Classic Cap EUR I MD 4%
+BNP Paribas Funds Sustainable Europe Value I MD 4%,BNP Paribas Funds Sustainable Europe Value I MD 4%
+"Euro Istoxx 50 Broad Infrastructure Tilted Nr decrement 4,5%","Euro Istoxx 50 Broad Infrastructure Tilted Nr decrement 4,5%"
+Solactive Eccellenze Europee 16% Risk Control 3% Decrement Net,Solactive Eccellenze Europee 16% Risk Control 3% Decrement Net
+Italy CPI FOI,Italy CPI FOI
+Euro Istoxx 50 Digital Security Tilted Nr Decrement 4.5%,Euro Istoxx 50 Digital Security Tilted Nr Decrement 4.5%
+Mib Esg Decrement 5%,Mib Esg Decrement 5%
+iSTOXX Single Stock on Stellantis GR Decrement 1.34,iSTOXX Single Stock on Stellantis GR Decrement 1.34
+iSTOXX Single Stock on Volkswagen GR Decrement 8.76,iSTOXX Single Stock on Volkswagen GR Decrement 8.76
+Anheuser-Busch InBev,Anheuser-Busch InBev
+Solactive Semiconductor 16% Risk Control 4% decrement,Solactive Semiconductor 16% Risk Control 4% decrement
+MSCI World Select Clean Energy Infrastructure Tilted 3.5% Decrement,MSCI World Select Clean Energy Infrastructure Tilted 3.5% Decrement
+CVS Health,CVS Health
+BNP Paribas 5% Volatility Control on MSCI AI,BNP Paribas 5% Volatility Control on MSCI AI
+Eurostat Eurozone HICP,Eurostat Eurozone HICP
+Msci World Select Robotics Tilted 3.5%,Msci World Select Robotics Tilted 3.5%
+Euronext Eurozone ESG Leaders 40 EW Decrement 5%,Euronext Eurozone ESG Leaders 40 EW Decrement 5%
+Tokyo Electron,Tokyo Electron
+Istoxx Single Stock on Eni GR Decrement 0.88,Istoxx Single Stock on Eni GR Decrement 0.88
+Istoxx Single Stock on Enel GR Decrement 0.38,Istoxx Single Stock on Enel GR Decrement 0.38
+iSTOXX Single Stock on Mercedes-Benz Group GR Decrement 5,iSTOXX Single Stock on Mercedes-Benz Group GR Decrement 5
+S&P Euro 50 Equal Weight Synthetic 5%,S&P Euro 50 Equal Weight Synthetic 5%
+Lenovo,Lenovo
+Taiwan Semiconductor Man. (US),Taiwan Semiconductor Man. (US)
+Repubblica Italiana,Repubblica Italiana
+Bloomberg Eurozone Titans Select Decrement 5%,Bloomberg Eurozone Titans Select Decrement 5%
+THEAM QUANT- Equity Eurozone GURU I MD DISTRIBUTION 4%,THEAM QUANT- Equity Eurozone GURU I MD DISTRIBUTION 4%
+Diaman Global Focus TR,Diaman Global Focus TR
+Kospi 200,KOSPI 200 Index
+VF Corp,VF Corp
+MSCI World Select Food Revolution Tilted 3.5% Decrement EUR,MSCI World Select Food Revolution Tilted 3.5% Decrement EUR
+iSTOXX Core Euro & Global Water Decrement 5%,iSTOXX Core Euro & Global Water Decrement 5%
+Inditex,Inditex
+Euronext Core Euro & Global Climate Change EW Decrement 5%,Euronext Core Euro & Global Climate Change EW Decrement 5%
+Heidelberg Materials,Heidelberg Materials
+Intermonte Global Brands Flex TR EUR,Intermonte Global Brands Flex TR EUR
+iSTOXX Europe 600 ESG-X Fintech Tilted NR Decrement 4.5%,iSTOXX Europe 600 ESG-X Fintech Tilted NR Decrement 4.5%
+Vonovia,Vonovia
+BNP Paribas Transition Metals ER 8%,BNP Paribas Transition Metals ER 8%
+MSCI World Select Hydrogen Tilted 4.5% Decrement,MSCI World Select Hydrogen Tilted 4.5% Decrement
+Asahi Group,Asahi Group
+OMX 30 Index,OMX 30 Index
+KraneShares CSI China Internet,KraneShares CSI China Internet
+JPMorgan Chase & Co,JPMorgan Chase & Co
+MSCI World Select Smart Security & Defense Tilted 4.5% Decrement Net EUR Index,MSCI World Select Smart Security & Defense Tilted 4.5% Decrement Net EUR Index
+MSCI World Quality Innovation Select 50 Decrement 5%,MSCI World Quality Innovation Select 50 Decrement 5%
+Intermonte Eur HY Bond TR EUR,Intermonte Eur HY Bond TR EUR
+iSTOXX Europe 600 ESG-X Longevity Tilted NR Decrement 4%,iSTOXX Europe 600 ESG-X Longevity Tilted NR Decrement 4%
+Mundys,Mundys
+BNP Paribas US Patriot Technologies RC5 AR,BNP Paribas US Patriot Technologies RC5 AR
+BNP Paribas RC5 MSCI World Quality Innovation Select 50 AR,BNP Paribas RC5 MSCI World Quality Innovation Select 50 AR
+Stoxx Europe 600 Banks,Stoxx Europe 600 Banks
+Ilardo Global High Yield TR EUR,Ilardo Global High Yield TR EUR
+Premium Brands Flex Dist. TR EUR,Premium Brands Flex Dist. TR EUR
+Leonteq European High Yield Bond Funds 4%RC,Leonteq European High Yield Bond Funds 4%RC
+CRISPR Therapeutics,CRISPR Therapeutics
+Iliad,Iliad
+Julius Baer,Julius Baer
+US Untraditional Finance,US Untraditional Finance
+US Treasury STRIPS,US Treasury STRIPS
+Leonteq Global High Yield Bonds 4%RC,Leonteq Global High Yield Bonds 4%RC
+iShares 20+ Year Treasury Bond ETF,iShares 20+ Year Treasury Bond ETF
+Jinkosolar,Jinkosolar
+FTSE Mib NR,FTSE Mib NR
+Msci World Technology Select Esg Top 50 5% Decrement,Msci World Technology Select Esg Top 50 5% Decrement
+International Consolidated Airlines,International Consolidated Airlines
+Advance Auto Parts,Advance Auto Parts
+Cellnex Telecom,Cellnex Telecom
+UBS CMCI Precious Metals USD ER,UBS CMCI Precious Metals USD ER
+Ubs CMCI Composite USD Excess Return,Ubs CMCI Composite USD Excess Return
+Shopify,Shopify
+Wells Fargo & Co,Wells Fargo & Co
+GGC Gryphon Bond Strategy,GGC Gryphon Bond Strategy
+Solactive Europe Aerospace and Defense,Solactive Europe Aerospace and Defense
+Carnival (GBP),Carnival (GBP)
+CME Group,CME Group
+SoFi Technologies,SoFi Technologies
+Lam Research,Lam Research
+CyberArk Software,CyberArk Software
+Daimler Truck,Daimler Truck
+Newmont Mining,Newmont Mining
+Nutrien,Nutrien
+"0,00211228 Revolve","0,00211228 Revolve"
+Topix,Topix
+Msci World Select Esg 30,Msci World Select Esg 30
+Goldman Sachs Global CORE Equity Portfolio - Class E Shares,Goldman Sachs Global CORE Equity Portfolio - Class E Shares
+Istoxx Global Profitability Select 30,Istoxx Global Profitability Select 30
+Zscaler,Zscaler
+3.206622 Cisco,3.206622 Cisco
+Delta Air Lines,Delta Air Lines
+Victoria's Secret,Victoria's Secret
+Royal Caribbean,Royal Caribbean
+Alibaba (CN),Alibaba (CN)
+S&P Gsci Industrial Metals,S&P Gsci Industrial Metals
+Solactive Bioengineering 14% Risk Control 5% decrement,Solactive Bioengineering 14% Risk Control 5% decrement
+CNH Industrial,CNH Industrial
+Solactive Europe And United States Technology 30/70,Solactive Europe And United States Technology 30/70
+Allegro Transatlantic,Allegro Transatlantic
+Theam Quant World Climate Carbon Offset Plan Fund,Theam Quant World Climate Carbon Offset Plan Fund
+Aleph Adaptive Risk Allocation,Aleph Adaptive Risk Allocation
+Bloomberg Transatlantic Tech Titans 2023 Decrement 5%,Bloomberg Transatlantic Tech Titans 2023 Decrement 5%
+BNP Paribas Global Water ER RC8,BNP Paribas Global Water ER RC8
+BNP Paribas Exane Clean Energy Opportunities ER RC8,BNP Paribas Exane Clean Energy Opportunities ER RC8
+Neste OYJ,Neste OYJ
+Diaman Power Profit TR EUR,Diaman Power Profit TR EUR
+Franco-Nevada,Franco-Nevada
+Holcim,Holcim
+BNP Paribas Transatlantic Defense Fixed Selection 5% Vol Control ER EUR,BNP Paribas Transatlantic Defense Fixed Selection 5% Vol Control ER EUR
+Dassault Systemes,Dassault Systemes
+Nordea Bank,Nordea Bank
+JD.com (HK),JD.com Inc.
+0.00% France Oat Fungible STRP,0.00% France Oat Fungible STRP
+Chevron,Chevron
+Valero Energy,Valero Energy
+Global Blue Economy,Global Blue Economy
+Schneider Electric (Euronext),Schneider Electric S.E.
+iShares 7-10 Year Treasury Bond ETF,iShares 7-10 Year Treasury Bond ETF
+Vontobel Momentum Strategy USA,Vontobel Momentum Strategy USA
+PDD HoldingsÂ (Pinduoduo),PDD Holdings (Pinduoduo)
+Just Eat Takeaway,Just Eat Takeaway
+First Solutions Credit Hybrids,First Solutions Credit Hybrids
+Carrefour,Carrefour
+Financial Select Sector SPDR Fund,Financial Select Sector SPDR Fund
+MSCI Global Climate Change Multi-Asset Select,MSCI Global Climate Change Multi-Asset Select
+NASDAQ 100 Technology Sector,NASDAQ100
+Solactive Cyber Security Technology Decrement,Solactive Cyber Security Technology Decrement
+Cigna,Cigna
+"Solactive Hydrogen ESG 3,5%","Solactive Hydrogen ESG 3,5%"
+Solactive Cyber Security Technology 3.5% Decrement,Solactive Cyber Security Technology 3.5% Decrement
+Euronext Eurozone Diversity & Governance 40 EW Decrement 5%,Euronext Eurozone Diversity & Governance 40 EW Decrement 5%
+Solactive Home Staying Technologies 2020 AR 5%,Solactive Home Staying Technologies 2020 AR 5%
+Cleveland Cliffs,Cleveland Cliffs
+Bristol-Myers Squibb,Bristol-Myers Squibb
+TRY,Try
+Koninklijke KPN,Koninklijke KPN
+Bloomberg Transatlantic Top Brands Fixed Selection Decrement 5%,Bloomberg Transatlantic Top Brands Fixed Selection Decrement 5%
+iShares MSCI India ETF,iShares MSCI India ETF
+ALLX Commodity & Metal AI (COMETA) TR EUR,ALLX Commodity & Metal AI (COMETA) TR EUR
+S&P Gsci Gold,S&P Gsci Gold
+Gold Spot,Gold Spot
+Leonteq Excess Return Index on GS India Fund,Leonteq Excess Return Index on GS India Fund
+2.15% BTPS Italia (03/01/72),2.15% BTPS Italia (03/01/72)
+Buzzi Unicem,Buzzi Unicem
+Vipshop Holdings,Vipshop Holdings
+Novo Nordisk (US),Novo Nordisk A/S
+K + S,K + S
+Lucid Group,Lucid Group Inc.
+First Solutions Multi Thematic Trends,First Solutions Multi Thematic Trends
+L&G Global Robotics and Automation,L&G Global Robotics and Automation
+L&G Cyber Security,L&G Cyber Security
+L&G Battery Value-Chain Ucits Etf,L&G Battery Value-Chain Ucits Etf
+L&G Hydrogen Economy,L&G Hydrogen Economy
+Ishares Global Clean Energy,Ishares Global Clean Energy
+iShare Healthcare Innovation,iShare Healthcare Innovation
+iShares Global Water,iShares Global Water
+Xtrackers Artificial Intelligence & Big Data,Xtrackers Artificial Intelligence & Big Data
+Banco De Sabadell,Banco De Sabadell
+Dow Jones Ind. Average,Dow Jones Ind. Average
+MSCI World Diversified Dividend Select 50,MSCI World Diversified Dividend Select 50
+The RealReal Inc,The RealReal Inc
+Kellogg,Kellogg
+Euro Stoxx 50 Total Return,Euro Stoxx 50 Total Return
+Northrop Grumman,Northrop Grumman
+Solactive 5G ESG EUR 3.5% AR,Solactive 5G ESG EUR 3.5% AR
+Solactive Hydrogen ESG,Solactive Hydrogen ESG
+Solactive Global UN Sustainable Development Goals,Solactive Global UN Sustainable Development Goals
+Bhp Billiton,Bhp Billiton
+Southwest Airlines,Southwest Airlines
+Euribor ICE Swap Rate 11:00 am,Euribor ICE Swap Rate 11:00 am
+Nasdaq Yewno Global Innovative Tech EUR NTR 5% Excess Return,Nasdaq Yewno Global Innovative Tech EUR NTR 5% Excess Return
+STMicroelectronics (USA),STMicroelectronics N.V.
+Flexible Allocation TR EUR,Flexible Allocation TR EUR
+Marathon Petroleum,Marathon Petroleum
+Freeport McMoRan,Freeport McMoRan
+Albemarle,Albemarle
+Mp Materials,Mp Materials
+EURO iSTOXX 50 Health & Fitness Tilted NR Decrement 4.5%,EURO iSTOXX 50 Health & Fitness Tilted NR Decrement 4.5%
+Spdr S&P Oil & Gas,Spdr S&P Oil & Gas
+Leonteq European High Yield Bonds 4% RC,Leonteq European High Yield Bonds 4% RC
+Leonteq 4%RC Index su PIMCO GIS Income Fund,Leonteq 4%RC Index su PIMCO GIS Income Fund
+VONTOBEL HOLDING,Vontobel Holding
+Prada (HK),Prada (HK)
+Harley Davidson,Harley Davidson
+First Solutions Quant Structured Products,First Solutions Quant Structured Products
+Euro iStoxx 50 Carbon Adaptation GR Decrement 5%,Euro iStoxx 50 Carbon Adaptation GR Decrement 5%
+MSCI World ESG Leaders PR,MSCI World ESG Leaders PR
+Istoxx 50 Global Diversity Enhanced Impact Select 30 Price,Istoxx 50 Global Diversity Enhanced Impact Select 30 Price
+Verizon,Verizon
+Jefferies Financial,Jefferies Financial
+MTU Aero Engines,MTU Aero Engines
+Charter Communications,Charter Communications
+Atlassian,Atlassian
+Decalia European Leaders TR EUR,Decalia European Leaders TR EUR
+Msci Europe ESG Leaders 5% decrement,Msci Europe ESG Leaders 5% decrement
+Leonteq Global Hydrogen Technology 15%RC,Leonteq Global Hydrogen Technology 15%RC
+Toyota Motor,Toyota Motor
+Rame,Rame
+Volvo,Volvo
+Jaguar Land Rover Automotive,Jaguar Land Rover Automotive
+Open Active ETF Trackers,Open Active ETF Trackers
+Petroleo Brasileiro,Petroleo Brasileiro
+Target Corp,Target Corp
+Stoxx Europe 600 Telecom,Stoxx Europe 600 Telecom
+STOXX Global ESG Social Leaders Diversification Select 30,STOXX Global ESG Social Leaders Diversification Select 30
+Stoxx Europe Esg Leaders 50,Stoxx Europe Esg Leaders 50
+Bank of America,Bank of America
+Legrand,Legrand
+Msci Europe Select Blue Cycle 50 Decrement 5%,Msci Europe Select Blue Cycle 50 Decrement 5%
+Solactive European Green Deal Selection AR5%,Solactive European Green Deal Selection AR5%
+Schlumberger,Schlumberger
+Bloomberg Commodity,Bloomberg Commodity
+FTSE Italia Mid Cap NR,FTSE Italia Mid Cap NR
+GE Aerospace ( Ex General Electric),GE Aerospace ( Ex General Electric)
+Li Auto (HK),Li Auto (HK)
+Xpeng (HK),Xpeng (HK)
+Bhp Billiton (USA),Bhp Billiton
+Geely Automobile,Geely Automobile
+Vontobel Momentum Strategy Europe,Vontobel Momentum Strategy Europe
+Solactive Quantum Computing,Solactive Quantum Computing
+Ahold Delhaize,Ahold Delhaize
+Colgate-Palmolive,Colgate-Palmolive
+Linde (US),Linde (US)
+Levi strauss,Levi strauss
+NetEase,NetEase
+Best Buy,Best Buy
+Humana Inc,Humana Inc
+Trump Media,Trump Media
+Vistry,Vistry
+Ericsson,Ericsson
+Compass,Compass
+Sartorius (Preferred),Sartorius (Preferred)
+BTP Maggio 2030 0.4%,BTP Maggio 2030 0.4%
+Tec 10,Tec 10
+Siemens Healthineers,Siemens Healthineers
+USD SOFR ICE,Usd Sofr Ice
+"Novartis SW + 0,2 Sandoz","Novartis SW + 0,2 Sandoz"
+Stoxx 600 Travel,Stoxx 600 Travel
+0% Netherlands Government,0% Netherlands Government
+CPR Invest - Reactive,CPR Invest - Reactive
+Vertex,Vertex
+Exelixis,Exelixis
+"Novartis SE + 0,2 Sandoz","Novartis SE + 0,2 Sandoz"
+Rio Tinto (AUD),Rio Tinto Group
