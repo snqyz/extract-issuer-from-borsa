@@ -408,24 +408,6 @@ def extract_issuer(
     return val
 
 
-def get_headers() -> dict[str, str]:
-    user_agent = random.choice(USER_AGENTS)
-    return {
-        "accept": "*/*",
-        "accept-language": "en-US,en;q=0.9",
-        "priority": "u=1, i",
-        "referer": "https://live.euronext.com/en/product/structured-products/XS2928979447-ETLX/market-information",
-        "sec-ch-ua": '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
-        "sec-ch-ua-mobile": "?1",
-        "sec-ch-ua-platform": '"Android"',
-        "sec-fetch-dest": "empty",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-site": "same-origin",
-        "user-agent": user_agent,
-        "x-requested-with": "XMLHttpRequest",
-    }
-
-
 def write_csv_to_isin_info(
     isin_and_mkt: list[tuple[str, str]],
     isin_info_path: Path,
