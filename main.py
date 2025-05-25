@@ -325,10 +325,11 @@ def get_sottostanti(soup: BeautifulSoup) -> str | None:
     return "/".join(companies) if companies else None
 
 
-def extract_from_cd(isin: str) -> dict[str, str | None]:
+def extract_from_cd(isin: str) -> tuple[dict[str, str | None], bool]:
     folder = BASE_FOLDER / "cd"
     folder.mkdir(parents=True, exist_ok=True)
     file = folder / f"{isin}.txt"
+    made_request = False
     if file.exists():
         soup = BeautifulSoup(file.read_text(encoding="utf-8"), "lxml")
     else:
@@ -338,14 +339,15 @@ def extract_from_cd(isin: str) -> dict[str, str | None]:
                 headers=get_headers(),
                 timeout=60,
             )
+            made_request = True
             r.raise_for_status()
         except requests.RequestException as e:
             tqdm.write(f"Error fetching data for ISIN {isin} from CD: {e}")
-            return {}
+            return {}, made_request
         file.write_text(r.text, encoding="utf-8")
         soup = BeautifulSoup(r.text, "lxml")
 
-    return parse_cd(soup)
+    return parse_cd(soup), made_request
 
 
 def get_headers() -> dict[str, str]:
@@ -419,12 +421,15 @@ def extract_data_for_isin(
         ),
     }
     if val["eusipa_code"]:  # and val["eusipa_code"].startswith("1"):
-        val.update(extract_from_cd(isin))
+        data, made_cd_request = extract_from_cd(isin)
+        val.update(data)
+        if made_cd_request is True and t is None:
+            time.sleep(random.random() * 2 + 1)
 
     if not val.get("sottostanti"):
         val["sottostanti"] = extract_from_title(soup, "Name")
 
-    tqdm.write(f"{isin}: {val}")
+    # tqdm.write(f"{isin}: {val}")
 
     return val
 
@@ -620,8 +625,8 @@ def update_generic_mapping(
             for col in other_cols
         },
     )
-    for col in other_cols:
-        new_names.loc[new_names[col].str.isupper(), col] = new_names[col].str.title()
+    # for col in other_cols:
+    #     new_names.loc[new_names[col].str.isupper(), col] = new_names[col].str.title()
 
     mapping_df = pd.concat([mapping_df, new_names])
     mapping_df.to_csv(output_path, index=False, encoding="utf-8-sig")
