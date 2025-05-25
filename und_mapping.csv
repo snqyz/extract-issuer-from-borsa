@@ -85,7 +85,7 @@ American Airlines Group,American Airlines Group
 AMERICAN EXPRESS,American Express Company
 AMERICAN INT,American International Group
 AMGEN,Amgen Inc.
-AMP,Ameriprise Financial Inc. (Assuming AMP is part of AMPF)
+AMP,Ameriprise Financial Inc.
 AMPF,Ameriprise Financial Inc.
 AMPLIFON,Amplifon SpA
 Amplifon SpA,Amplifon SpA
@@ -265,7 +265,7 @@ C3 AI,C3.ai Inc.
 C3.AI,C3.ai Inc.
 C3.ai Inc,C3.ai Inc.
 CA,Crédit Agricole S.A.
-CAC,CAC
+CAC,CAC 40
 CAC 40,CAC 40
 CAMECO CORP,Cameco Corporation
 CAMPAR,Davide Campari-Milano N.V.
@@ -415,8 +415,8 @@ DELIVERY HERO,Delivery Hero SE
 DELL,Dell Technologies Inc.
 DELL TECHNOLOGIES INC,Dell Technologies Inc.
 DELTA,Delta Air Lines Inc.
-DEU,DEU (Too generic)
-DEU B,DEU B (Too generic)
+DEU,Deutsche Bank AG
+DEU B,Deutsche Bank AG
 DEU BANK,Deutsche Bank AG
 DEU LUFT,Deutsche Lufthansa AG
 DEU TELE,Deutsche Telekom AG
@@ -496,14 +496,14 @@ ESX UTIL,ESX UTIL
 ESXB,ESXB
 ESXX BANK,ESXX BANK
 EUR,EUR
-EUR 3M,EUR 3M
+EUR 3M,EURIBOR 3M
 EUR CMS 1Y,EUR CMS 1Y
 EUR STX 50 ESG,EUR STX 50 ESG
-EURIBOR 3 MESI,EURIBOR 3 MESI
+EURIBOR 3 MESI,EURIBOR 3M
 EURIBOR 3M,EURIBOR 3M
 EURIBOR 6M,EURIBOR 6M
-EURIBOR(3M),EURIBOR(3M)
-EURIBOR3M,EURIBOR3M
+EURIBOR(3M),EURIBOR 3M
+EURIBOR3M,EURIBOR 3M
 EURNEXT CORE EUR&GLBL CLIM CHG EW DEC 5%,EURNEXT CORE EUR&GLBL CLIM CHG EW DEC 5%
 EURNEXT EUR LARGE CAP BIODIVE LEAD 30 DE,EURNEXT EUR LARGE CAP BIODIVE LEAD 30 DE
 EURO BTP FUTURE,EURO BTP FUTURE
@@ -667,8 +667,8 @@ Hensoldt AG,Hensoldt AG
 HER,Hera S.p.A.
 HERA,Hera S.p.A.
 Hera Spa,Hera S.p.A.
-HERMES,Hermès International S.C.A.
-HERMES INTL.,Hermès International S.C.A.
+HERMES,Hermès International
+HERMES INTL.,Hermès International
 HICP INFLATION INDEX,HICP INFLATION INDEX
 HITACHI,Hitachi Ltd.
 HOLN,Hologic Inc.
@@ -711,7 +711,7 @@ ISHARES CHINA LARGE CAP ETF,ISHARES CHINA LARGE CAP ETF
 ISHARES MSCI CHINA A UCITS ETF USD,ISHARES MSCI CHINA A UCITS ETF USD
 ISHARES MSCI INDIA UCITS ETF USD (ACC),ISHARES MSCI INDIA UCITS ETF USD (ACC)
 ISHARESCORE MSCI WORLD UCITS ETF ACC,ISHARESCORE MSCI WORLD UCITS ETF ACC
-ISHR20ETF,ISHR20ETF
+ISHR20ETF,ISHRS 20+Y BOND ETF
 ISHRS 20+Y BOND ETF,ISHRS 20+Y BOND ETF
 ISP,Intesa Sanpaolo S.p.A.
 ISTOXX AI GLOBAL ARTIFICIAL INTELLIGENCE,ISTOXX AI GLOBAL ARTIFICIAL INTELLIGENCE
@@ -748,7 +748,7 @@ JOHSNON,Johnson & Johnson
 JP MORGAN CHASE CO,JPMorgan Chase & Co.
 JPM,JPMorgan Chase & Co.
 JPY,JPY
-JSTEAT,JSTEAT
+JSTEAT,Just Eat Takeaway
 JULIUS,Julius Bär Gruppe AG
 JULIUS BAR,Julius Bär Gruppe AG
 Juventus FC SpA,Juventus F.C. S.p.A.
@@ -761,7 +761,7 @@ KO,The Coca-Cola Company
 KON PHILIPS,Koninklijke Philips N.V.
 KONINKLE,Koninklijke Philips N.V.
 KONINKLIJKE PHILI,Koninklijke Philips N.V.
-KOSPI 200 INDEX,KOSPI 200 INDEX
+KOSPI 200 INDEX,KOSPI 200 Index
 KRAFT HEINZ,The Kraft Heinz Company
 KUENHE,Kuehne + Nagel International AG
 KWEB,KWEB
@@ -895,12 +895,12 @@ MUV2,Münchener Rückversicherungs-Gesellschaft AG (Munich Re)
 MXEF,MXEF
 MXWO,MXWO
 N225,N225
-NASDAQ,NASDAQ
-NASDAQ 100,NASDAQ 100
-NASDAQ 100 TR,NASDAQ 100 TR
-NASDAQ TECH EUR NTR 5% ER IDX,NASDAQ TECH EUR NTR 5% ER IDX
+NASDAQ,NASDAQ100
+NASDAQ 100,NASDAQ100
+NASDAQ 100 TR,NASDAQ100
+NASDAQ TECH EUR NTR 5% ER IDX,NASDAQ100
 NASDAQ100,NASDAQ100
-NASDAQ-100,NASDAQ-100
+NASDAQ-100,NASDAQ100
 NASDAQ-100 Notional Net Total Return,NASDAQ-100 Notional Net Total Return
 NASDAQ-100 TECHNOLOGY SECTOR,NASDAQ-100 TECHNOLOGY SECTOR
 NAT GRID,National Grid plc
@@ -928,8 +928,8 @@ NEXTERA ENERGY,NextEra Energy Inc.
 NEXTGEN BRANDS INDEX,NEXTGEN BRANDS INDEX
 NFLX,Netflix Inc.
 NIKE,NIKE Inc.
-NIKKEI,NIKKEI
-NIKKEI 225,NIKKEI 225
+NIKKEI,Nikkei 225 Index
+NIKKEI 225,Nikkei 225 Index
 NIKKEI 225 NET TOTAL RETURN INDEX,NIKKEI 225 NET TOTAL RETURN INDEX
 NIKKEI 225 TOTAL RETURN INDEX,NIKKEI 225 TOTAL RETURN INDEX
 NIKKEI225,NIKKEI225
@@ -984,24 +984,24 @@ Oracle Corp,Oracle Corporation
 ORANGE,Orange S.A.
 ORANGE JUICE FCOJ-A FUTURE,ORANGE JUICE FCOJ-A FUTURE
 ORSTED,Ørsted A/S
-P911,"Porsche Automobil Holding SE (P911 is Porsche AG, but contextually for Porsche SE or AG)"
+P911,Porsche AG
 PAAS,Pan American Silver Corp.
 PACIFIC 600 NR,PACIFIC 600 NR
-PAH3,Porsche Automobil Holding SE
-PALA,"PALA (Palamina Corp. or similar, specific junior miner, keep as is unless more info)"
+PAH3,Porsche AG
+PALA,Palantir Technologies Inc.
 PALANT,Palantir Technologies Inc.
 PALANTIR,Palantir Technologies Inc.
 Palantir Tech Inc,Palantir Technologies Inc.
 PALANTIR TECHNOLOGIES,Palantir Technologies Inc.
 PALLADIUM,PALLADIUM
-PALLADIUM FUTURE,PALLADIUM FUTURE
+PALLADIUM FUTURE,PALLADIUM
 PALO,Palo Alto Networks Inc.
 PALO ALTO,Palo Alto Networks Inc.
 PALO ALTO NETWORKS INC,Palo Alto Networks Inc.
 PAN AMERICAN SILVER,Pan American Silver Corp.
 PANASONIC,Panasonic Corporation
 PANASONIC CORP,Panasonic Corporation
-PAR,"PAR (Too generic, can be various companies or even Paris stock exchange symbol)"
+PAR,Paramount Global
 PARA,Paramount Global
 PARAMOUNT,Paramount Global
 PATH,UiPath Inc.
@@ -1036,8 +1036,8 @@ PORSCH,Porsche AG
 PORSCHE,Porsche AG
 PORSCHE AG,Porsche AG
 PORSCHE AG VZ,Porsche AG
-PORSCHE AUTOM,Porsche Automobil Holding SE
-PORSCHE AUTOMOBIL,Porsche Automobil Holding SE
+PORSCHE AUTOM,Porsche AG
+PORSCHE AUTOMOBIL,Porsche AG
 POSTE,Poste Italiane S.p.A.
 POSTE IT,Poste Italiane S.p.A.
 POSTE ITA,Poste Italiane S.p.A.
@@ -1045,9 +1045,9 @@ POSTE ITALIANE,Poste Italiane S.p.A.
 Poste Italiane SpA,Poste Italiane S.p.A.
 PPAL,PayPal Holdings Inc.
 PROCTER & GAMBLE,Procter & Gamble Company
-PROSHARES 20+ Y ETF,PROSHARES 20+ Y ETF
+PROSHARES 20+ Y ETF,PROSHARES 20+Y ETF
 PROSHARES 20+Y ETF,PROSHARES 20+Y ETF
-PROSHR ETF,PROSHR ETF
+PROSHR ETF,PROSHARES 20+Y ETF
 PRU,Prudential plc
 PRUD,Prudential plc
 PRUDENTIAL,Prudential plc
@@ -1087,7 +1087,7 @@ REPSOL,Repsol S.A.
 REPSOL SM,Repsol S.A.
 REPSOL YPF S.A.,Repsol S.A.
 REVOLVE,Revolve Group Inc.
-RH,RH
+RH,Rheinmetall AG
 RHEIN,Rheinmetall AG
 RHEINMET,Rheinmetall AG
 RHEINMETALL,Rheinmetall AG
@@ -1331,7 +1331,7 @@ SXE,SXE
 SXEE,SXEE
 SXEP,SXEP
 SXP,SXP
-SXPP,SXPP
+SXPP,SXP
 SYMBOTIC,Symbotic Inc.
 SYNOPS,Synopsys Inc.
 Synopsys,Synopsys Inc.
@@ -1740,8 +1740,8 @@ VZ,Vz
 INVES,Invesco Ltd.
 JEFF,Jefferies
 KKR,KKR & Co. Inc. 
-C3.A,C3.AI
-BAE Systems PLC,Bae Systems Plc
+C3.A,C3.ai Inc.
+BAE Systems PLC,BAE Systems plc
 AZMT,Azimut Holding SpA
 SCOR,Scor
 MTU,MTU Aero Engines
@@ -1791,7 +1791,7 @@ LOUIS HACHETTE,LOUIS HACHETTE
 Vont 4X S NFLX V6,Vont 4X S NFLX V6
 Vont 7X S COPPER FT V4,Vont 7X S COPPER FT V4
 Vont 5X L ISP V2,Vont 5X L ISP V2
-HOOD,"Robinhood Markets, Inc."
+HOOD,Robinhood Markets Inc.
 AIR FR,Air France-KLM
 D LUFT,Deutsche Lufthansa AG
 CARL,Carlsberg A/S
@@ -1801,7 +1801,7 @@ VT JP EQ STR AMC IDX,VT JP EQ STR AMC IDX
 AIRFRA,Air France-KLM
 COSTCO,Costco Wholesale Corporation
 DOLLAR,"Dollar Tree, Inc."
-MONDE,"Mondelēz International, Inc."
+MONDE,Mondelez International Inc.
 TARG,Target Corporation
 KPN,KPN N.V.
 Vont 3X L ENI V2,Vont 3X L ENI V2
@@ -1848,19 +1848,19 @@ DEB AIR FRA,DEBITO AIR FRANCE
 DEB TELEC ITA,DEBITO TELECOM ITALIA
 BLOOMBERG COMMODITY INDEX,BLOOMBERG COMMODITY INDEX
 ZOOM VIDEO COMMUNICATIONS,ZOOM VIDEO COMMUNICATIONS
-ADV MICRO DEVICES,Advanced Micro Devices
-CNH INDUSTR,CNH Industrial
-STMICROELE,STMicroelectronics
+ADV MICRO DEVICES,Advanced Micro Devices Inc.
+CNH INDUSTR,CNH Industrial N.V.
+STMICROELE,STMicroelectronics N.V.
 ADM,Archer-Daniels-Midland
 FTSE ITALIA PIR PMI,FTSE ITALIA PIR PMI
 European Biotech Index,European Biotech Index
 Chipotle Mexican Grill Inc,Chipotle Mexican Grill Inc
-CATERPILLAR,Caterpillar
+CATERPILLAR,Caterpillar Inc.
 GENRL ELEC,General Electric
 VERNO,VERNO
 ARCELOR,ArcelorMittal
 SGOB,SGOB
-HEIDEL,HeidelbergCement
+HEIDEL,Heidelberg Materials AG
 XPENG,XPENG
 MERCK & CO,MERCK & CO
 BHP LTD ADR,BHP Group
@@ -1870,9 +1870,9 @@ MARATHON DIG,Marathon Digital Holdings
 VT STRATEGY EU IDX,VT STRATEGY EU IDX
 SOL QUANTUM IDX,SOL QUANTUM IDX
 UBISOFT ENTERTAINMENT,UBISOFT ENTERTAINMENT
-BEYOND,Beyond Meat
+BEYOND,Beyond Meat Inc.
 Vont 5X S RHM V4,Vont 5X S RHM V4
-HEID,HeidelbergCement
+HEID,Heidelberg Materials AG
 FORVIA,FORVIA
 Vont 7X L PALLADIUM V7,Vont 7X L PALLADIUM V7
 Vont 5X S MSFT V10,Vont 5X S MSFT V10
@@ -1889,9 +1889,9 @@ COLGATE,Colgate-Palmolive
 LINDT,Lindt & Sprüngli AG
 KON,KONE Corporation
 EUROSTOXXBANKS,EUROSTOXXBANKS
-ST,STMicroelectronics
+ST,STMicroelectronics N.V.
 CAMP,Davide Campari-Milano N.V.
-PAL,Palantir Technologies
+PAL,Palantir Technologies Inc.
 FCX,Freeport-McMoRan
 EXELON,Exelon Corporation
 BWX TECHNOLOGIES,BWX TECHNOLOGIES
@@ -1899,14 +1899,14 @@ NORWEGIAN CRUISE LINE,NORWEGIAN CRUISE LINE
 AIR,Airbus
 MTX,Materialise NV
 HO,Hermès International
-SAAB AB,SAAB AB
+SAAB AB,Saab AB
 NYMEX LS CRUDE 08/25,NYMEX LS CRUDE 08/25
 DB STLA,DB STLA
 DEBITO ARCELORMITTAL,DEBITO ARCELORMITTAL
 BASF SE,BASF SE
 LINDE PLC,LINDE PLC
 VOW,Volkswagen AG
-INTL,INTL
+INTL,Intel Corporation
 ABN AMRO,ABN AMRO
 LEVI,Levi Strauss & Co.
 RUSSEL,RUSSELL 2000 INDEX
@@ -1919,9 +1919,9 @@ AGEA,Ageas SA/NV
 STL,Stellantis N.V.
 DAL,Delta Air Lines Inc.
 Under Armour Inc-Class A,Under Armour Inc.
-PROSH 20+ Y ETF,PROSH 20+ Y ETF
+PROSH 20+ Y ETF,PROSHARES 20+Y ETF
 MET,MetLife Inc.
-PORSCHE VZ,Porsche Automobil Holding SE Vz
+PORSCHE VZ,Porsche AG
 BEST,BEST Inc.
 HUMANA,Humana Inc.
 Rivian Automotive Inc.,Rivian Automotive Inc.
@@ -1931,7 +1931,7 @@ VTY,Vistry Group PLC
 Vont 5X S GOOG V6,Vontobel 5X Short Alphabet (GOOG) V6
 VESTAS WIND SYS,Vestas Wind Systems A/S
 SOLAREDGE TECH,SolarEdge Technologies Inc.
-TAIWAN SEMICONDUC MANUF,Taiwan Semiconductor Manufacturing Company (TSMC)
+TAIWAN SEMICONDUC MANUF,Taiwan Semiconductor Manufacturing Company Limited
 Vont 3X S MSFT V4,Vontobel 3X Short Microsoft V4
 Vont 3X L AAPL V5,Vontobel 3X Long Apple V5
 Vont 3X L XPT,Vontobel 3X Long Platinum (XPT)
@@ -1980,7 +1980,7 @@ SXKP,STOXX Europe 600 Telecommunications
 SXTP,STOXX Europe 600 Telecommunications
 STMPAFP,STMicroelectronics NV
 TEN IM,Tenaris S.A.
-PROSHRS 20Y ETF,PROSH 20+ Y ETF
+PROSHRS 20Y ETF,PROSHARES 20+Y ETF
 0% NLD GOV (01/15/2052),0% Nld Gov (01/15/2052)
 BKT 3 STOXX,STOXX Europe 600 Daily Leverage 3
 NINTENDO CO LTD,Nintendo Co. Ltd.
@@ -1991,7 +1991,7 @@ LUFTH,Deutsche Lufthansa AG
 Vont 7X S COPPER V6,Vont 7X S Copper V6
 Vont 7X L SX5E,Vont 7X L Sx5E
 Vont 2X L FVS1 V17,Vont 2X L Fvs1 V17
-ANHEUSER-BUSCH I,Anheuser-Busch
+ANHEUSER-BUSCH I,Anheuser-Busch InBev SA/NV
 FIRSTSOLAR,First Solar Inc.
 ENPHASE E,"Enphase Energy, Inc."
 4XS DAX,DAX 40
@@ -2017,7 +2017,7 @@ TRI,Thomson Reuters Corporation
 IREN,Iren SpA
 TECHNOPROBE SPA,Technoprobe SpA
 NVDIA,NVIDIA Corporation
-BRUNELLO,Brunello Cucinelli SpA
+BRUNELLO,Brunello Cucinelli S.p.A.
 QARS TPS QUANTITAT ABSOLUTE RTN IND AMC,QARS TPS Quantitative Absolute Return Index AMC
 TUI1,TUI AG
 EZJ,easyJet plc
