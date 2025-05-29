@@ -32,6 +32,10 @@ URLS = [
 ]
 
 
+def default_wait_time_gen() -> float:
+    return random.random() * 2 + 1
+
+
 def load_from_csv_to_db(csv_path: Path) -> dict[str, dict[str, str]]:
     isin_data = {}
     print("Loading ISINs metadata to memory...")
@@ -396,7 +400,7 @@ def extract_data_for_isin(
         whole_data = whole_data.strip()
         file.write_text(whole_data, encoding="utf-8")
         soup = BeautifulSoup(whole_data, "lxml")
-        t = random.random() * 2 + 1
+        t = default_wait_time_gen()
         time.sleep(t)
 
     val = {
@@ -424,7 +428,7 @@ def extract_data_for_isin(
         data, made_cd_request = extract_from_cd(isin)
         val.update(data)
         if made_cd_request is True and t is None:
-            time.sleep(random.random() * 2 + 1)
+            time.sleep(default_wait_time_gen())
 
     if not val.get("sottostanti"):
         val["sottostanti"] = extract_from_title(soup, "Name")
@@ -593,6 +597,31 @@ def update_generic_mapping(
     *,
     default_use_same: bool = True,
 ) -> None:
+    """
+    Updates a mapping CSV file by adding new values from an input CSV file
+    that are not already present in the mapping.
+
+    This function reads two CSV files:
+    - `input_path`: contains source data with potential new values.
+    - `output_path`: a mapping file containing previously mapped values.
+
+    It identifies new, case-insensitive and whitespace-trimmed unique entries
+    in `input_col` of `input_path` that are not yet present in `output_col`
+    of `output_path`, and appends them to the mapping file. If `default_use_same`
+    is True, new rows will have the same value for all other columns (excluding `output_col`)
+    as the new `output_col` value. Otherwise, those columns are set to `None`.
+
+    Parameters:
+        input_path (Path): Path to the input CSV file containing potential new entries.
+        output_path (Path): Path to the mapping CSV file to be updated.
+        input_col (str): Column name in `input_path` to check for new values.
+        output_col (str): Column name in `output_path` to compare against and append to.
+        default_use_same (bool, optional): If True, fill other columns with the same
+            value as `output_col`. If False, fill them with `None`. Defaults to True.
+
+    Returns:
+        None
+    """
     input_df = pd.read_csv(input_path, encoding="utf-8-sig")
     mapping_df = pd.read_csv(output_path, encoding="utf-8-sig")
 
@@ -625,8 +654,6 @@ def update_generic_mapping(
             for col in other_cols
         },
     )
-    # for col in other_cols:
-    #     new_names.loc[new_names[col].str.isupper(), col] = new_names[col].str.title()
 
     mapping_df = pd.concat([mapping_df, new_names])
     mapping_df.to_csv(output_path, index=False, encoding="utf-8-sig")
