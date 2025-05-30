@@ -98,8 +98,7 @@ def parse_date(date_str: str) -> date | None:
 
 
 def determine_frequency(dates: Sequence[date]) -> str:
-    """
-    Determines the frequency of events (e.g., weekly, monthly) given a list of dates.
+    """Determines the frequency of events (e.g., weekly, monthly) given a list of dates.
     It looks for the most common difference in days between consecutive dates.
     """
     if len(dates) < 2:
@@ -396,6 +395,9 @@ def extract_data_for_isin(
                 tqdm.write("Ci stanno tracciando! Stacca, stacca!")
                 time.sleep(30)
                 r = requests.get(url, headers=get_headers(), timeout=60)
+            except requests.exceptions.HTTPError:
+                tqdm.write(f"Error for ISIN {isin} {mkt}, skipping...")
+                continue
             whole_data += r.text
         whole_data = whole_data.strip()
         file.write_text(whole_data, encoding="utf-8")
@@ -550,15 +552,26 @@ def download_file(save_folder: Path) -> None:
         f.write(response.content)
     print("Download completed")
 
+    already_saved = {i.stem for i in save_folder.iterdir()}
+
     with tempfile.TemporaryDirectory() as tmpdir:
         with zipfile.ZipFile(zip_path, "r") as z:
             z.extractall(tmpdir)
 
         # Construct full paths
         src_path = Path(tmpdir) / original_filename
-        new_filename = pd.read_csv(src_path, header=1, nrows=3)["TradingDateTime"].iloc[
-            0
-        ][:10]
+        all_days = (
+            pd.read_csv(
+                src_path,
+                header=1,
+                parse_dates=[1, 2, 3],
+                date_format="ISO8601",
+            )["TradingDateTime"]
+            .dt.strftime("%Y-%m-%d")
+            .drop_duplicates()
+        )
+        complete_days = all_days[:-1]
+        new_filename = next(i for i in complete_days if i not in already_saved)
         dst_path = save_folder / f"{new_filename}.zip"
 
         # 2. Move & rename
@@ -597,8 +610,7 @@ def update_generic_mapping(
     *,
     default_use_same: bool = True,
 ) -> None:
-    """
-    Updates a mapping CSV file by adding new values from an input CSV file
+    """Updates a mapping CSV file by adding new values from an input CSV file
     that are not already present in the mapping.
 
     This function reads two CSV files:
@@ -611,7 +623,8 @@ def update_generic_mapping(
     is True, new rows will have the same value for all other columns (excluding `output_col`)
     as the new `output_col` value. Otherwise, those columns are set to `None`.
 
-    Parameters:
+    Parameters
+    ----------
         input_path (Path): Path to the input CSV file containing potential new entries.
         output_path (Path): Path to the mapping CSV file to be updated.
         input_col (str): Column name in `input_path` to check for new values.
@@ -619,8 +632,10 @@ def update_generic_mapping(
         default_use_same (bool, optional): If True, fill other columns with the same
             value as `output_col`. If False, fill them with `None`. Defaults to True.
 
-    Returns:
+    Returns
+    -------
         None
+
     """
     input_df = pd.read_csv(input_path, encoding="utf-8-sig")
     mapping_df = pd.read_csv(output_path, encoding="utf-8-sig")
@@ -672,7 +687,7 @@ def main() -> None:
     intermediate_folder.mkdir(parents=True, exist_ok=True)
 
     # 1. download newest file, saves the .zip in 'input_csv' with name as day
-    download_file(save_folder=input_folder)
+    # download_file(save_folder=input_folder)
 
     # 2. summarize CSVs and extract market (ETLX or SEDX)
     summarize_csvs(input_folder=input_folder, output_folder=intermediate_folder)
