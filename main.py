@@ -617,7 +617,7 @@ def download_file(save_folder: Path) -> None:
 
         # 2. Move & rename
         shutil.move(zip_path, dst_path)
-    logger.info(f"Copied file to {dst_path.relative_to(BASE_FOLDER)}")
+    logger.info("Copied file to %s", dst_path.relative_to(BASE_FOLDER))
 
 
 def create_underlying_table(isin_info_path: Path, output_path: Path) -> None:
@@ -695,13 +695,19 @@ def update_generic_mapping(
 
     if new_names.empty:
         logger.info(
-            f"No new {input_col!r} found in {input_path.name!r} not in "
-            f"{output_path.name!r}",
+            "No new %r found in %r not in %r",
+            input_col,
+            input_path.name,
+            output_path.name,
         )
         return
     logger.info(
-        f"{len(new_names_list)} new {input_col!r} found in {input_path.name!r} not in {output_path.name!r}: "
-        f"{', '.join(repr(x) for x in new_names_list)}",
+        "%d new %r found in %r not in %r: %s",
+        len(new_names_list),
+        input_col,
+        input_path.name,
+        output_path.name,
+        ", ".join(repr(x) for x in new_names_list),
     )
     other_cols = [col for col in mapping_df.columns if col != output_col]
     new_names = new_names.assign(
