@@ -611,6 +611,7 @@ def download_file(save_folder: Path) -> None:
         try:
             new_filename = next(i for i in complete_days if i not in already_saved)
         except StopIteration:
+            zip_path.unlink(missing_ok=True)
             logger.info("No new files to process.")
             return
         dst_path = save_folder / f"{new_filename}.zip"
