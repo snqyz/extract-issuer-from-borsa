@@ -35,10 +35,10 @@ URLS = [
 
 
 class TqdmLoggingHandler(logging.Handler):
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
-    def emit(self, record):
+    def emit(self, record: logging.LogRecord) -> None:
         try:
             msg = self.format(record)
             tqdm.write(msg)  # Use tqdm.write instead of print
@@ -68,7 +68,7 @@ def default_wait_time_gen() -> float:
 
 
 def load_from_csv_to_db(csv_path: Path) -> dict[str, dict[str, str]]:
-    isin_data = {}
+    isin_data: dict[str, dict[str, str]] = {}
     logger.info("Loading ISINs metadata to memory...")
     if not csv_path.exists():
         csv_path.write_text(
@@ -87,10 +87,10 @@ def load_from_csv_to_db(csv_path: Path) -> dict[str, dict[str, str]]:
 
 
 def extract_isins_from_csvs(path: Path) -> list[tuple[str, str]]:
-    logger.info(f"Loading ISINs from {path.name!r}...")
+    logger.info("Loading ISINs from %s...", repr(path.name))
     df = pd.concat([pd.read_csv(file) for file in path.iterdir()])
     df = df.loc[df["VenueOfPublication"].isin(["ETLX", "SEDX"])]
-    logger.info(f"ISINs loaded from {path.name!r}")
+    logger.info("ISINs loaded from %s", repr(path.name))
     return list(
         df[["MifidInstrumentID", "VenueOfPublication"]]
         .drop_duplicates(subset="MifidInstrumentID")
@@ -129,7 +129,8 @@ def parse_date(date_str: str) -> date | None:
 
 
 def determine_frequency(dates: Sequence[date]) -> str:
-    """Determines the frequency of events (e.g., weekly, monthly) given a list of dates.
+    """Determine the frequency of events (e.g., weekly, monthly) given a list of dates.
+
     It looks for the most common difference in days between consecutive dates.
     """
     if len(dates) < 2:
@@ -376,7 +377,11 @@ def extract_from_cd(isin: str) -> tuple[dict[str, str | None], bool]:
             made_request = True
             r.raise_for_status()
         except requests.RequestException as e:
-            logger.info(f"Error fetching data for ISIN {isin} from CD: {e}")
+            logger.info(
+                "Error fetching data for ISIN %s from CD: %s",
+                repr(isin),
+                repr(e),
+            )
             return {}, made_request
         file.write_text(r.text, encoding="utf-8")
         soup = BeautifulSoup(r.text, "lxml")
@@ -427,7 +432,7 @@ def extract_data_for_isin(
                 time.sleep(30)
                 r = requests.get(url, headers=get_headers(), timeout=60)
             except requests.exceptions.HTTPError:
-                logger.info(f"Error for ISIN {isin} {mkt}, skipping...")
+                logger.info("Error for ISIN %s %s, skipping...", repr(isin), repr(mkt))
                 continue
             whole_data += r.text
         whole_data = whole_data.strip()
@@ -530,7 +535,7 @@ def summarize_csvs(input_folder: Path, output_folder: Path) -> None:
     for input_file in input_folder.iterdir():
         output_file = output_folder / input_file.with_suffix(".csv").name
         if output_file.exists():
-            logger.info(f"{output_file.name!r} already exists, skipping...")
+            logger.info("%s already exists, skipping...", repr(output_file.name))
             continue
         with tempfile.TemporaryDirectory() as tmpdir:
             with zipfile.ZipFile(input_file, "r") as z:
@@ -561,7 +566,7 @@ def summarize_csvs(input_folder: Path, output_folder: Path) -> None:
             .round(2)
         )
         input_df.to_csv(output_file, encoding="utf-8-sig")
-        logger.info(f"Created {output_file.name!r}")
+        logger.info("Created %s", repr(output_file.name))
 
 
 def download_file(save_folder: Path) -> None:
@@ -601,6 +606,7 @@ def download_file(save_folder: Path) -> None:
             .dt.strftime("%Y-%m-%d")
             .drop_duplicates()
         )
+        logger.info("Found the following days in the file: %s", all_days.tolist())
         complete_days = all_days[:-1] if len(all_days) > 1 else all_days
         try:
             new_filename = next(i for i in complete_days if i not in already_saved)
@@ -645,7 +651,7 @@ def update_generic_mapping(
     *,
     default_use_same: bool = True,
 ) -> None:
-    """Updates a mapping CSV file by adding new values from an input CSV file
+    """Update a mapping CSV file by adding new values from an input CSV file
     that are not already present in the mapping.
 
     This function reads two CSV files:
