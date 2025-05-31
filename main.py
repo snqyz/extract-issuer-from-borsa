@@ -570,8 +570,12 @@ def download_file(save_folder: Path) -> None:
             .dt.strftime("%Y-%m-%d")
             .drop_duplicates()
         )
-        complete_days = all_days[:-1]
-        new_filename = next(i for i in complete_days if i not in already_saved)
+        complete_days = all_days[:-1] if len(all_days) > 1 else all_days
+        try:
+            new_filename = next(i for i in complete_days if i not in already_saved)
+        except StopIteration:
+            print("No new files to process.")
+            return
         dst_path = save_folder / f"{new_filename}.zip"
 
         # 2. Move & rename
@@ -687,7 +691,7 @@ def main() -> None:
     intermediate_folder.mkdir(parents=True, exist_ok=True)
 
     # 1. download newest file, saves the .zip in 'input_csv' with name as day
-    # download_file(save_folder=input_folder)
+    download_file(save_folder=input_folder)
 
     # 2. summarize CSVs and extract market (ETLX or SEDX)
     summarize_csvs(input_folder=input_folder, output_folder=intermediate_folder)
