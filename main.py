@@ -1,5 +1,6 @@
 import contextlib
 import csv
+import logging
 import random
 import shutil
 import tempfile
@@ -8,6 +9,7 @@ import zipfile
 from collections import Counter
 from collections.abc import Sequence
 from datetime import date, datetime
+from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
 import pandas as pd
@@ -32,13 +34,42 @@ URLS = [
 ]
 
 
+class TqdmLoggingHandler(logging.Handler):
+    def __init__(self):
+        super().__init__()
+
+    def emit(self, record):
+        try:
+            msg = self.format(record)
+            tqdm.write(msg)  # Use tqdm.write instead of print
+            self.flush()
+        except Exception:
+            self.handleError(record)
+
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        TqdmLoggingHandler(),
+        RotatingFileHandler(
+            "app.log",
+            maxBytes=5 * 1024 * 1024,  # 5 MB max size per file
+            backupCount=3,  # Keep up to 3 backup files
+        ),
+    ],
+)
+
+logger = logging.getLogger(__name__)
+
+
 def default_wait_time_gen() -> float:
     return random.random() * 2 + 1
 
 
 def load_from_csv_to_db(csv_path: Path) -> dict[str, dict[str, str]]:
     isin_data = {}
-    print("Loading ISINs metadata to memory...")
+    logger.info("Loading ISINs metadata to memory...")
     if not csv_path.exists():
         csv_path.write_text(
             "ISIN,Nome,Strategy,EUSIPA Code,EUSIPA Name,Issue Price,Emittente,Issue Date,Expiry Date,Sottostanti,Coupon P.A.,Coupon Frequency,Autocall Frequency,Autocall First Date,Autocall Decrement,Autocall Initial Trigger,Autocall Minimum Trigger\n",
@@ -51,15 +82,15 @@ def load_from_csv_to_db(csv_path: Path) -> dict[str, dict[str, str]]:
         for row in reader:
             isin = row.pop("ISIN")
             isin_data[isin] = row
-    print("Loaded ISINs metadata to memory")
+    logger.info("Loaded ISINs metadata to memory")
     return isin_data
 
 
 def extract_isins_from_csvs(path: Path) -> list[tuple[str, str]]:
-    print(f"Loading ISINs from {path.name!r}...")
+    logger.info(f"Loading ISINs from {path.name!r}...")
     df = pd.concat([pd.read_csv(file) for file in path.iterdir()])
     df = df.loc[df["VenueOfPublication"].isin(["ETLX", "SEDX"])]
-    print(f"ISINs loaded from {path.name!r}")
+    logger.info(f"ISINs loaded from {path.name!r}")
     return list(
         df[["MifidInstrumentID", "VenueOfPublication"]]
         .drop_duplicates(subset="MifidInstrumentID")
@@ -345,7 +376,7 @@ def extract_from_cd(isin: str) -> tuple[dict[str, str | None], bool]:
             made_request = True
             r.raise_for_status()
         except requests.RequestException as e:
-            tqdm.write(f"Error fetching data for ISIN {isin} from CD: {e}")
+            logger.info(f"Error fetching data for ISIN {isin} from CD: {e}")
             return {}, made_request
         file.write_text(r.text, encoding="utf-8")
         soup = BeautifulSoup(r.text, "lxml")
@@ -392,11 +423,11 @@ def extract_data_for_isin(
                 r = requests.get(url, headers=get_headers(), timeout=60)
                 r.raise_for_status()
             except requests.exceptions.ReadTimeout:
-                tqdm.write("Ci stanno tracciando! Stacca, stacca!")
+                logger.info("Ci stanno tracciando! Stacca, stacca!")
                 time.sleep(30)
                 r = requests.get(url, headers=get_headers(), timeout=60)
             except requests.exceptions.HTTPError:
-                tqdm.write(f"Error for ISIN {isin} {mkt}, skipping...")
+                logger.info(f"Error for ISIN {isin} {mkt}, skipping...")
                 continue
             whole_data += r.text
         whole_data = whole_data.strip()
@@ -499,7 +530,7 @@ def summarize_csvs(input_folder: Path, output_folder: Path) -> None:
     for input_file in input_folder.iterdir():
         output_file = output_folder / input_file.with_suffix(".csv").name
         if output_file.exists():
-            print(f"{output_file.name!r} already exists, skipping...")
+            logger.info(f"{output_file.name!r} already exists, skipping...")
             continue
         with tempfile.TemporaryDirectory() as tmpdir:
             with zipfile.ZipFile(input_file, "r") as z:
@@ -530,7 +561,7 @@ def summarize_csvs(input_folder: Path, output_folder: Path) -> None:
             .round(2)
         )
         input_df.to_csv(output_file, encoding="utf-8-sig")
-        print(f"Created {output_file.name!r}")
+        logger.info(f"Created {output_file.name!r}")
 
 
 def download_file(save_folder: Path) -> None:
@@ -545,12 +576,12 @@ def download_file(save_folder: Path) -> None:
         "fileType": "WarrantCertificates",
     }
 
-    print("Downloading newest file...")
+    logger.info("Downloading newest file...")
     response = requests.post(url, data=data, timeout=60)
 
     with zip_path.open("wb") as f:
         f.write(response.content)
-    print("Download completed")
+    logger.info("Download completed")
 
     already_saved = {i.stem for i in save_folder.iterdir()}
 
@@ -574,13 +605,13 @@ def download_file(save_folder: Path) -> None:
         try:
             new_filename = next(i for i in complete_days if i not in already_saved)
         except StopIteration:
-            print("No new files to process.")
+            logger.info("No new files to process.")
             return
         dst_path = save_folder / f"{new_filename}.zip"
 
         # 2. Move & rename
         shutil.move(zip_path, dst_path)
-    print(f"Copied file to {dst_path.relative_to(BASE_FOLDER)}")
+    logger.info(f"Copied file to {dst_path.relative_to(BASE_FOLDER)}")
 
 
 def create_underlying_table(isin_info_path: Path, output_path: Path) -> None:
@@ -657,12 +688,12 @@ def update_generic_mapping(
     new_names_list = new_names[output_col].to_list()
 
     if new_names.empty:
-        print(
+        logger.info(
             f"No new {input_col!r} found in {input_path.name!r} not in "
             f"{output_path.name!r}",
         )
         return
-    print(
+    logger.info(
         f"{len(new_names_list)} new {input_col!r} found in {input_path.name!r} not in {output_path.name!r}: "
         f"{', '.join(repr(x) for x in new_names_list)}",
     )
