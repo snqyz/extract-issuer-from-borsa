@@ -54,12 +54,6 @@ def issuers_page():
             left_on=["Nome"],
             right_on=["Category"],
         )
-        .assign(
-            Year=lambda df: df["DayEvent"].dt.year,
-            Month=lambda df: df["DayEvent"].dt.month,
-            Week=lambda df: df["DayEvent"].dt.isocalendar().week,
-            Day=lambda df: df["DayEvent"].dt.day,
-        )
     )
 
     # Sidebar filters
@@ -209,10 +203,6 @@ def products_page():
             right_on=["Category"],
         )
         .assign(
-            Year=lambda df: df["DayEvent"].dt.year,
-            Month=lambda df: df["DayEvent"].dt.month,
-            Week=lambda df: df["DayEvent"].dt.isocalendar().week,
-            Day=lambda df: df["DayEvent"].dt.day,
             **{
                 "Adjusted Turnover": lambda df: df["MifidNotionalAmount"].where(
                     df["Issue Price"].isna(),
@@ -327,10 +317,6 @@ def underlyings_page():
             suffixes=("_x", ""),
         )
         .assign(
-            Year=lambda df: df["DayEvent"].dt.year,
-            Month=lambda df: df["DayEvent"].dt.month,
-            Week=lambda df: df["DayEvent"].dt.isocalendar().week,
-            Day=lambda df: df["DayEvent"].dt.day,
             **{
                 "Adjusted Turnover (underlying)": lambda df: df[
                     "MifidNotionalAmount"
@@ -551,46 +537,3 @@ selected_page = st.sidebar.selectbox("Navigate to:", list(pages.keys()))
 
 
 pages[selected_page]()
-
-# if not isin_info.empty:
-#     df = isin_info
-#     if selected_isin:
-#         df = df[df['ISIN'].astype(str).str.contains(selected_isin, case=False, na=False)]
-#     if selected_issuer:
-#         df = df[df['Emittente'].astype(str).str.contains(selected_issuer, case=False, na=False)]
-#     st.dataframe(df, use_container_width=True)
-# else:
-#     st.info("isin_info.csv not found or empty.")
-
-# # Underlyings Table
-# st.subheader("Underlyings")
-# if not underlyings.empty:
-#     df = underlyings
-#     if selected_isin:
-#         df = df[df['ISIN'].astype(str).str.contains(selected_isin, case=False, na=False)]
-#     if selected_underlying:
-#         df = df[df['Sottostante'].astype(str).str.contains(selected_underlying, case=False, na=False)]
-#     st.dataframe(df, use_container_width=True)
-# else:
-#     st.info("underlyings.csv not found or empty.")
-
-# # Type and Subtype Mapping
-# st.subheader("Type and Subtype Mapping")
-# if not type_and_subtype.empty:
-#     st.dataframe(type_and_subtype, use_container_width=True)
-# else:
-#     st.info("type_and_subtype.csv not found or empty.")
-
-# # Issuers Mapping
-# st.subheader("Issuers Mapping")
-# if not issuers.empty:
-#     st.dataframe(issuers, use_container_width=True)
-# else:
-#     st.info("issuers.csv not found or empty.")
-
-# # Underlying Mapping
-# st.subheader("Underlying Mapping")
-# if not und_mapping.empty:
-#     st.dataframe(und_mapping, use_container_width=True)
-# else:
-#     st.info("und_mapping.csv not found or empty.")
