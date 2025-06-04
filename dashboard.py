@@ -132,12 +132,13 @@ def issuers_page():
     st.subheader("By Type")
 
     # Group and aggregate the data
+    filtered_total = filtered_by_date_issuers[
+        filtered_by_date_issuers["SubType"].isin(filter_subtype)
+        & filtered_by_date_issuers["Type"].isin(filter_type)
+    ]
+
     chart_data = (
-        filtered_by_date_issuers[
-            filtered_by_date_issuers["SubType"].isin(filter_subtype)
-            & filtered_by_date_issuers["Type"].isin(filter_type)
-        ]
-        .groupby(
+        filtered_total.groupby(
             ["Issuer", "SubType"],
         )
         .agg(
@@ -178,6 +179,13 @@ def issuers_page():
     )
 
     st.plotly_chart(fig, use_container_width=True)
+
+    st.download_button(
+        "Download CSV",
+        data=filtered_total.to_csv(index=False),
+        file_name="issuers.csv",
+        mime="text/csv",
+    )
 
 
 def products_page():
@@ -240,22 +248,23 @@ def products_page():
 
     st.title("Products dashboard")
 
+    filtered_total = joined.loc[
+        (joined["DayEvent"].dt.date.between(start_day_filter, end_day_filter))
+        & (joined["Type"].isin(filter_type))
+        & (joined["SubType"].isin(filter_subtype)),
+        [
+            "DayEvent",
+            "ISIN",
+            "Sottostanti",
+            "Issuer",
+            "Adjusted Turnover",
+            "Type",
+            "SubType",
+        ],
+    ]
+
     st.dataframe(
-        joined.loc[
-            (joined["DayEvent"].dt.date.between(start_day_filter, end_day_filter))
-            & (joined["Type"].isin(filter_type))
-            & (joined["SubType"].isin(filter_subtype)),
-            [
-                "DayEvent",
-                "ISIN",
-                "Sottostanti",
-                "Issuer",
-                "Adjusted Turnover",
-                "Type",
-                "SubType",
-            ],
-        ]
-        .groupby(["ISIN", "Issuer", "Sottostanti", "Type", "SubType"])
+        filtered_total.groupby(["ISIN", "Issuer", "Sottostanti", "Type", "SubType"])
         .agg({"Adjusted Turnover": "sum"})
         .sort_values(by="Adjusted Turnover", ascending=False)
         .reset_index()
@@ -270,6 +279,13 @@ def products_page():
         )
         .set_index("n"),
         use_container_width=True,
+    )
+
+    st.download_button(
+        "Download CSV",
+        data=filtered_total.to_csv(index=False),
+        file_name="products.csv",
+        mime="text/csv",
     )
 
 
@@ -527,6 +543,13 @@ def underlyings_page():
             },
         ).set_index("n"),
         use_container_width=True,
+    )
+
+    st.download_button(
+        "Download CSV",
+        data=ref_df.to_csv(index=False),
+        file_name="underlyings.csv",
+        mime="text/csv",
     )
 
 
