@@ -11,7 +11,7 @@ BASE_FOLDER = Path(__file__).parent
 
 
 @st.cache_data
-def load_csv(filename, modified_time: float, **kwargs):
+def load_csv(filename: str, _modified_time: float, **kwargs) -> pd.DataFrame:
     print("Loading CSV:", filename)
     path = BASE_FOLDER / filename
     if path.exists():
@@ -19,8 +19,8 @@ def load_csv(filename, modified_time: float, **kwargs):
     return pd.DataFrame()
 
 
-def load_data_with_modified(filename, **kwargs):
-    return load_csv(filename, modified_time=os.path.getmtime(filename), **kwargs)
+def load_data_with_modified(filename: str, **kwargs) -> pd.DataFrame:
+    return load_csv(filename, _modified_time=os.path.getmtime(filename), **kwargs)
 
 
 # Load data
@@ -37,7 +37,7 @@ issuers = load_data_with_modified("issuers.csv")
 und_mapping = load_data_with_modified("und_mapping.csv")
 
 
-def issuers_page():
+def issuers_page() -> None:
     st.title("Issuers dashboard")
 
     joined = get_joined_df()
@@ -85,26 +85,19 @@ def issuers_page():
     )
 
     # ISIN Info Table
-    st.subheader("By Day")
+    st.subheader("By day")
     fig = px.line(
         data_frame=aggregated,
         x="DayEvent",
         y="Turnover (M)",
         color="Issuer",
-        title="Turnover by Day and Issuer",  # Optional title
         markers=True,
     )
     st.plotly_chart(fig, use_container_width=True)
 
-    st.subheader("By Type")
+    st.subheader("By issuer")
 
-    # Group and aggregate the data
-    filtered_total = filtered_by_date_issuers[
-        filtered_by_date_issuers["SubType"].isin(filter_subtype)
-        & filtered_by_date_issuers["Type"].isin(filter_type)
-    ]
-
-    chart_data = filtered_total.groupby(
+    chart_data = filtered_by_subtype.groupby(
         ["Issuer", "SubType"],
     ).agg(
         MifidNotionalAmount=("MifidNotionalAmount", "sum"),
@@ -147,15 +140,13 @@ def issuers_page():
 
     st.download_button(
         "Download CSV",
-        data=filtered_total.to_csv(index=False),
+        data=filtered_by_subtype.to_csv(index=False),
         file_name="issuers.csv",
         mime="text/csv",
     )
 
 
-def products_page():
-    st.sidebar.header("Filters")
-
+def products_page() -> None:
     joined = get_joined_df()
 
     dates_filter, filter_type, filter_subtype, filter_issuer = get_standard_filters(
@@ -212,7 +203,9 @@ def products_page():
     )
 
 
-def get_standard_filters(joined):
+def get_standard_filters(
+    joined: pd.DataFrame,
+) -> tuple[list[str], list[str], list[str], list[str]]:
     st.sidebar.header("Filters")
 
     dates_filter = st.sidebar.date_input(
@@ -245,7 +238,7 @@ def get_standard_filters(joined):
 
 
 @st.cache_data
-def get_joined_df():
+def get_joined_df() -> pd.DataFrame:
     return (
         sales_data.merge(
             isin_info,
@@ -280,10 +273,8 @@ def compute_adjusted_turnover(df: pd.DataFrame) -> pd.Series:
     )
 
 
-def underlyings_page():
-    st.sidebar.header("Filters")
-
-    n_underlyings = underlyings.groupby("ISIN")["Sottostante"].nunique()
+def underlyings_page() -> None:
+    n_underlyings = underlyings.groupby("ISIN")["Sottostante"].count()
 
     joined = (
         get_joined_df()
@@ -360,7 +351,6 @@ def underlyings_page():
         x="Turnover (M)",
         y="Sottostanti",
         color="SubType",
-        title="Top 10 Baskets by Adjusted Turnover",
         orientation="h",
     )
     fig.update_layout(
@@ -369,6 +359,7 @@ def underlyings_page():
             "categoryarray": top_10_sottostanti.to_list(),
         },
     )
+    st.header("Top 10 baskets")
     st.plotly_chart(fig, use_container_width=True)
 
     top_10_sottostante = (
@@ -389,7 +380,6 @@ def underlyings_page():
         x="Turnover (M)",
         y="Sottostante",
         color="SubType",
-        title="Top 10 Underlyings by Adjusted Turnover",
         orientation="h",
     )
     fig.update_layout(
@@ -398,6 +388,7 @@ def underlyings_page():
             "categoryarray": top_10_sottostante.to_list(),
         },
     )
+    st.header("Top 10 underlyings")
     st.plotly_chart(fig, use_container_width=True)
 
     # Step 1: Group and sum turnover
@@ -435,6 +426,7 @@ def underlyings_page():
         "//",
     )
 
+    st.header("Top baskets")
     st.dataframe(
         sorted_grouped.assign(
             **{
@@ -489,6 +481,7 @@ def underlyings_page():
         "//",
     )
 
+    st.header("Top underlyings")
     st.dataframe(
         sorted_grouped.assign(
             **{
@@ -516,6 +509,5 @@ pages = {
 }
 
 selected_page = st.sidebar.selectbox("Navigate to:", list(pages.keys()))
-
 
 pages[selected_page]()
