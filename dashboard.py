@@ -33,7 +33,7 @@ und_mapping = load_csv("und_mapping.csv")
 
 
 def issuers_page():
-    st.title("Issuers Dashboard")
+    st.title("Issuers dashboard")
 
     joined = (
         sales_data.merge(
@@ -238,7 +238,7 @@ def products_page():
     filter_type = filter_type if filter_type else joined["Type"].unique()
     filter_subtype = filter_subtype if filter_subtype else joined["SubType"].unique()
 
-    st.subheader("Products Dashboard")
+    st.title("Products dashboard")
 
     st.dataframe(
         joined.loc[
@@ -248,13 +248,14 @@ def products_page():
             [
                 "DayEvent",
                 "ISIN",
+                "Sottostanti",
                 "Issuer",
                 "Adjusted Turnover",
                 "Type",
                 "SubType",
             ],
         ]
-        .groupby(["ISIN", "Issuer", "Type", "SubType"])
+        .groupby(["ISIN", "Issuer", "Sottostanti", "Type", "SubType"])
         .agg({"Adjusted Turnover": "sum"})
         .sort_values(by="Adjusted Turnover", ascending=False)
         .reset_index()
@@ -356,6 +357,8 @@ def underlyings_page():
     )
     filter_type = filter_type if filter_type else joined["Type"].unique()
     filter_subtype = filter_subtype if filter_subtype else joined["SubType"].unique()
+
+    st.title("Underlyings dashboard")
 
     ref_df = joined.loc[
         (joined["DayEvent"].dt.date.between(start_day_filter, end_day_filter))
