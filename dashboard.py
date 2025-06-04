@@ -40,59 +40,21 @@ und_mapping = load_data_with_modified("und_mapping.csv")
 def issuers_page():
     st.title("Issuers dashboard")
 
-    joined = (
-        sales_data.merge(
-            isin_info,
-            how="left",
-            left_on=["MifidInstrumentID"],
-            right_on=["ISIN"],
-        )
-        .merge(
-            issuers,
-            how="left",
-            left_on=["Emittente"],
-            right_on=["Original"],
-        )
-        .merge(
-            type_and_subtype,
-            how="left",
-            left_on=["Nome"],
-            right_on=["Category"],
-        )
-    )
+    joined = get_joined_df()
 
-    # Sidebar filters
-    st.sidebar.header("Filters")
-
-    start_day_filter = st.sidebar.date_input(
-        "Select day",
-        min_value=joined["DayEvent"].min(),
-        max_value=joined["DayEvent"].max(),
-        value=joined["DayEvent"].min(),
+    dates_filter, filter_type, filter_subtype, filter_issuer = get_standard_filters(
+        joined,
     )
-    end_day_filter = st.sidebar.date_input(
-        "Select end day",
-        min_value=joined["DayEvent"].min(),
-        max_value=joined["DayEvent"].max(),
-        value=joined["DayEvent"].max(),
-    )
-
-    filter_type = st.sidebar.multiselect(
-        "Select Type",
-        options=joined["Type"].unique(),
-        default=joined["Type"].unique(),
-    )
-    filter_subtype = st.sidebar.multiselect(
-        "Select SubType",
-        options=joined["SubType"].unique(),
-        default=["Yield Enhancement"],
-    )
-    filter_type = filter_type if filter_type else joined["Type"].unique()
-    filter_subtype = filter_subtype if filter_subtype else joined["SubType"].unique()
 
     # Filter data for the line chart
     filtered_by_date = joined[
-        joined["DayEvent"].dt.date.between(start_day_filter, end_day_filter)
+        joined["DayEvent"].dt.date.between(
+            dates_filter[0],
+            dates_filter[1]
+            if len(dates_filter) == 2
+            else joined["DayEvent"].dt.date.max(),
+        )
+        & joined["Issuer"].isin(filter_issuer)
     ]
 
     top_10_issuers = (
@@ -118,8 +80,8 @@ def issuers_page():
         )
         .reset_index()
     )
-    aggregated["Turnover (M)"] = (aggregated["MifidNotionalAmount"] / 1_000_000).round(
-        2,
+    aggregated["Turnover (M)"] = (aggregated["MifidNotionalAmount"] / 1_000_000).apply(
+        lambda x: f"{x:,.2f}",
     )
 
     # ISIN Info Table
@@ -142,15 +104,13 @@ def issuers_page():
         & filtered_by_date_issuers["Type"].isin(filter_type)
     ]
 
-    chart_data = (
-        filtered_total.groupby(
-            ["Issuer", "SubType"],
-        )
-        .agg(
-            MifidNotionalAmount=("MifidNotionalAmount", "sum"),
-        )
-        .reset_index()
+    chart_data = filtered_total.groupby(
+        ["Issuer", "SubType"],
+    ).agg(
+        MifidNotionalAmount=("MifidNotionalAmount", "sum"),
     )
+    chart_data = chart_data / chart_data.sum()
+    chart_data = chart_data.reset_index()
 
     # Calculate total notional amount per issuer for sorting
     issuer_totals = (
@@ -196,67 +156,26 @@ def issuers_page():
 def products_page():
     st.sidebar.header("Filters")
 
-    joined = (
-        sales_data.merge(
-            isin_info,
-            how="left",
-            left_on=["MifidInstrumentID"],
-            right_on=["ISIN"],
-        )
-        .merge(
-            issuers,
-            how="left",
-            left_on=["Emittente"],
-            right_on=["Original"],
-        )
-        .merge(
-            type_and_subtype,
-            how="left",
-            left_on=["Nome"],
-            right_on=["Category"],
-        )
-        .assign(
-            **{
-                "Adjusted Turnover": lambda df: df["MifidNotionalAmount"].where(
-                    df["Issue Price"].isna(),
-                    df["MifidQuantity"] * df["Issue Price"],
-                ),
-            },
-        )
-    )
+    joined = get_joined_df()
 
-    start_day_filter = st.sidebar.date_input(
-        "Select day",
-        min_value=sales_data["DayEvent"].min(),
-        max_value=sales_data["DayEvent"].max(),
-        value=sales_data["DayEvent"].min(),
+    dates_filter, filter_type, filter_subtype, filter_issuer = get_standard_filters(
+        joined,
     )
-    end_day_filter = st.sidebar.date_input(
-        "Select end day",
-        min_value=sales_data["DayEvent"].min(),
-        max_value=sales_data["DayEvent"].max(),
-        value=sales_data["DayEvent"].max(),
-    )
-
-    filter_type = st.sidebar.multiselect(
-        "Select Type",
-        options=joined["Type"].unique(),
-        default=joined["Type"].unique(),
-    )
-    filter_subtype = st.sidebar.multiselect(
-        "Select SubType",
-        options=joined["SubType"].unique(),
-        default=["Yield Enhancement"],
-    )
-    filter_type = filter_type if filter_type else joined["Type"].unique()
-    filter_subtype = filter_subtype if filter_subtype else joined["SubType"].unique()
 
     st.title("Products dashboard")
 
     filtered_total = joined.loc[
-        (joined["DayEvent"].dt.date.between(start_day_filter, end_day_filter))
+        (
+            joined["DayEvent"].dt.date.between(
+                dates_filter[0],
+                dates_filter[1]
+                if len(dates_filter) == 2
+                else joined["DayEvent"].dt.date.max(),
+            )
+        )
         & (joined["Type"].isin(filter_type))
-        & (joined["SubType"].isin(filter_subtype)),
+        & (joined["SubType"].isin(filter_subtype))
+        & (joined["Issuer"].isin(filter_issuer)),
         [
             "DayEvent",
             "ISIN",
@@ -275,10 +194,9 @@ def products_page():
         .reset_index()
         .assign(
             **{
-                "Adjusted Turnover": lambda df: (df["Adjusted Turnover"] / 1_000_000)
-                .round(2)
-                .astype(str)
-                .str.ljust(4, "0"),
+                "Adjusted Turnover": lambda df: (
+                    df["Adjusted Turnover"] / 1_000_000
+                ).apply(lambda x: f"{x:,.2f}"),
                 "n": lambda df: range(1, len(df) + 1),
             },
         )
@@ -294,22 +212,46 @@ def products_page():
     )
 
 
-def underlyings_page():
+def get_standard_filters(joined):
     st.sidebar.header("Filters")
 
-    n_underlyings = underlyings.groupby("ISIN")["Sottostante"].nunique()
+    dates_filter = st.sidebar.date_input(
+        "Select days",
+        min_value=joined["DayEvent"].min(),
+        max_value=joined["DayEvent"].max(),
+        value=(joined["DayEvent"].min(), joined["DayEvent"].max()),
+    )
 
-    joined = (
+    filter_type = st.sidebar.multiselect(
+        "Select Type",
+        options=joined["Type"].unique(),
+        default=joined["Type"].unique(),
+    )
+    filter_subtype = st.sidebar.multiselect(
+        "Select SubType",
+        options=joined["SubType"].unique(),
+        default=["Yield Enhancement"],
+    )
+    filter_type = filter_type if filter_type else joined["Type"].unique()
+    filter_subtype = filter_subtype if filter_subtype else joined["SubType"].unique()
+
+    filter_issuer = st.sidebar.multiselect(
+        "Select Type",
+        options=joined["Issuer"].unique(),
+        default=[],
+    )
+    filter_issuer = filter_issuer if filter_issuer else joined["Issuer"].unique()
+    return dates_filter, filter_type, filter_subtype, filter_issuer
+
+
+@st.cache_data
+def get_joined_df():
+    return (
         sales_data.merge(
             isin_info,
             how="left",
             left_on=["MifidInstrumentID"],
             right_on=["ISIN"],
-        )
-        .merge(
-            n_underlyings.rename("n_underlyings").reset_index(),
-            how="left",
-            on=["ISIN"],
         )
         .merge(
             issuers,
@@ -322,6 +264,33 @@ def underlyings_page():
             how="left",
             left_on=["Nome"],
             right_on=["Category"],
+        )
+        .assign(
+            **{
+                "Adjusted Turnover": lambda df: compute_adjusted_turnover(df),
+            },
+        )
+    )
+
+
+def compute_adjusted_turnover(df: pd.DataFrame) -> pd.Series:
+    return df["MifidNotionalAmount"].where(
+        df["Issue Price"].isna(),
+        df["MifidQuantity"] * df["Issue Price"],
+    )
+
+
+def underlyings_page():
+    st.sidebar.header("Filters")
+
+    n_underlyings = underlyings.groupby("ISIN")["Sottostante"].nunique()
+
+    joined = (
+        get_joined_df()
+        .merge(
+            n_underlyings.rename("n_underlyings").reset_index(),
+            how="left",
+            on=["ISIN"],
         )
         .merge(
             underlyings,
@@ -353,38 +322,24 @@ def underlyings_page():
         )
     )
 
-    start_day_filter = st.sidebar.date_input(
-        "Select day",
-        min_value=sales_data["DayEvent"].min(),
-        max_value=sales_data["DayEvent"].max(),
-        value=sales_data["DayEvent"].min(),
+    dates_filter, filter_type, filter_subtype, filter_issuer = get_standard_filters(
+        joined,
     )
-    end_day_filter = st.sidebar.date_input(
-        "Select end day",
-        min_value=sales_data["DayEvent"].min(),
-        max_value=sales_data["DayEvent"].max(),
-        value=sales_data["DayEvent"].max(),
-    )
-
-    filter_type = st.sidebar.multiselect(
-        "Select Type",
-        options=joined["Type"].unique(),
-        default=joined["Type"].unique(),
-    )
-    filter_subtype = st.sidebar.multiselect(
-        "Select SubType",
-        options=joined["SubType"].unique(),
-        default=["Yield Enhancement"],
-    )
-    filter_type = filter_type if filter_type else joined["Type"].unique()
-    filter_subtype = filter_subtype if filter_subtype else joined["SubType"].unique()
 
     st.title("Underlyings dashboard")
 
     ref_df = joined.loc[
-        (joined["DayEvent"].dt.date.between(start_day_filter, end_day_filter))
+        (
+            joined["DayEvent"].dt.date.between(
+                dates_filter[0],
+                dates_filter[1]
+                if len(dates_filter) == 2
+                else joined["DayEvent"].dt.date.max(),
+            )
+        )
         & (joined["Type"].isin(filter_type))
-        & (joined["SubType"].isin(filter_subtype)),
+        & (joined["SubType"].isin(filter_subtype))
+        & joined["Issuer"].isin(filter_issuer)
     ]
 
     top_10_sottostanti = (
@@ -483,10 +438,9 @@ def underlyings_page():
     st.dataframe(
         sorted_grouped.assign(
             **{
-                "Adjusted Turnover": lambda df: (df["Adjusted Turnover"] / 1_000_000)
-                .round(2)
-                .astype(str)
-                .str.ljust(4, "0"),
+                "Adjusted Turnover": lambda df: (
+                    df["Adjusted Turnover"] / 1_000_000
+                ).apply(lambda x: f"{x:,.2f}"),
                 "n": lambda df: range(1, len(df) + 1),
             },
         ).set_index("n"),
@@ -540,10 +494,7 @@ def underlyings_page():
             **{
                 "Adjusted Turnover (underlying)": lambda df: (
                     df["Adjusted Turnover (underlying)"] / 1_000_000
-                )
-                .round(2)
-                .astype(str)
-                .str.ljust(4, "0"),
+                ).apply(lambda x: f"{x:,.2f}"),
                 "n": lambda df: range(1, len(df) + 1),
             },
         ).set_index("n"),
