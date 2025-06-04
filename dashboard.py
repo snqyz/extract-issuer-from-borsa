@@ -305,6 +305,13 @@ def underlyings_page() -> None:
         joined,
     )
 
+    n_underlyings = st.sidebar.slider(
+        label="Underlyings to show:",
+        min_value=5,
+        max_value=20,
+        value=10,
+    )
+
     st.title("Underlyings dashboard")
 
     ref_df = joined.loc[
@@ -325,7 +332,7 @@ def underlyings_page() -> None:
         ref_df.groupby("Sottostanti")["Adjusted Turnover"]
         .sum()
         .sort_values(ascending=True)
-        .iloc[-10:]
+        .iloc[-n_underlyings:]
         .index
     )
     fig = px.bar(
@@ -347,14 +354,14 @@ def underlyings_page() -> None:
             "categoryarray": top_10_sottostanti.to_list(),
         },
     )
-    st.header("Top 10 baskets")
+    st.header(f"Top {n_underlyings} baskets")
     st.plotly_chart(fig, use_container_width=True)
 
     top_10_sottostante = (
         ref_df.groupby("Sottostante")["Adjusted Turnover (underlying)"]
         .sum()
         .sort_values(ascending=True)
-        .iloc[-10:]
+        .iloc[-n_underlyings:]
         .index
     )
     fig = px.bar(
@@ -376,7 +383,7 @@ def underlyings_page() -> None:
             "categoryarray": top_10_sottostante.to_list(),
         },
     )
-    st.header("Top 10 underlyings")
+    st.header(f"Top {n_underlyings} underlyings")
     st.plotly_chart(fig, use_container_width=True)
 
     # Step 1: Group and sum turnover
