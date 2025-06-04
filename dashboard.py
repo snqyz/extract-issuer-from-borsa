@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -10,7 +11,7 @@ BASE_FOLDER = Path(__file__).parent
 
 
 @st.cache_data
-def load_csv(filename, **kwargs):
+def load_csv(filename, modified_time: float, **kwargs):
     print("Loading CSV:", filename)
     path = BASE_FOLDER / filename
     if path.exists():
@@ -18,18 +19,22 @@ def load_csv(filename, **kwargs):
     return pd.DataFrame()
 
 
+def load_data_with_modified(filename, **kwargs):
+    return load_csv(filename, modified_time=os.path.getmtime(filename), **kwargs)
+
+
 # Load data
 sales_data = pd.concat(
     [
-        load_csv(f, parse_dates=["DayEvent"])
+        load_data_with_modified(f, parse_dates=["DayEvent"])
         for f in (BASE_FOLDER / "intermediate_csv").iterdir()
     ],
 )
-isin_info = load_csv("isin_info.csv")
-underlyings = load_csv("underlyings.csv")
-type_and_subtype = load_csv("type_and_subtype.csv")
-issuers = load_csv("issuers.csv")
-und_mapping = load_csv("und_mapping.csv")
+isin_info = load_data_with_modified("isin_info.csv")
+underlyings = load_data_with_modified("underlyings.csv")
+type_and_subtype = load_data_with_modified("type_and_subtype.csv")
+issuers = load_data_with_modified("issuers.csv")
+und_mapping = load_data_with_modified("und_mapping.csv")
 
 
 def issuers_page():
