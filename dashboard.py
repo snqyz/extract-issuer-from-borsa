@@ -99,28 +99,17 @@ def issuers_page() -> None:
 
     chart_data = filtered_by_subtype.groupby(
         ["Issuer", "SubType"],
-    ).agg(
-        MifidNotionalAmount=("MifidNotionalAmount", "sum"),
+    )["MifidNotionalAmount"].sum()
+    issuer_order = (
+        filtered_by_subtype.groupby("Issuer")["MifidNotionalAmount"]
+        .sum()
+        .sort_values(ascending=False)
+        .index
     )
-    chart_data = chart_data / chart_data.sum()
+    chart_data = chart_data * 100 / chart_data.sum()
     chart_data = chart_data.reset_index()
 
     # Calculate total notional amount per issuer for sorting
-    issuer_totals = (
-        chart_data.groupby("Issuer")["MifidNotionalAmount"].sum().reset_index()
-    )
-    issuer_totals = issuer_totals.sort_values("MifidNotionalAmount", ascending=True)
-
-    # Create ordered list of issuers
-    issuer_order = issuer_totals["Issuer"].tolist()
-
-    # Sort the chart data by issuer order
-    chart_data["Issuer"] = pd.Categorical(
-        chart_data["Issuer"],
-        categories=issuer_order,
-        ordered=True,
-    )
-    chart_data = chart_data.sort_values("Issuer")
 
     # Create the bar chart with plotly for proper sorting
     fig = px.bar(
@@ -132,8 +121,10 @@ def issuers_page() -> None:
         category_orders={"Issuer": issuer_order},
     )
 
-    fig.update_layout(
-        yaxis={"categoryorder": "array", "categoryarray": issuer_order},
+    # Format axis and hover labels as percentage
+    fig.update_xaxes(ticksuffix="%")
+    fig.update_traces(
+        hovertemplate="Issuer=%{y}<br>Turnover (%)=%{x:.1f}%<extra></extra>",
     )
 
     st.plotly_chart(fig, use_container_width=True)
@@ -300,15 +291,12 @@ def underlyings_page() -> None:
         )
         .assign(
             **{
-                "Adjusted Turnover (underlying)": lambda df: df[
-                    "MifidNotionalAmount"
-                ].where(
-                    df["Issue Price"].isna(),
-                    df["MifidQuantity"] * df["Issue Price"],
+                "Adjusted Turnover (underlying)": lambda df: compute_adjusted_turnover(
+                    df,
                 ),
                 "Adjusted Turnover": lambda df: (
                     df["Adjusted Turnover (underlying)"] / df["n_underlyings"]
-                ).round(2),
+                ),
             },
         )
     )
