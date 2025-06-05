@@ -14063,3 +14063,378 @@ XS3034117716,Express,Bullish,1260,Express Certificates,1000.0,SANTANDER INTERNAT
 XS3037465369,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,2025-05-28,2028-06-19,Sanofi/Novo Nordisk/AstraZeneca/Roche,10.2,Monthly,Monthly,2026-06-11,0.0,95.0,65.0
 XS3037492769,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,2025-05-30,2028-06-06,Axa/Allianz/Aegon/Prudential,9.84,Monthly,N/A (less than 2 dates),2028-05-30,,55.0,55.0
 XS3037532572,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,2025-06-03,2028-06-12,Aegon/Prudential/Allianz/Axa,8.4,Monthly,N/A (less than 2 dates),2028-06-05,,60.0,60.0
+CH1237087197,Express Protected,Bullish,1199,Miscellaneous Capital Protection,,LEONTEQ SECURITIES,2023-01-03,2028-01-03,Leonteq Global Hydrogen Technology 15%RC
+CH1265332721,Express,Bullish,1260,Express Certificates,,LEONTEQ SECURITIES,2023-06-05,2026-06-05,LVMH Louis Vuitton/Kering/Moncler,10.0,Monthly,Monthly,2023-11-29,0.0,100.0,60.0
+CH1277650839,Express,Bullish,1260,Express Certificates,,LEONTEQ SECURITIES,2023-07-07,2027-07-07,Generali/Swiss RE/Aegon,9.0,Monthly,N/A (less than 2 dates),2027-06-30,,60.0,60.0
+CH1282090732,Express,Bullish,1260,Express Certificates,1000.0,EFG INTERNATIONAL FINANCE,2023-09-28,2026-09-28,Ferrari/Unicredit/Moncler/Stellantis,15.0,Monthly,N/A (less than 2 dates),2026-09-21,,55.0,55.0
+CH1300958928,Twin Win,Bullish,1340,Twin-Win Certificates,1000.0,LEONTEQ SECURITIES,2024-02-09,2026-02-09,Intesa Sanpaolo/STMicroelectronics (PA)/Unicredit/Moncler,9.0,Monthly,Monthly,2024-08-02,0.0,100.0,70.0
+CH1322070728,Express,Bullish,1260,Express Certificates,1000.0,EFG INTERNATIONAL FINANCE,2024-02-16,2027-02-16,Nvidia/Advanced Micro Devices/Infineon,12.0,Monthly,N/A (less than 2 dates),2027-02-09,,60.0,60.0
+CH1336216796,Express,Bullish,1260,Express Certificates,1000.0,EFG INTERNATIONAL FINANCE,2024-03-26,2027-03-30,Intesa Sanpaolo/STMicroelectronics (PA)/Banco BPM,15.0,Monthly,N/A (less than 2 dates),2027-03-23,,60.0,60.0
+CH1336243345,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,1000.0,LEONTEQ SECURITIES,2024-05-07,2029-05-07,Excess Return Index on M&G high Yield Fund
+CH1349976725,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,2024-05-17,2027-05-17,Enel/Fortum,12.0,Monthly,N/A (less than 2 dates),2027-05-10,,60.0,60.0
+CH1349987102,Express Protected,Bullish,1199,Miscellaneous Capital Protection,1000.0,LEONTEQ SECURITIES,2024-06-19,2029-06-19,Eurostoxx Select Dividend 30
+CH1369861252,Express Protected,Bullish,1199,Miscellaneous Capital Protection,1000.0,LEONTEQ SECURITIES,2024-09-12,2029-09-12,Leonteq European High Yield Bond Funds 4%RC
+CH1381831887,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,2024-10-04,2027-10-04,Unicredit,10.0,Monthly,N/A (less than 2 dates),2027-09-27,,55.0,55.0
+CH1381833370,Express,Bullish,1260,Express Certificates,890.0,LEONTEQ SECURITIES,2024-10-03,2028-10-03,Eni/Intesa Sanpaolo/Nvidia/Advanced Micro Devices,6.0,Monthly,N/A (less than 2 dates),2028-09-26,,50.0,50.0
+CH1390859424,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,2024-11-01,2027-11-01,Be Semiconductor,15.0,Monthly,N/A (less than 2 dates),2027-10-25,,60.0,60.0
+CH1390871312,Express Protected,Bullish,1199,Miscellaneous Capital Protection,1000.0,LEONTEQ SECURITIES,2024-11-26,2029-11-26,Excess Return Index on Man GLG High Yield Opps Fund
+CH1400319658,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,2024-12-06,2027-12-06,Qualcomm/Meta/Eli Lilly,10.0,Quarterly,Quarterly,2025-05-29,0.0,100.0,60.0
+CH1400323205,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,2024-12-13,2027-12-13,Veolia Env./Nextera Energy/Nrg Energy,9.0,Monthly,N/A (less than 2 dates),2027-12-06,,60.0,60.0
+CH1400332651,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,2025-01-17,2028-01-17,United Airlines,10.0,Monthly,N/A (less than 2 dates),2028-01-10,,60.0,60.0
+CH1438101847,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,2025-05-29,2028-05-29,Leonteq Brazil Equity Dec 5%/Leonteq Italian Equity TR Dec 4.5%/Leonteq Japan Eq TR Futures Dec 2%,9.0,Monthly,N/A (less than 2 dates),2028-05-22,,60.0,60.0
+CH1438102563,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,2025-06-02,2026-06-02,Advanced Micro Devices/Nvidia/Intel/Tesla,30.0,Monthly,N/A (less than 2 dates),2026-05-26,,60.0,60.0
+CH1438102944,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,2025-05-30,2026-11-30,Banco BPM/Commerzbank/Citigroup,12.0,Monthly,Monthly,2025-07-23,3.0,100.0,50.0
+CH1438103074,Express,Bullish,1260,Express Certificates,1000.0,LEONTEQ SECURITIES,2025-06-02,2027-06-02,Campari/Stellantis/Banco BPM,21.0,Monthly,Monthly,2025-07-28,1.0,95.0,60.0
+DE000FA05GT0,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.5,SOCIETE GENERALE EFFEKTEN GMBH,2025-05-20,2099-12-31,FTSE Mib,,,,,,,
+DE000FA05HY8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.69,SOCIETE GENERALE EFFEKTEN GMBH,2025-05-20,2099-12-31,Buzzi Unicem,,,,,,,
+DE000FA0B143,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,4.04,SOCIETE GENERALE EFFEKTEN GMBH,2025-05-07,2099-12-31,Tesla,,,,,,,
+DE000FA0Z6C7,Turbo Short,Bearish,2200,Knock-Out Warrants,12.7,SOCIETE GENERALE EFFEKTEN GMBH,2025-05-16,2025-09-19,Nasdaq 100,,,,,,,
+DE000FA0Z6V7,Turbo Short,Bearish,2200,Knock-Out Warrants,2.3,SOCIETE GENERALE EFFEKTEN GMBH,2025-05-16,2025-09-19,Dax,,,,,,,
+DE000FA1JNM9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,2.8,SOCIETE GENERALE EFFEKTEN GMBH,2025-05-26,2099-12-31,Amplifon,,,,,,,
+DE000GQ691E3,Equity Protection with Cap,Bullish,1120,Capped Capital Protected,100.0,GOLDMAN SACHS & CO. WERTPAPIER,2024-04-30,2027-04-30,Gold
+DE000GQ6P042,Equity Protection with Cap,Bullish,1120,Capped Capital Protected,100.0,GOLDMAN SACHS & CO. WERTPAPIER,2024-05-22,2027-05-24,MSCI India USD
+DE000HB8KNT4,Cash Collect Autocallable,Bullish,1260,Express Certificates,,Unicredit Bank GmbH,2022-07-19,2025-07-17,Nio,17.6,Quarterly,Quarterly,2023-01-19,0.0,100.0,50.0
+DE000HC78NQ1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2023-06-06,2099-12-31,ADIDAS,,,,,,,
+DE000HC9AHQ0,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,2023-09-18,2027-09-16,Enel/Eni/Banco BPM,12.0,Quarterly,Quarterly,2024-06-20,0.0,100.0,50.0
+DE000HD39EN7,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,Unicredit Bank GmbH,2024-02-29,2025-06-19,STMicroelectronics (PA),5.16,Monthly,N/A (less than 2 dates),2025-06-19,,60.0,60.0
+DE000HD3LZM0,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,Unicredit Bank GmbH,2024-03-11,2027-03-18,Enel/Generali/Unicredit,8.4,Monthly,N/A (less than 2 dates),2027-03-18,,60.0,60.0
+DE000HD3UTB7,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2024-03-15,2025-06-20,FTSE MIB INDEX
+DE000HD50WB1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2024-04-24,2099-12-31,Enel,,,,,,,
+DE000HD5N2H4,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,Unicredit Bank GmbH,2024-05-16,2027-12-16,Eni/Generali/Intesa Sanpaolo/Mediobanca,7.2,Monthly,N/A (less than 2 dates),2027-12-16,,50.0,50.0
+DE000HD6CKS1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2024-06-14,2025-12-19,S AND P 500
+DE000HD6QYT0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2024-06-27,2025-06-18,ALLIANZ
+DE000HD764N3,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,2024-07-17,2027-12-16,Enel/Banco BPM/STMicroelectronics (MI)/Stellantis,15.0,Monthly,Monthly,2025-08-21,0.0,100.0,60.0
+DE000HD7CN08,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2024-07-25,2025-12-18,STMICROELECTRONICS IT
+DE000HD7HUP3,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2024-07-30,2099-12-31,Stellantis,,,,,,,
+DE000HD8GJJ9,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,Unicredit Bank GmbH,2024-10-11,2027-09-24,Eurostoxx Banks/S&P 500/Nikkei 225,7.44,Monthly,Monthly,2025-09-17,1.0,100.0,60.0
+DE000HD8XKW5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2024-09-23,2025-06-19,Prysmian
+DE000HD8XM52,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2024-09-23,2025-12-18,STMICROELECTRONICS IT
+DE000HD8ZTF6,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2024-09-24,2025-09-19,NASDAQ-100
+DE000HD8ZYV3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2024-09-24,2025-09-18,STMICROELECTRONICS IT
+DE000HD8ZYZ4,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2024-09-24,2025-09-18,STMICROELECTRONICS IT
+DE000HD8ZZ06,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2024-09-24,2025-09-18,STMICROELECTRONICS IT
+DE000HD8ZZ97,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2024-09-24,2025-09-18,TENARIS SA
+DE000HD9A9N8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2024-10-01,2025-12-18,TENARIS SA
+DE000HD9WAA2,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,Unicredit Bank GmbH,2024-10-25,2026-06-17,Nvidia,8.28,Monthly,N/A (less than 2 dates),2026-06-17,,50.0,50.0
+DE000SF2M914,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,,SOCIETE GENERALE EFFEKTEN GMBH,2021-07-21,2099-12-31,10-YEARS US TREASURY NOTE FUTURE,,,,,,,
+DE000SJ0C9U4,Discount,Bullish,1200,Discount Certificates,5.62,SOCIETE GENERALE EFFEKTEN GMBH,2024-09-30,2025-12-29,Campari
+DE000SJ1CJE5,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,20.53,SOCIETE GENERALE EFFEKTEN GMBH,2024-10-22,2029-09-20,STMicroelectronics (MI),,,,,,,
+DE000SJ1CJL0,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,20.54,SOCIETE GENERALE EFFEKTEN GMBH,2024-10-22,2029-09-20,STMicroelectronics (MI),,,,,,,
+DE000SJ1RES4,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,1.79,SOCIETE GENERALE EFFEKTEN GMBH,2024-10-29,2099-12-31,Leonardo,,,,,,,
+DE000SJ1RFD3,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,4.98,SOCIETE GENERALE EFFEKTEN GMBH,2024-10-29,2099-12-31,STMicroelectronics (MI),,,,,,,
+DE000SJ293E3,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,5.21,SOCIETE GENERALE EFFEKTEN GMBH,2024-11-26,2099-12-31,STMicroelectronics (MI),,,,,,,
+DE000SJ2E628,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,4.41,SOCIETE GENERALE EFFEKTEN GMBH,2024-11-12,2099-12-31,STMicroelectronics (MI),,,,,,,
+DE000SJ2V5H4,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,3.12,SOCIETE GENERALE EFFEKTEN GMBH,2024-11-19,2099-12-31,Nvidia,,,,,,,
+DE000SJ6W019,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,1.21,SOCIETE GENERALE EFFEKTEN GMBH,2024-12-10,2099-12-31,Nvidia,,,,,,,
+DE000SJ78F84,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.57,SOCIETE GENERALE EFFEKTEN GMBH,2025-01-13,2099-12-31,FTSE Mib,,,,,,,
+DE000SU18JZ5,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,3.25,SOCIETE GENERALE EFFEKTEN GMBH,2023-11-17,2099-12-31,FERRARI IT,,,,,,,
+DE000SU5WP47,Discount,Bullish,1200,Discount Certificates,11.52,SOCIETE GENERALE EFFEKTEN GMBH,2023-12-19,2025-06-26,Eni
+DE000SU7F1G7,Bonus Cap,Bullish,1250,Capped Bonus Certificates,88.85,SOCIETE GENERALE EFFEKTEN GMBH,2024-01-30,2025-12-29,Eni
+DE000SW3QQR1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,2.16,SOCIETE GENERALE EFFEKTEN GMBH,2023-09-22,2099-12-31,GENERALI,,,,,,,
+DE000SW958M7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.14,SOCIETE GENERALE EFFEKTEN GMBH,2024-05-13,2025-06-20,Alphabet Inc. C
+DE000SW96CK4,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.32,SOCIETE GENERALE EFFEKTEN GMBH,2024-05-13,2025-06-19,STMICROELECTRONICS IT
+DE000SX1B024,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,20.55,SOCIETE GENERALE EFFEKTEN GMBH,2025-02-17,2099-12-31,Spotify,,,,,,,
+DE000SX1HT16,Mini Future Long,Bullish,2210,Mini-Futures,0.24,SOCIETE GENERALE EFFEKTEN GMBH,2025-02-19,2099-12-31,VIX,,,,,,,
+DE000SX57CA5,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,0.98,SOCIETE GENERALE EFFEKTEN GMBH,2025-03-19,2099-12-31,Salvatore Ferragamo,,,,,,,
+DE000SX66R29,Discount,Bullish,1200,Discount Certificates,3.94,SOCIETE GENERALE EFFEKTEN GMBH,2025-04-04,2026-12-24,Intesa Sanpaolo
+DE000SX6AGP2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.09,SOCIETE GENERALE EFFEKTEN GMBH,2025-03-20,2025-09-18,Mediobanca
+DE000SX76D07,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,6.14,SOCIETE GENERALE EFFEKTEN GMBH,2025-04-17,2099-12-31,Leonardo,,,,,,,
+DE000SY2Y9H2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.56,SOCIETE GENERALE EFFEKTEN GMBH,2024-07-15,2025-12-18,STMICROELECTRONICS IT
+DE000SY2Y9L4,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.46,SOCIETE GENERALE EFFEKTEN GMBH,2024-07-15,2025-12-18,STMICROELECTRONICS IT
+DE000SY6H508,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,3.16,SOCIETE GENERALE EFFEKTEN GMBH,2024-08-06,2099-12-31,Unity Software,,,,,,,
+DE000SY9Q131,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,0.88,SOCIETE GENERALE EFFEKTEN GMBH,2024-09-17,2099-12-31,Campari,,,,,,,
+DE000SY9WFC9,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.28,SOCIETE GENERALE EFFEKTEN GMBH,2024-09-19,2025-12-18,STMICROELECTRONICS IT
+DE000UG00KE1,Reverse Bonus Cap,Bearish,1250,Capped Bonus Certificates,100.0,Unicredit Bank GmbH,2024-10-31,2025-12-19,Stellantis
+DE000UG09HX8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2024-11-08,2025-06-18,TESLA INC
+DE000UG0QZ27,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2024-11-20,2025-09-17,APPLE
+DE000UG0YWM6,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2024-11-29,2025-12-18,STMICROELECTRONICS IT
+DE000UG1C128,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2024-12-13,2099-12-31,Porsche Holding SE,,,,,,,
+DE000UG1QBU7,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2025-01-03,2025-12-17,EUR/USD
+DE000UG1V8B4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2025-01-08,2026-06-18,UNICREDIT
+DE000UG2AR72,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2025-01-22,2025-12-17,Alphabet Inc. C
+DE000UG2HDF1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2025-01-28,2025-09-17,INTEL
+DE000UG2HDU0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2025-01-28,2025-09-17,META PLATFORMS
+DE000UG2HEG7,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2025-01-28,2025-09-17,NVIDIA Corp
+DE000UG2V7R1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2025-02-07,2025-09-17,CISCO SYSTEMS
+DE000UG2YPK0,Reverse Bonus Cap,Bearish,1250,Capped Bonus Certificates,100.0,Unicredit Bank GmbH,2025-02-13,2025-12-19,Dax
+DE000UG31P04,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2025-02-14,2025-06-19,UNICREDIT
+DE000UG361U3,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,Unicredit Bank GmbH,2025-02-20,2026-11-19,Intesa Sanpaolo/STMicroelectronics (MI)/Stellantis,9.68,Quarterly,N/A (less than 2 dates),2026-11-19,,60.0,60.0
+DE000UG3BHT4,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2025-02-25,2099-12-31,Meta,,,,,,,
+DE000UG3KF81,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2025-03-04,2099-12-31,STMicroelectronics (MI),,,,,,,
+DE000UG3M1E2,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2025-03-05,2099-12-31,EUR/USD,,,,,,,
+DE000UG3PXQ7,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2025-03-07,2025-09-18,Intesa Sanpaolo
+DE000UG3Z2W7,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2025-03-14,2099-12-31,Silver,,,,,,,
+DE000UG42EC0,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2025-03-18,2099-12-31,Mediolanum,,,,,,,
+DE000UG42FW5,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2025-03-18,2099-12-31,Porsche Holding SE,,,,,,,
+DE000UG44VK3,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2025-03-21,2026-06-19,SILVER
+DE000UG4GZ90,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,Unicredit Bank GmbH,2025-03-31,2025-12-11,Tesla,14.52,Monthly,N/A (less than 2 dates),2025-12-11,,55.0,55.0
+DE000UG4U462,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2025-04-08,2025-06-19,STMICROELECTRONICS IT
+DE000UG4U4C9,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2025-04-08,2025-12-18,STMICROELECTRONICS IT
+DE000UG4U686,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Unicredit Bank GmbH,2025-04-08,2025-12-18,Italgas SpA
+DE000UG4VND2,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,2025-04-09,2028-06-14,Eurostoxx Banks/FTSE Mib/S&P 500/Nasdaq 100,11.52,Monthly,Monthly,2025-07-17,0.0,100.0,60.0
+DE000UG53423,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2025-04-11,2099-12-31,Banca MPS,,,,,,,
+DE000UG581A8,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,2025-04-15,2028-10-19,BMW/Mercedes Benz,8.28,Monthly,Monthly,2026-04-16,0.0,100.0,60.0
+DE000UG5GMC4,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2025-04-22,2099-12-31,Repsol,,,,,,,
+DE000UG6BPP8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2025-05-13,2099-12-31,STMicroelectronics (MI),,,,,,,
+DE000UG6TW39,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,Unicredit Bank GmbH,2025-05-23,2099-12-31,Gold Spot,,,,,,,
+DE000UG6W3R5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2025-05-27,2025-09-18,STMICROELECTRONICS IT
+DE000UG6W3S3,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2025-05-27,2025-09-18,STMICROELECTRONICS IT
+DE000UG6W3Y1,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,Unicredit Bank GmbH,2025-05-27,2025-12-18,STMICROELECTRONICS IT
+DE000UG6YPP0,Express,Bullish,1260,Express Certificates,100.0,Unicredit Bank GmbH,2025-05-30,2028-06-14,Eurostoxx Banks/Nasdaq 100/FTSE Mib,7.68,Monthly,Monthly,2025-12-11,0.0,100.0,65.0
+DE000UG6YPU0,Bonus Cap,Bullish,1250,Capped Bonus Certificates,100.0,Unicredit Bank GmbH,2025-05-30,2025-12-12,Stellantis
+DE000UG6ZLR2,Bonus Cap,Bullish,1250,Capped Bonus Certificates,81.98,Unicredit Bank GmbH,2025-06-02,2027-12-17,Stellantis
+DE000UG6ZLZ5,Bonus Cap,Bullish,1250,Capped Bonus Certificates,85.44,Unicredit Bank GmbH,2025-06-02,2027-12-17,STMicroelectronics (MI)
+DE000UJ8BK92,Express,Bullish,1260,Express Certificates,1000.0,UBS AG,2025-05-30,2030-06-10,Iveco/Saipem/Unicredit,11.26,Monthly,Monthly,2026-06-02,1.0,100.0,53.0
+DE000UL4SXR0,Express,Bullish,1260,Express Certificates,,UBS AG,2023-07-18,2028-07-24,Adidas/Intesa Sanpaolo/Volkswagen Pref,9.5,Quarterly,Quarterly,2024-07-17,0.0,100.0,60.0
+DE000UL6LJW9,Bonus Cap,Bullish,1250,Capped Bonus Certificates,,UBS AG,2023-06-14,2026-06-22,Vodafone/Tesla/Uber
+DE000VC04SN4,Express,Bullish,1260,Express Certificates,1000.0,VONTOBEL FINANCIAL PRODUCTS GM,2024-08-06,2027-08-06,Moderna,17.2,Quarterly,Quarterly,2025-05-06,0.0,100.0,60.0
+DE000VC0L900,Turbo Short,Bearish,2200,Knock-Out Warrants,0.52,VONTOBEL FINANCIAL PRODUCTS GM,2024-08-05,2025-06-20,STMicroelectronics (PA),,,,,,,
+DE000VC2L6Q4,Express,Bullish,1260,Express Certificates,1000.0,VONTOBEL FINANCIAL PRODUCTS GM,2024-08-23,2026-08-24,BMW/Renault/Tesla,16.8,Quarterly,Quarterly,2025-05-23,0.0,100.0,60.0
+DE000VC2LWF6,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.06,VONTOBEL FINANCIAL PRODUCTS GM,2024-09-10,2025-12-19,STMICROELECTRONICS FR
+DE000VC2W6Z2,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,2024-08-29,2027-03-01,BPER Banca/Leonardo/STMicroelectronics (PA)/Banca MPS,11.64,Quarterly,Quarterly,2025-09-01,0.0,100.0,60.0
+DE000VC4BXS4,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.16,VONTOBEL FINANCIAL PRODUCTS GM,2024-10-02,2025-06-20,FTSE MIB INDEX
+DE000VC70AE2,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.13,VONTOBEL FINANCIAL PRODUCTS GM,2025-03-11,2025-06-20,AMAZON INC
+DE000VC70JC7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.05,VONTOBEL FINANCIAL PRODUCTS GM,2025-03-12,2026-06-19,VOLKSWAGEN PREF
+DE000VC73BL9,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.14,VONTOBEL FINANCIAL PRODUCTS GM,2025-04-02,2025-07-18,FTSE MIB INDEX
+DE000VC73G49,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.4,VONTOBEL FINANCIAL PRODUCTS GM,2025-04-02,2026-03-20,EUR/USD
+DE000VC73HJ0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.17,VONTOBEL FINANCIAL PRODUCTS GM,2025-04-02,2026-03-20,LBMA Gold Price PM
+DE000VC73JH0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.26,VONTOBEL FINANCIAL PRODUCTS GM,2025-04-02,2026-03-20,S AND P 500
+DE000VC73JR9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.48,VONTOBEL FINANCIAL PRODUCTS GM,2025-04-02,2026-03-20,S AND P 500
+DE000VC744E7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.37,VONTOBEL FINANCIAL PRODUCTS GM,2025-04-09,2026-12-18,APPLE
+DE000VC75TV5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.35,VONTOBEL FINANCIAL PRODUCTS GM,2025-04-10,2025-06-18,NASDAQ-100
+DE000VC75WU1,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,2.18,VONTOBEL FINANCIAL PRODUCTS GM,2025-04-10,2099-12-31,Stellantis,,,,,,,
+DE000VC7TRC5,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,2024-11-11,2027-11-11,Schlumberger/Baker Hughes/Transocean,5.6,Monthly,Monthly,2025-11-11,0.0,100.0,60.0
+DE000VC7ZKF0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.11,VONTOBEL FINANCIAL PRODUCTS GM,2025-03-07,2025-12-19,EUR/USD
+DE000VC9DH63,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.98,VONTOBEL FINANCIAL PRODUCTS GM,2024-12-05,2025-06-18,NASDAQ-100
+DE000VD05CX2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.63,VONTOBEL FINANCIAL PRODUCTS GM,2024-03-11,2025-06-20,NVIDIA Corp
+DE000VD15KD6,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,2024-03-15,2028-09-15,Johnson & Johnson/Pfizer/Biogen/Roche,8.6,Quarterly,Quarterly,2025-03-17,0.25,100.0,70.0
+DE000VD1UBS5,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,10.0,VONTOBEL FINANCIAL PRODUCTS GM,2024-03-18,2027-06-18,Platinum Spot,,,,,,,
+DE000VD4RKK3,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,2024-04-25,2026-05-25,Eni/Unicredit/Banco BPM/Stellantis,12.96,Monthly,Monthly,2024-07-25,1.0,100.0,60.0
+DE000VD5UE42,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,2024-05-10,2026-05-11,Lufthansa/American Airlines/United Airlines,13.68,Monthly,Monthly,2024-11-11,0.0,100.0,60.0
+DE000VD82UD5,Turbo Short,Bearish,2200,Knock-Out Warrants,5.14,VONTOBEL FINANCIAL PRODUCTS GM,2024-07-03,2025-06-20,S&P 500,,,,,,,
+DE000VD82ZN3,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.15,VONTOBEL FINANCIAL PRODUCTS GM,2024-07-03,2025-12-18,UNICREDIT
+DE000VD8UPQ4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.39,VONTOBEL FINANCIAL PRODUCTS GM,2024-07-02,2025-12-19,META PLATFORMS
+DE000VD8UUE0,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.57,VONTOBEL FINANCIAL PRODUCTS GM,2024-07-02,2025-12-19,STMICROELECTRONICS FR
+DE000VD8UVQ2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.11,VONTOBEL FINANCIAL PRODUCTS GM,2024-07-02,2025-12-19,AMAZON INC
+DE000VD9L926,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.23,VONTOBEL FINANCIAL PRODUCTS GM,2024-07-29,2025-06-19,STELLANTIS IT
+DE000VG1DNG8,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.38,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-03,2026-06-19,STMICROELECTRONICS FR
+DE000VG1DQJ5,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.25,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-03,2025-09-19,STMICROELECTRONICS FR
+DE000VG1S9X9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.19,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-03,2025-06-20,S AND P 500
+DE000VG2E758,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.27,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-08,2025-09-19,STMICROELECTRONICS FR
+DE000VG2E766,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.21,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-08,2025-06-20,STMICROELECTRONICS FR
+DE000VG2FAC7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.04,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-09,2025-09-19,STMICROELECTRONICS FR
+DE000VG2FDR9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,9.21,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-09,2099-12-31,Netflix,,,,,,,
+DE000VG2FE54,Mini Future Open-End Long,Bullish,2210,Mini-Futures,3.76,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-09,2099-12-31,Generali,,,,,,,
+DE000VG2J6P1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.23,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-21,2025-07-28,ICE BRENT 09/25
+DE000VG2J7R5,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,47.03,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-21,2099-12-31,Dax,,,,,,,
+DE000VG2JV26,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.52,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-14,2025-09-19,EUR/USD
+DE000VG37CE8,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-28,2027-07-28,Coinbase/ARM Holdings ADR/AppLovin Corp. Class A,21.96,Monthly,Monthly,2025-07-28,1.0,100.0,50.0
+DE000VG3P984,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.2,VONTOBEL FINANCIAL PRODUCTS GM,2025-01-31,2026-12-18,Palantir Tech Inc
+DE000VG4K6P6,Turbo Short,Bearish,2200,Knock-Out Warrants,1.22,VONTOBEL FINANCIAL PRODUCTS GM,2025-02-11,2025-06-20,Tesla,,,,,,,
+DE000VG4LHG7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.06,VONTOBEL FINANCIAL PRODUCTS GM,2025-02-19,2025-09-18,Leonardo SpA
+DE000VG6J8X7,Turbo Short,Bearish,2200,Knock-Out Warrants,0.6,VONTOBEL FINANCIAL PRODUCTS GM,2025-02-25,2025-06-20,STMicroelectronics (PA),,,,,,,
+DE000VG6KHP5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.19,VONTOBEL FINANCIAL PRODUCTS GM,2025-03-04,2025-06-20,STMICROELECTRONICS FR
+DE000VG7DB21,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.13,VONTOBEL FINANCIAL PRODUCTS GM,2025-03-04,2025-06-20,Palantir Tech Inc
+DE000VG7WJT6,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,2025-03-12,2027-09-13,Tesla,12.48,Monthly,Monthly,2025-09-15,1.0,100.0,60.0
+DE000VG7YDX7,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,2025-03-26,2027-03-24,STMicroelectronics (PA)/Stellantis/Hertz Global Holdings,12.0,Monthly,Monthly,2025-09-25,1.0,100.0,50.0
+DE000VG955E5,Mini Future Open-End Long,Bullish,2210,Mini-Futures,3.72,VONTOBEL FINANCIAL PRODUCTS GM,2025-04-28,2099-12-31,Dax,,,,,,,
+DE000VK2M1J2,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,2025-05-13,2027-05-10,Intesa Sanpaolo/Banco BPM/Amazon/Alphabet cl. A,10.56,Monthly,Monthly,2025-11-10,1.0,100.0,50.0
+DE000VK2X786,Express,Bullish,1260,Express Certificates,1000.0,VONTOBEL FINANCIAL PRODUCTS GM,2025-05-21,2027-05-19,Banca MPS/Banco BPM,17.76,Monthly,Monthly,2025-11-19,0.0,100.0,60.0
+DE000VK3LVC3,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,54.04,VONTOBEL FINANCIAL PRODUCTS GM,2025-05-07,2099-12-31,Dax,,,,,,,
+DE000VK3U3W0,Mini Future Open-End Short,Bearish,2210,Mini-Futures,46.72,VONTOBEL FINANCIAL PRODUCTS GM,2025-05-09,2099-12-31,Nasdaq 100,,,,,,,
+DE000VK479W2,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,3.39,VONTOBEL FINANCIAL PRODUCTS GM,2025-05-27,2099-12-31,EUR/USD,,,,,,,
+DE000VK4GU53,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.56,VONTOBEL FINANCIAL PRODUCTS GM,2025-05-16,2099-12-31,ICE COFFEE FUTURE
+DE000VK4GVR9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,0.5,VONTOBEL FINANCIAL PRODUCTS GM,2025-05-16,2099-12-31,FTSE Mib,,,,,,,
+DE000VK4VCR8,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.61,VONTOBEL FINANCIAL PRODUCTS GM,2025-05-21,2025-07-18,DAX
+DE000VK5ERX7,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.38,VONTOBEL FINANCIAL PRODUCTS GM,2025-05-29,2025-06-20,DAX
+DE000VK5ERY5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.86,VONTOBEL FINANCIAL PRODUCTS GM,2025-05-29,2025-09-19,DAX
+DE000VK5ETP9,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,0.04,VONTOBEL FINANCIAL PRODUCTS GM,2025-05-29,2099-12-31,Natural Gas,,,,,,,
+DE000VK5QM19,Turbo Short,Bearish,2200,Knock-Out Warrants,1.37,VONTOBEL FINANCIAL PRODUCTS GM,2025-06-03,2025-12-18,STELLANTIS IT
+DE000VK5QP81,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,1.77,VONTOBEL FINANCIAL PRODUCTS GM,2025-06-03,2099-12-31,TESLA INC
+DE000VK5QPU1,Turbo Long,Bullish,2200,Knock-Out Warrants,0.53,VONTOBEL FINANCIAL PRODUCTS GM,2025-06-03,2025-09-19,FTSE MIB INDEX
+DE000VK6NPV4,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,2025-06-02,2027-11-29,Generali/Barclays/Commerzbank,9.48,Monthly,Monthly,2025-09-01,1.0,100.0,60.0
+DE000VM0FGH9,Express,Bullish,1260,Express Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,2023-08-02,2026-07-31,Zalando/Capri Holdings/Gap,17.4,Monthly,Monthly,2024-04-29,0.0,100.0,50.0
+DE000VM2A0Y3,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,2.03,VONTOBEL FINANCIAL PRODUCTS GM,2023-09-19,2027-06-18,Alphabet cl. A,,,,,,,
+DE000VM752A6,Express,Bullish,1260,Express Certificates,100.0,VONTOBEL FINANCIAL PRODUCTS GM,2024-01-08,2027-01-08,Burberry/Kering/Estee Lauder/Tapestry,11.09,Quarterly,Quarterly,2024-10-08,0.0,100.0,60.0
+DE000VM7Q6B5,Plain Vanilla Warrant Put,Bearish,2100,Warrants,0.1,VONTOBEL FINANCIAL PRODUCTS GM,2024-01-05,2025-06-20,STMICROELECTRONICS FR
+DE000VM7V5T2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,0.19,VONTOBEL FINANCIAL PRODUCTS GM,2024-01-12,2025-06-19,ENI
+DE000VM9KKT7,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,10.0,VONTOBEL FINANCIAL PRODUCTS GM,2024-02-08,2027-06-18,S&P 500,,,,,,,
+DE000VQ1XGK0,Tracker,Bullish,1300,Tracker Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,2020-12-04,2099-12-31,DISRUPTORS INDEX,,,,,,,
+DE000VQ1ZMN7,Tracker,Bullish,1300,Tracker Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,2020-12-04,2099-12-31,IMPACT FOR GOOD INDEX,,,,,,,
+DE000VU2XKS7,Express,Bullish,1260,Express Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,2023-02-06,2028-02-02,Renault/Volkswagen Pref/Ford/Stellantis,12.0,Monthly,Monthly,2023-08-02,0.0,100.0,60.0
+DE000VU32954,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,2023-03-06,2027-06-18,Vont 3X S MB,,,,,,,
+DE000VU33BR2,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,2023-03-06,2027-06-18,Vont 5X S STM,,,,,,,
+DE000VU33DW8,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,2023-03-06,2027-06-18,Vont 3X S DAX V2,,,,,,,
+DE000VU6AZ85,Express,Bullish,1260,Express Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,2023-04-21,2026-04-21,Volkswagen Pref/Stellantis/Mercedes Benz,11.28,Monthly,Monthly,2024-01-22,0.0,100.0,50.0
+DE000VX05Z77,Tracker,Bullish,1300,Tracker Certificates,,VONTOBEL FINANCIAL PRODUCTS GM,2021-09-22,2099-12-31,First Solutions GBA,,,,,,,
+DE000VX3RZC6,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,VONTOBEL FINANCIAL PRODUCTS GM,2021-12-06,2099-12-31,NYMEX WTI CRUDE OIL FUTURE
+GB00BPM1WN21,Cash Collect Autocallable,Bullish,1260,Express Certificates,,GOLDMAN SACHS INTERNATIONAL,2023-03-03,2026-09-09,Porsche Holding SE/Unicredit/Banco BPM,8.64,Monthly,Monthly,2024-03-04,0.0,100.0,60.0
+GB00BTLDMS21,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,GOLDMAN SACHS INTERNATIONAL,2025-05-23,2028-05-22,Renault/Stellantis,9.0,Quarterly,Quarterly,2026-02-16,0.0,100.0,60.0
+IT0005393779,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,,Unicredit S.p.A.,2020-04-30,2025-10-30,Eurostoxx Select Dividend 30
+IT0005446213,Miscellaneous Capital Protection,Bullish,1199,Miscellaneous Capital Protection,,Unicredit S.p.A.,2021-10-29,2028-04-28,Euribor 3M,1.0,Annual,N/A (less than 2 dates),,,,
+IT0005452146,Cash Collect Autocallable,Bullish,1260,Express Certificates,,Mediobanca Banca di Credito Fi,2021-08-30,2025-12-01,FTSE Mib/Eurostoxx Select Dividend 30,2.1,Annual,Irregular (most common diff: 458 days),2024-08-23,50.0,100.0,50.0
+IT0005456139,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,,Unicredit S.p.A.,2021-12-30,2027-12-30,UC Next Generation Energy,2.75,Annual,N/A (less than 2 dates),,,,
+IT0005561573,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,Intesa Sanpaolo S.p.A.,2023-09-13,2025-09-15,BPER Banca,8.28,Monthly,N/A (less than 2 dates),2025-09-11,,55.0,55.0
+IT0005567380,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Banco BPM S.p.A.,2023-11-16,2027-11-16,Eurostoxx Select Dividend 30,4.4,Annual,N/A (less than 2 dates),2027-11-09,,50.0,50.0
+IT0005582009,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,Unicredit S.p.A.,2024-05-03,2028-05-04,Porsche AG,6.24,Quarterly,Quarterly,2025-01-27,0.0,100.0,65.0
+IT0005587149,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Banco BPM S.p.A.,2024-03-19,2026-03-19,BMW/Unicredit,9.48,Monthly,Monthly,2024-12-12,0.0,100.0,55.0
+IT0005588477,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,Unicredit S.p.A.,2024-05-28,2027-05-28,Banco BPM/STMicroelectronics (MI)/Stellantis,7.8,Monthly,Monthly,2025-05-21,0.0,100.0,50.0
+IT0005593816,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,1000.0,Mediobanca Banca di Credito Fi,2024-05-29,2028-06-05,Axa/Eni/Fineco,10.32,Monthly,Monthly,2025-05-27,0.0,100.0,70.0
+IT0005598484,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,Banco BPM S.p.A.,2024-06-11,2026-06-11,STMicroelectronics (PA),6.96,Monthly,N/A (less than 2 dates),2026-06-04,,60.0,60.0
+IT0005600389,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Banco BPM S.p.A.,2024-06-28,2027-06-28,BPER Banca/Credit Agricole/Infineon,10.0,Quarterly,Quarterly,2025-06-20,0.0,100.0,50.0
+IT0005603391,Bonus Cap,Bullish,1250,Capped Bonus Certificates,500.0,Mediobanca Banca di Credito Fi,2024-08-14,2027-08-19,Bayer/Kering
+IT0005608978,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Unicredit S.p.A.,2024-10-15,2027-10-15,Eni/Tenaris/Repsol,10.0,Monthly,Monthly,2025-04-08,0.0,100.0,100.0
+IT0005611766,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,Banco BPM S.p.A.,2024-09-24,2027-09-24,BMW/STMicroelectronics (PA)/Unicredit,11.05,Monthly,Monthly,2025-09-17,0.0,100.0,50.0
+IT0005614083,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Unicredit S.p.A.,2024-12-24,2030-12-24,Euribor 3M,3.07,Semiannual,N/A (less than 2 dates),,,,
+IT0005620049,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,Unicredit S.p.A.,2024-12-23,2028-12-27,Renault,9.48,Quarterly,Quarterly,2025-09-16,0.0,100.0,65.0
+IT0005632655,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,Unicredit S.p.A.,2025-03-27,2031-03-27,FTSE Mib,3.3,Annual,N/A (less than 2 dates),,,,
+IT0005638520,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Intesa Sanpaolo S.p.A.,2025-03-10,2025-12-19,FTSE MIB INDEX
+IT0005639551,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,Intesa Sanpaolo S.p.A.,2025-03-10,2025-12-01,STMICROELECTRONICS IT
+IT0006759077,Express,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,2023-09-13,2026-09-23,BMW/Tesla/Stellantis,9.89,Quarterly,Quarterly,2024-06-13,0.0,100.0,50.0
+IT0006762709,Express,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,2024-03-22,2027-04-08,LVMH Louis Vuitton/Kering/Cie Financiere Richemont,11.0,Monthly,Monthly,2024-07-29,1.0,100.0,50.0
+IT0006763475,Express,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,2024-05-07,2027-11-12,Axa/BNP Paribas/Credit Agricole/STMicroelectronics (PA),12.36,Monthly,Monthly,2025-05-05,1.0,100.0,50.0
+IT0006765215,Express,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,2024-09-04,2028-03-08,Saipem/STMicroelectronics (PA)/Tenaris,12.9,Quarterly,Quarterly,2025-02-28,0.0,100.0,60.0
+IT0006769035,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,NATIXIS STRUCTURED ISSUANCE SA,2025-05-30,2029-06-13,Bayer/Siemens,7.5,Quarterly,Quarterly,2026-06-01,0.0,100.0,60.0
+IT0006769357,Express,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,2025-06-03,2029-06-15,Nikkei 225/Nasdaq 100/iShares China Large-Cap Etf/Euro Stoxx 50,7.5,Monthly,Monthly,2025-12-08,0.0,100.0,60.0
+IT0006769365,Express,Bullish,1260,Express Certificates,1000.0,MAREX FINANCIAL,2025-06-04,2027-06-11,Mediobanca/Engie/Rwe/Generali,11.3,Monthly,Monthly,2025-10-02,1.0,95.0,70.0
+JE00BS6BGJ35,Equity Protection with Cap,Bullish,1120,Capped Capital Protected,100.0,GOLDMAN SACHS FIN CORP INT,2025-03-05,2028-03-06,Msci World
+NL0014612822,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2020-04-03,2025-12-23,Mediobanca,,,,,,,
+NLBNPIT10KM6,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2020-11-20,2099-12-31,ENI,,,,,,,
+NLBNPIT10MV3,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,,BNP PARIBAS ISSUANCE B.V.,2020-11-25,2025-12-19,FTSE MIB FUTURE,,,,,,,
+NLBNPIT1EYR7,Fixed Leverage Certificate Long,Bullish,2300,Constant Leverage Certificates,,BNP PARIBAS ISSUANCE B.V.,2022-07-20,2025-12-24,SILVER COMEX FUTURE,,,,,,,
+NLBNPIT1IDU6,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2022-10-19,2025-12-23,Prysmian,,,,,,,
+NLBNPIT1QUL2,Cash Collect Autocallable,Bullish,1260,Express Certificates,,BNP PARIBAS ISSUANCE B.V.,2023-06-14,2026-06-17,Sanofi/Vertex/Moderna,9.09,Quarterly,Quarterly,2023-12-08,0.0,100.0,50.0
+NLBNPIT1R338,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,,BNP PARIBAS ISSUANCE B.V.,2023-06-22,2027-06-25,Eurostoxx Oil & Gas/Eurostoxx Utilities,6.6,Quarterly,N/A (less than 2 dates),2027-06-16,,70.0,70.0
+NLBNPIT1XRU5,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2023-12-14,2099-12-31,EUR/USD,,,,,,,
+NLBNPIT1Z6X1,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,BNP PARIBAS ISSUANCE B.V.,2024-02-15,2027-02-23,A2A/Eni/STMicroelectronics (MI),9.6,Monthly,N/A (less than 2 dates),2027-02-12,,60.0,60.0
+NLBNPIT20045,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,2024-03-01,2027-03-09,Expedia/Uber/Carnival,12.0,Monthly,Annual,2025-02-26,0.0,100.0,60.0
+NLBNPIT245Y6,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,BNP PARIBAS ISSUANCE B.V.,2024-06-20,2026-06-26,Enel/Eni/Generali/Unicredit,9.6,Monthly,Semiannual,2025-06-13,2.0,98.0,60.0
+NLBNPIT24NQ2,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2024-06-28,2025-06-24,UNICREDIT
+NLBNPIT26B29,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2024-08-06,2025-06-25,STMICROELECTRONICS FR
+NLBNPIT27ID3,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2024-09-04,2025-06-25,LVMH
+NLBNPIT27L59,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2024-09-04,2025-06-24,Salvatore Ferragamo SpA
+NLBNPIT27RV6,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2024-09-05,2099-12-31,STMicroelectronics (PA),,,,,,,
+NLBNPIT28D66,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2024-09-19,2025-06-25,NETFLIX INC
+NLBNPIT28LX3,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2024-09-26,2099-12-31,Tenaris,,,,,,,
+NLBNPIT28NE9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2024-09-26,2025-06-25,GOLD
+NLBNPIT294G1,Bonus Cap,Bullish,1250,Capped Bonus Certificates,,BNP PARIBAS ISSUANCE B.V.,2024-10-11,2025-12-19,Saipem
+NLBNPIT296U7,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2024-10-11,2035-12-27,CREDEM,,,,,,,
+NLBNPIT29DD0,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2024-10-17,2035-12-28,USD/JPY,,,,,,,
+NLBNPIT29SB2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2024-10-31,2025-06-24,Davide Campari Milano
+NLBNPIT2B4K0,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,23.75,BNP PARIBAS ISSUANCE B.V.,2024-12-05,2035-12-28,Advanced Micro Devices,,,,,,,
+NLBNPIT2BLN7,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2024-12-17,2025-06-25,Broadcom Ltd
+NLBNPIT2BM87,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2024-12-17,2025-06-25,Palantir Tech Inc
+NLBNPIT2C882,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-03,2025-06-25,STMICROELECTRONICS FR
+NLBNPIT2C8G8,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-03,2025-09-24,STMICROELECTRONICS FR
+NLBNPIT2C8K0,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-03,2025-12-24,STMICROELECTRONICS FR
+NLBNPIT2C8P9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-03,2025-06-24,BANCO BPM SPA
+NLBNPIT2C8U9,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-03,2025-09-23,BANCO BPM SPA
+NLBNPIT2C965,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-03,2025-06-24,BANCA MONTE P. SIENA
+NLBNPIT2CAW9,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-03,2025-09-23,Intesa Sanpaolo
+NLBNPIT2CBT3,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-03,2025-12-23,FERRARI IT
+NLBNPIT2CD61,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-03,2025-09-24,APPLE
+NLBNPIT2CEH2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-03,2025-12-24,META PLATFORMS
+NLBNPIT2CG68,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-03,2025-09-24,TESLA INC
+NLBNPIT2DN76,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-20,2025-06-24,Prysmian
+NLBNPIT2E052,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-27,2025-09-24,S AND P 500
+NLBNPIT2E7O2,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-01-31,2025-06-25,Dax,,,,,,,
+NLBNPIT2EG25,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2025-02-05,2035-12-28,USD/GBP,,,,,,,
+NLBNPIT2FSX2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-02-28,2025-12-23,DiaSorin SpA
+NLBNPIT2G5G0,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-03-06,2099-12-31,Citigroup,,,,,,,
+NLBNPIT2GJT7,Mini Future Short,Bearish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2025-03-12,2035-12-28,Arcelor Mittal,,,,,,,
+NLBNPIT2GR12,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-03-14,2025-12-23,Leonardo SpA
+NLBNPIT2H5B0,Mini Future Short,Bearish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2025-03-20,2035-12-27,Brembo,,,,,,,
+NLBNPIT2HGL8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-03-27,2099-12-31,Novo Nordisk,,,,,,,
+NLBNPIT2HZC7,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-04,2025-12-24,NVIDIA Corp
+NLBNPIT2I236,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2025-04-07,2035-12-28,STMicroelectronics (PA),,,,,,,
+NLBNPIT2IBJ1,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-07,2025-06-24,STELLANTIS IT
+NLBNPIT2IKI4,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2025-04-08,2035-12-27,Buzzi Unicem,,,,,,,
+NLBNPIT2JAZ7,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2025-04-09,2035-12-27,Iveco,,,,,,,
+NLBNPIT2JDD8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-09,2099-12-31,Airbus,,,,,,,
+NLBNPIT2JGZ4,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-09,2099-12-31,Biontech,,,,,,,
+NLBNPIT2JHD9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-09,2099-12-31,DoorDash,,,,,,,
+NLBNPIT2JJU9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-09,2025-09-23,FTSE MIB INDEX
+NLBNPIT2JR27,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-10,2099-12-31,Tesla,,,,,,,
+NLBNPIT2JTP8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-11,2025-12-24,ASML HOLDING
+NLBNPIT2JTQ6,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-11,2025-12-24,ASML HOLDING
+NLBNPIT2K3V8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-11,2099-12-31,Atlassian,,,,,,,
+NLBNPIT2K8Z8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-14,2025-09-24,STMICROELECTRONICS FR
+NLBNPIT2KKH2,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-16,2025-06-24,Banco BPM,,,,,,,
+NLBNPIT2KOC5,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-22,2099-12-31,FTSE Mib,,,,,,,
+NLBNPIT2KXC6,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-24,2025-06-25,EUR/USD,,,,,,,
+NLBNPIT2KZ24,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-24,2099-12-31,SAP,,,,,,,
+NLBNPIT2L0G4,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-24,2099-12-31,Qualcomm,,,,,,,
+NLBNPIT2L0Q3,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-24,2099-12-31,EUR/USD,,,,,,,
+NLBNPIT2L925,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-04-30,2099-12-31,Uipath,,,,,,,
+NLBNPIT2LHL8,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-06,2099-12-31,Applied Materials,,,,,,,
+NLBNPIT2LHU9,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-06,2099-12-31,Netapp,,,,,,,
+NLBNPIT2LQV8,Mini Future Short,Bearish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2025-05-13,2035-12-28,STMicroelectronics (PA),,,,,,,
+NLBNPIT2LVY2,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-13,2025-06-24,Mediobanca
+NLBNPIT2LWA0,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-13,2025-12-24,Palantir Tech Inc
+NLBNPIT2LX17,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-14,2025-06-25,STMicroelectronics (PA),,,,,,,
+NLBNPIT2LZ31,Turbo Open-End Long,Bullish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-14,2099-12-31,KLA,,,,,,,
+NLBNPIT2M048,Fixed Leverage Certificate Short,Bearish,2300,Constant Leverage Certificates,26.7,BNP PARIBAS ISSUANCE B.V.,2025-05-15,2035-12-28,Palantir,,,,,,,
+NLBNPIT2M6A3,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-19,2025-09-23,FTSE MIB INDEX
+NLBNPIT2M9D1,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-19,2025-12-23,Banco BPM,,,,,,,
+NLBNPIT2M9X9,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-19,2025-12-23,Enel,,,,,,,
+NLBNPIT2MEQ2,Turbo Open-End Short,Bearish,2205,Open-End Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-20,2099-12-31,Intesa Sanpaolo,,,,,,,
+NLBNPIT2MI64,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2025-05-21,2035-12-27,Leonardo,,,,,,,
+NLBNPIT2MJY5,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-22,2025-09-24,Dax,,,,,,,
+NLBNPIT2MK45,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-22,2025-09-24,Euro Stoxx 50,,,,,,,
+NLBNPIT2MMI2,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-22,2025-09-24,S&P 500,,,,,,,
+NLBNPIT2MMP7,Turbo Short,Bearish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-22,2025-12-23,Generali,,,,,,,
+NLBNPIT2MNE9,Mini Future Long,Bullish,2210,Mini-Futures,,BNP PARIBAS ISSUANCE B.V.,2025-05-22,2035-12-28,Palladio Future,,,,,,,
+NLBNPIT2MS13,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-23,2025-06-10,NASDAQ-100
+NLBNPIT2MSA6,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-23,2025-06-11,NASDAQ-100
+NLBNPIT2MSB4,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-23,2025-06-12,NASDAQ-100
+NLBNPIT2MUL9,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-23,2025-06-10,S AND P 500
+NLBNPIT2MZH6,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-23,2025-07-23,TESLA INC
+NLBNPIT2N0H0,Turbo Long,Bullish,2200,Knock-Out Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-26,2025-12-23,Mediobanca,,,,,,,
+NLBNPIT2N1R7,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-26,2025-07-23,DAX
+NLBNPIT2N2G8,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-26,2025-07-22,FTSE MIB INDEX
+NLBNPIT2N491,Plain Vanilla Warrant Call,Bullish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-26,2025-09-23,Interpump Group SpA
+NLBNPIT2N4S9,Plain Vanilla Warrant Put,Bearish,2100,Warrants,,BNP PARIBAS ISSUANCE B.V.,2025-05-26,2025-09-23,STELLANTIS IT
+XS0461522475,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,10000.0,DEUTSCHE BANK AG.,2024-01-17,2025-12-23,Unicredit,,,,,,,
+XS0462073510,Bonus,Bullish,1320,Bonus Certificates,100.0,DEUTSCHE BANK AG.,2024-11-29,2028-11-29,S&P 500
+XS2281831995,Cash Collect Autocallable,Bullish,1260,Express Certificates,,BNP PARIBAS ISSUANCE B.V.,2023-07-18,2026-07-28,Tenaris/Banco BPM/STMicroelectronics (MI),8.0,Quarterly,Quarterly,2023-12-04,0.0,100.0,50.0
+XS2314212205,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,,SG ISSUER,2021-06-30,2025-07-07,Solactive Global UN Sustainable Development Goals
+XS2348176806,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,,BNP PARIBAS ISSUANCE B.V.,2022-02-28,2026-02-16,Eurostoxx Banks,4.0,Semiannual,N/A (less than 2 dates),2026-02-09,,100.0,100.0
+XS2380307905,Cash Collect Autocallable,Bullish,1260,Express Certificates,,BNP PARIBAS ISSUANCE B.V.,2023-09-01,2026-08-11,Eurostoxx Banks/Stoxx Europe 600 Oil&Gas/Stoxx Europe 600 Auto&Parts,7.56,Monthly,Monthly,2024-08-05,0.0,100.0,55.0
+XS2394958420,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,,SG ISSUER,2022-06-30,2027-06-28,STOXX Global Select Dividend 100
+XS2395034973,Cash Collect Autocallable,Bullish,1260,Express Certificates,,SG ISSUER,2023-06-29,2026-06-19,Airbus/Lufthansa/Air France-KLM,11.4,Monthly,Monthly,2025-06-12,0.0,100.0,60.0
+XS2395060119,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,SG ISSUER,2023-11-30,2026-12-02,Allianz/L'Oreal/KLA,6.88,Monthly,Monthly,2024-11-25,10.0,100.0,70.0
+XS2395062750,Equity Protection without Cap,Bullish,1100,Uncapped Capital Protection,100.0,SG ISSUER,2023-12-12,2026-12-04,Eurostoxx Select Dividend 30
+XS2395069417,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,SG ISSUER,2024-02-15,2027-02-16,Enel/STMicroelectronics (PA)/Tenaris/Fineco,9.6,Monthly,Monthly,2024-08-09,15.0,100.0,55.0
+XS2395097541,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,1000.0,SG ISSUER,2024-07-05,2027-07-05,Intesa Sanpaolo/Renault/Telecom Italia/Unicredit,12.96,Monthly,N/A (less than 2 dates),2027-06-28,,55.0,55.0
+XS2395114148,Cash Collect Autocallable,Bullish,1260,Express Certificates,100.0,SG ISSUER,2024-10-31,2027-10-25,Enel/Eni/Rwe,6.6,Monthly,Monthly,2025-10-20,0.0,100.0,60.0
+XS2395164838,Miscellaneous Participation,Bullish,1399,Miscellaneous Particpation,1000.0,SG ISSUER,2025-05-30,2027-05-24,Eurostoxx Banks,,N/A (less than 2 dates),N/A (less than 2 dates),,,,
+XS2428663632,Cash Collect Autocallable,Bullish,1260,Express Certificates,,BNP PARIBAS ISSUANCE B.V.,2022-10-10,2026-10-12,Euro Stoxx 50/FTSE Mib,4.65,Annual,Annual,2025-10-13,50.0,100.0,50.0
+XS2435997767,Express,Bullish,1260,Express Certificates,,BNP PARIBAS ISSUANCE B.V.,2022-10-26,2026-10-28,Euro Stoxx 50/S&P 500,5.0,Annual,N/A (less than 2 dates),2026-10-21,,40.0,40.0
+XS2436015171,Equity Protection with Cap,Bullish,1120,Capped Capital Protected,,BNP PARIBAS ISSUANCE B.V.,2022-10-31,2027-10-18,Euronext Core Euro & Global Climate Change EW Decrement 5%
+XS2442161373,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,,BNP PARIBAS ISSUANCE B.V.,2022-11-30,2026-11-30,Walt Disney,6.15,Annual,N/A (less than 2 dates),,,,
+XS2484917526,Bonus Protected,Bullish,1199,Miscellaneous Capital Protection,,BNP PARIBAS ISSUANCE B.V.,2023-03-21,2028-03-28,MSCI World IMI Digital health Select 5% Risk Control
+XS2521301015,Tracker,Bullish,1300,Tracker Certificates,,BNP PARIBAS ISSUANCE B.V.,2023-06-22,2099-12-31,BNP PARIBAS GLOBAL WATER TR INDEX
+XS2527773266,Equity Protection with Cap,Bullish,1120,Capped Capital Protected,1000.0,Intesa Sanpaolo S.p.A.,2022-10-07,2027-10-07,Euro Stoxx 50
+XS2551769198,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,,Mediobanca Banca di Credito Fi,2022-11-21,2027-12-20,DEBITO ENI,4.8,Quarterly,N/A (less than 2 dates),,,,
+XS2623596975,Express,Bullish,1260,Express Certificates,1000.0,CITIGROUP GLOBAL MARKETS FUNDI,2023-11-30,2026-12-07,STMicroelectronics (PA)/Unicredit/Repsol,10.0,Monthly,Monthly,2024-08-28,30.0,100.0,60.0
+XS2660407250,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,CITIGROUP GLOBAL MARKETS HOLDI,2024-08-07,2029-08-07,Euribor ICE Swap Rate 11:00 am,5.4,Quarterly,Quarterly,2025-04-29,0.0,100.0,100.0
+XS2685401130,Credit Linked Certificate,Bullish,1440,Credit Linked Note - Linear,100000.0,Mediobanca Banca di Credito Fi,2023-10-06,2033-06-20,Renault,7.1,Quarterly,N/A (less than 2 dates),,,,
+XS2705282791,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,BNP PARIBAS ISSUANCE B.V.,2024-02-07,2027-02-17,Enel/Rwe/Veolia Env.,9.0,Quarterly,N/A (less than 2 dates),2027-02-08,,55.0,55.0
+XS2753881817,Express,Bullish,1260,Express Certificates,5000.0,Mediobanca Banca di Credito Fi,2024-02-21,2028-02-28,Ing Groep/Stellantis,9.24,Monthly,Monthly,2025-02-19,0.0,100.0,60.0
+XS2759148609,Express,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,2024-05-10,2027-04-26,Enel/Unicredit/STMicroelectronics (MI),14.76,Monthly,Monthly,2025-04-17,0.0,100.0,60.0
+XS2772438730,Equity Protection with Coupon,Bullish,1140,Capital protection with Coupon,1000.0,BARCLAYS BANK PLC,2024-06-19,2029-06-07,Intesa Sanpaolo/Poste Italiane,4.0,Quarterly,N/A (less than 2 dates),,,,
+XS2804822349,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,BNP PARIBAS ISSUANCE B.V.,2024-07-10,2027-07-21,Renault/Continental/Ford/Porsche AG,10.44,Monthly,Monthly,2025-01-13,0.0,100.0,40.0
+XS2808968882,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,2024-07-15,2027-07-19,Société Générale/Kering/Alstom,10.6,Quarterly,Quarterly,2025-04-10,0.0,100.0,60.0
+XS2878491849,Express,Bullish,1260,Express Certificates,100.0,SG ISSUER,2025-05-30,2028-05-29,Siemens/Snam,8.0,Quarterly,Quarterly,2025-12-01,0.0,100.0,60.0
+XS2878492813,Cash Collect Autocallable,Bullish,1260,Express Certificates,1000.0,SG ISSUER,2025-05-21,2027-05-28,Nike,7.2,Monthly,Monthly,2026-05-21,0.0,100.0,55.0
+XS2902549141,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,1000.0,Mediobanca Banca di Credito Fi,2024-09-25,2026-09-21,Biogen,8.1,Monthly,Monthly,2025-09-15,0.0,100.0,65.0
+XS2943571732,Express,Bullish,1260,Express Certificates,20000.0,Mediobanca Banca di Credito Fi,2024-12-17,2026-12-07,Exxon/Synopsys,8.76,Monthly,Monthly,2025-08-29,0.0,100.0,70.0
+XS2949280221,Express,Bullish,1260,Express Certificates,1000.0,Mediobanca Banca di Credito Fi,2024-12-05,2026-12-02,Nvidia,10.8,Monthly,Monthly,2025-11-25,0.0,100.0,50.0
+XS2953006470,Express,Bullish,1260,Express Certificates,99.0,BARCLAYS BANK PLC,2025-02-10,2030-02-20,Kering/Nike/Puma,9.12,Monthly,Monthly,2025-08-11,0.0,100.0,60.0
+XS2959159273,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,2025-03-05,2028-03-06,BNP Paribas/Ferrari/Generali/Unicredit,10.08,Monthly,Monthly,2025-11-28,1.0,95.0,50.0
+XS2966759388,Express,Bullish,1260,Express Certificates,1000.0,BARCLAYS BANK PLC,2025-04-04,2028-03-27,Engie,6.6,Monthly,Monthly,2026-03-18,1.0,100.0,65.0
+XS2999213445,Express,Bullish,1260,Express Certificates,100.0,BNP PARIBAS ISSUANCE B.V.,2025-05-26,2029-05-31,Siemens Energy,8.5,Quarterly,Quarterly,2026-05-22,0.0,100.0,50.0
+XS2999216463,Cash Collect,Bullish,1230,Barrier Reverse Convertibles,100.0,BNP PARIBAS ISSUANCE B.V.,2025-05-26,2029-05-22,Eaton,,Irregular (most common diff: 525 days),N/A (less than 2 dates),2029-05-11,,70.0,70.0
+XS3006822350,Equity Protection with Cap,Bullish,1120,Capped Capital Protected,100.0,BNP PARIBAS ISSUANCE B.V.,2025-05-26,2030-05-15,Bloomberg Eurozone Titans Select Decrement 5%
+XS3038074624,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,2025-06-02,2027-06-11,Commerzbank/Deutsche Bank/Mediobanca/Banca MPS/Banco BPM,24.0,Monthly,Monthly,2025-08-04,0.0,100.0,55.0
+XS3038097831,Express,Bullish,1260,Express Certificates,100.0,BARCLAYS BANK PLC,2025-06-03,2028-06-12,Leonardo/STMicroelectronics (MI)/Eni,10.56,Monthly,Monthly,2025-12-03,1.0,100.0,60.0
