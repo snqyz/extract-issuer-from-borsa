@@ -11,7 +11,7 @@ BASE_FOLDER = Path(__file__).parent
 
 
 @st.cache_data
-def load_csv(filename: str, _modified_time: float, **kwargs) -> pd.DataFrame:
+def load_csv(filename: str, modified_time: float, **kwargs) -> pd.DataFrame:
     print("Loading CSV:", filename)
     path = BASE_FOLDER / filename
     if path.exists():
@@ -20,7 +20,7 @@ def load_csv(filename: str, _modified_time: float, **kwargs) -> pd.DataFrame:
 
 
 def load_data_with_modified(filename: str, **kwargs) -> pd.DataFrame:
-    return load_csv(filename, _modified_time=os.path.getmtime(filename), **kwargs)
+    return load_csv(filename, modified_time=os.path.getmtime(filename), **kwargs)
 
 
 # Load data
@@ -113,18 +113,19 @@ def issuers_page() -> None:
 
     # Create the bar chart with plotly for proper sorting
     fig = px.bar(
-        chart_data,
-        x="MifidNotionalAmount",
+        chart_data.rename(columns={"MifidNotionalAmount": "Turnover (%)"}),
+        x="Turnover (%)",
         y="Issuer",
         color="SubType",
         orientation="h",
         category_orders={"Issuer": issuer_order},
+        custom_data=["SubType"],
     )
 
     # Format axis and hover labels as percentage
     fig.update_xaxes(ticksuffix="%")
     fig.update_traces(
-        hovertemplate="Issuer=%{y}<br>Turnover (%)=%{x:.1f}%<extra></extra>",
+        hovertemplate="Issuer=%{y}<br>Turnover (%)=%{x:.1f}%<br>SubType=%{customdata[0]}<extra></extra>",
     )
 
     st.plotly_chart(fig, use_container_width=True)
@@ -220,7 +221,7 @@ def get_standard_filters(
     filter_subtype = filter_subtype if filter_subtype else joined["SubType"].unique()
 
     filter_issuer = st.sidebar.multiselect(
-        "Select Type",
+        "Select issuer",
         options=joined["Issuer"].unique(),
         default=[],
     )
@@ -306,7 +307,7 @@ def underlyings_page() -> None:
     )
 
     n_underlyings = st.sidebar.slider(
-        label="Underlyings to show:",
+        label="Underlyings to show",
         min_value=5,
         max_value=20,
         value=10,
