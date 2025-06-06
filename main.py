@@ -410,7 +410,7 @@ def extract_data_for_isin(
     isin: str,
     mkt: str,
     already_loaded: dict[str, dict[str, str]],
-) -> dict[str, str]:
+) -> dict[str, str] | None:
     if isin.strip() in already_loaded:
         return already_loaded[isin]
 
@@ -433,7 +433,7 @@ def extract_data_for_isin(
                 r = requests.get(url, headers=get_headers(), timeout=60)
             except requests.exceptions.HTTPError:
                 logger.info("Error for ISIN %s %s, skipping...", repr(isin), repr(mkt))
-                continue
+                return None
             whole_data += r.text
         whole_data = whole_data.strip()
         file.write_text(whole_data, encoding="utf-8")
@@ -496,6 +496,8 @@ def write_csv_to_isin_info(
                 mkt=mkt,
                 already_loaded=already_loaded,
             )
+            if output is None:
+                continue
             writer.writerow([isin, *output.values()])
 
 
