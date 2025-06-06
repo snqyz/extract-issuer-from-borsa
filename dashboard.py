@@ -255,6 +255,7 @@ def get_joined_df() -> pd.DataFrame:
                 "Adjusted Turnover": lambda df: compute_adjusted_turnover(df),
             },
         )
+        .drop(columns=["MifidInstrumentID", "Original", "Emittente", "Nome"])
     )
 
 
@@ -300,6 +301,12 @@ def underlyings_page() -> None:
                 ),
             },
         )
+        .drop(
+            columns=[
+                "Sottostante_x",
+                "Original",
+            ],
+        )
     )
 
     dates_filter, filter_type, filter_subtype, filter_issuer = get_standard_filters(
@@ -315,19 +322,43 @@ def underlyings_page() -> None:
 
     st.title("Underlyings dashboard")
 
-    ref_df = joined.loc[
-        (
-            joined["DayEvent"].dt.date.between(
-                dates_filter[0],
-                dates_filter[1]
-                if len(dates_filter) == 2
-                else joined["DayEvent"].dt.date.max(),
-            )
-        )
-        & (joined["Type"].isin(filter_type))
-        & (joined["SubType"].isin(filter_subtype))
-        & joined["Issuer"].isin(filter_issuer)
+    columns_to_group = [
+        col
+        for col in joined.columns
+        if col
+        not in [
+            "DayEvent",
+            "MifidNotionalAmount",
+            "Adjusted Turnover",
+            "Adjusted Turnover (underlying)",
+            "MifidQuantity",
+        ]
     ]
+    ref_df = (
+        joined.loc[
+            (
+                joined["DayEvent"].dt.date.between(
+                    dates_filter[0],
+                    dates_filter[1]
+                    if len(dates_filter) == 2
+                    else joined["DayEvent"].dt.date.max(),
+                )
+            )
+            & (joined["Type"].isin(filter_type))
+            & (joined["SubType"].isin(filter_subtype))
+            & joined["Issuer"].isin(filter_issuer)
+        ]
+        .groupby(columns_to_group)[
+            [
+                "Adjusted Turnover",
+                "MifidNotionalAmount",
+                "Adjusted Turnover (underlying)",
+                "MifidQuantity",
+            ]
+        ]
+        .sum()
+        .reset_index()
+    )
 
     top_10_sottostanti = (
         ref_df.groupby("Sottostanti")["Adjusted Turnover"]
