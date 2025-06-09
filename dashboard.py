@@ -106,15 +106,15 @@ def issuers_page() -> None:
         .sort_values(ascending=False)
         .index
     )
-    chart_data = chart_data * 100 / chart_data.sum()
+    # chart_data = chart_data * 100 / chart_data.sum()
     chart_data = chart_data.reset_index()
 
     # Calculate total notional amount per issuer for sorting
 
     # Create the bar chart with plotly for proper sorting
     fig = px.bar(
-        chart_data.rename(columns={"MifidNotionalAmount": "Turnover (%)"}),
-        x="Turnover (%)",
+        chart_data.rename(columns={"MifidNotionalAmount": "Turnover"}),
+        x="Turnover",
         y="Issuer",
         color="SubType",
         orientation="h",
@@ -123,9 +123,9 @@ def issuers_page() -> None:
     )
 
     # Format axis and hover labels as percentage
-    fig.update_xaxes(ticksuffix="%")
+    # fig.update_xaxes(ticksuffix="%")
     fig.update_traces(
-        hovertemplate="Issuer=%{y}<br>Turnover (%)=%{x:.1f}%<br>SubType=%{customdata[0]}<extra></extra>",
+        hovertemplate="Issuer=%{y}<br>Turnover=%{x:.1f}<br>SubType=%{customdata[0]}<extra></extra>",
     )
 
     st.plotly_chart(fig, use_container_width=True)
@@ -229,7 +229,6 @@ def get_standard_filters(
     return dates_filter, filter_type, filter_subtype, filter_issuer
 
 
-@st.cache_data
 def get_joined_df() -> pd.DataFrame:
     return (
         sales_data.merge(
@@ -350,10 +349,10 @@ def underlyings_page() -> None:
         ]
         .groupby(columns_to_group)[
             [
-                "Adjusted Turnover",
                 "MifidNotionalAmount",
-                "Adjusted Turnover (underlying)",
                 "MifidQuantity",
+                "Adjusted Turnover",
+                "Adjusted Turnover (underlying)",
             ]
         ]
         .sum()
