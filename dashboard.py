@@ -1,6 +1,6 @@
 import os
 import socket
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 import pandas as pd
@@ -16,6 +16,12 @@ IS_AUTHORIZED_FOR_UPDATE = socket.gethostname() == "CHNTXD0056"
 
 
 def run_update():
+    if date.today().weekday() >= 5:
+        print("Update skipped on weekends.")
+        return
+    if datetime.now().hour <= 8 or datetime.now().hour >= 18:
+        print("Update skipped outside of working hours (8:00 - 20:00).")
+        return
     import main
 
     main.update_all()
