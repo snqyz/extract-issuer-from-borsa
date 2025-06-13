@@ -53,7 +53,7 @@ logging.basicConfig(
     handlers=[
         TqdmLoggingHandler(),
         RotatingFileHandler(
-            "app.log",
+            BASE_FOLDER / "app.log",
             maxBytes=5 * 1024 * 1024,  # 5 MB max size per file
             backupCount=3,  # Keep up to 3 backup files
         ),
