@@ -1,13 +1,39 @@
 import os
+import socket
+from datetime import datetime, timedelta
 from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from apscheduler.schedulers.background import BackgroundScheduler
 
 st.set_page_config(page_title="ISIN Dashboard", page_icon="📊", layout="wide")
 
 BASE_FOLDER = Path(__file__).parent
+UPDATE_INTERVAL_SEC = 0.5 * 3600
+IS_AUTHORIZED_FOR_UPDATE = socket.gethostname() == "CHNTXD0056"
+
+
+def run_update():
+    import main
+
+    main.update_all()
+
+
+def start_scheduler():
+    scheduler = BackgroundScheduler()
+    job = scheduler.add_job(run_update, "interval", seconds=UPDATE_INTERVAL_SEC)
+    scheduler.start()
+    print("Scheduler started.")
+    return scheduler, job
+
+
+# Initialize scheduler once
+if "scheduler_started" not in st.session_state and IS_AUTHORIZED_FOR_UPDATE:
+    scheduler, job = start_scheduler()
+    st.session_state.scheduler_started = True
+    st.session_state.job = job
 
 
 @st.cache_data
@@ -39,6 +65,22 @@ und_mapping = load_data_with_modified("und_mapping.csv")
 
 def issuers_page() -> None:
     st.title("Issuers dashboard")
+    last_update = datetime.fromtimestamp(
+        max(f.stat().st_mtime for f in (BASE_FOLDER / "intermediate_csv").iterdir()),
+    )
+    if hasattr(st.session_state, "job"):
+        st.caption(
+            f"Prossimo update alle: {st.session_state.job.next_run_time.strftime('%H:%M')}, ultimo update alle {last_update.strftime('%H:%M')}",
+        )
+        if st.button("Aggiorna dati adesso", type="primary"):
+            with st.spinner("Aggiornamento in corso..."):
+                run_update()
+            st.success("Dati aggiornati!")
+            st.rerun()
+    else:
+        st.caption(
+            f"Ultimo update alle {last_update.strftime('%H:%M')}",
+        )
 
     joined = get_joined_df()
 
@@ -58,7 +100,7 @@ def issuers_page() -> None:
     ]
 
     top_10_issuers = (
-        filtered_by_date.groupby("Issuer")["MifidNotionalAmount"]
+        filtered_by_date.groupby("Issuer")["Adjusted Turnover"]
         .sum()
         .nlargest(10)
         .index.tolist()
@@ -76,11 +118,11 @@ def issuers_page() -> None:
             ["DayEvent", "Issuer"],
         )
         .agg(
-            MifidNotionalAmount=("MifidNotionalAmount", "sum"),
+            Adjusted_Turnover=("Adjusted Turnover", "sum"),
         )
         .reset_index()
     )
-    aggregated["Turnover (M)"] = (aggregated["MifidNotionalAmount"] / 1_000_000).apply(
+    aggregated["Turnover (M)"] = (aggregated["Adjusted_Turnover"] / 1_000_000).apply(
         lambda x: f"{x:,.2f}",
     )
 
@@ -99,9 +141,9 @@ def issuers_page() -> None:
 
     chart_data = filtered_by_subtype.groupby(
         ["Issuer", "SubType"],
-    )["MifidNotionalAmount"].sum()
+    )["Adjusted Turnover"].sum()
     issuer_order = (
-        filtered_by_subtype.groupby("Issuer")["MifidNotionalAmount"]
+        filtered_by_subtype.groupby("Issuer")["Adjusted Turnover"]
         .sum()
         .sort_values(ascending=False)
         .index
@@ -113,7 +155,7 @@ def issuers_page() -> None:
 
     # Create the bar chart with plotly for proper sorting
     fig = px.bar(
-        chart_data.rename(columns={"MifidNotionalAmount": "Turnover"}),
+        chart_data.rename(columns={"Adjusted Turnover": "Turnover"}),
         x="Turnover",
         y="Issuer",
         color="SubType",
@@ -128,6 +170,28 @@ def issuers_page() -> None:
         hovertemplate="Issuer=%{y}<br>Turnover=%{x:.1f}<br>SubType=%{customdata[0]}<extra></extra>",
     )
 
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.subheader("Totale mercato")
+    df = (
+        filtered_by_subtype.groupby(["DayEvent", "SubType"])["Adjusted Turnover"]
+        .sum()
+        .reset_index()
+    )
+    df["Adjusted Turnover Label"] = (df["Adjusted Turnover"] / 1_000_000).round(
+        1,
+    ).astype(str) + "M"
+
+    fig = px.line(
+        df,
+        x="DayEvent",
+        y="Adjusted Turnover",
+        color="SubType",
+        markers=True,
+        text="Adjusted Turnover Label",
+    )
+    fig.update_yaxes(rangemode="tozero")
+    fig.update_traces(textposition="top center")
     st.plotly_chart(fig, use_container_width=True)
 
     st.download_button(
@@ -204,7 +268,13 @@ def get_standard_filters(
         "Select days",
         min_value=joined["DayEvent"].min(),
         max_value=joined["DayEvent"].max(),
-        value=(joined["DayEvent"].min(), joined["DayEvent"].max()),
+        value=(
+            max(
+                joined["DayEvent"].min(),
+                joined["DayEvent"].max() - timedelta(days=30),
+            ),
+            joined["DayEvent"].max(),
+        ),
     )
 
     filter_type = st.sidebar.multiselect(
@@ -260,7 +330,7 @@ def get_joined_df() -> pd.DataFrame:
 
 def compute_adjusted_turnover(df: pd.DataFrame) -> pd.Series:
     return df["MifidNotionalAmount"].where(
-        df["Issue Price"].isna(),
+        (df["Issue Price"].isna() & df["Type"] != "Investment"),
         df["MifidQuantity"] * df["Issue Price"],
     )
 
