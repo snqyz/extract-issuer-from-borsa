@@ -47,19 +47,6 @@ class TqdmLoggingHandler(logging.Handler):
             self.handleError(record)
 
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[
-        TqdmLoggingHandler(),
-        RotatingFileHandler(
-            BASE_FOLDER / "app.log",
-            maxBytes=5 * 1024 * 1024,  # 5 MB max size per file
-            backupCount=3,  # Keep up to 3 backup files
-        ),
-    ],
-)
-
 logger = logging.getLogger(__name__)
 
 
@@ -536,7 +523,10 @@ def update_mappings(
 def summarize_csvs(input_folder: Path, output_folder: Path) -> None:
     for input_file in input_folder.iterdir():
         output_file = output_folder / input_file.with_suffix(".csv").name
-        if output_file.exists():
+        if (
+            output_file.exists()
+            and input_file.stat().st_mtime < output_file.stat().st_mtime
+        ):
             logger.info("%s already exists, skipping...", repr(output_file.name))
             continue
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -590,8 +580,6 @@ def download_file(save_folder: Path) -> None:
         f.write(response.content)
     logger.info("Download completed")
 
-    already_saved = {i.stem for i in save_folder.iterdir()}
-
     with tempfile.TemporaryDirectory() as tmpdir:
         with zipfile.ZipFile(zip_path, "r") as z:
             z.extractall(tmpdir)
@@ -609,18 +597,12 @@ def download_file(save_folder: Path) -> None:
             .drop_duplicates()
         )
         logger.info("Found the following days in the file: %s", all_days.tolist())
-        complete_days = all_days[:-1] if len(all_days) > 1 else all_days
-        try:
-            new_filename = next(i for i in complete_days if i not in already_saved)
-        except StopIteration:
-            zip_path.unlink(missing_ok=True)
-            logger.info("No new files to process.")
-            return
-        dst_path = save_folder / f"{new_filename}.zip"
+        for day in all_days:
+            dst_path = save_folder / f"{day}.zip"
+            shutil.copy(zip_path, dst_path)
+            logger.info("Copied file to %s", dst_path.relative_to(BASE_FOLDER))
 
-        # 2. Move & rename
-        shutil.move(zip_path, dst_path)
-    logger.info("Copied file to %s", dst_path.relative_to(BASE_FOLDER))
+    zip_path.unlink(missing_ok=True)
 
 
 def create_underlying_table(isin_info_path: Path, output_path: Path) -> None:
@@ -724,7 +706,7 @@ def update_generic_mapping(
     mapping_df.to_csv(output_path, index=False, encoding="utf-8-sig")
 
 
-def main() -> None:
+def update_all() -> None:
     input_folder = BASE_FOLDER / "input_csv"
     intermediate_folder = BASE_FOLDER / "intermediate_csv"
     isin_info_path = BASE_FOLDER / "isin_info.csv"
@@ -764,6 +746,22 @@ def main() -> None:
         underlyings_path=underlyings_path,
         und_mapping_path=und_mapping_path,
     )
+
+
+def main():
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(levelname)s - %(message)s",
+        handlers=[
+            TqdmLoggingHandler(),
+            RotatingFileHandler(
+                BASE_FOLDER / "app.log",
+                maxBytes=5 * 1024 * 1024,  # 5 MB max size per file
+                backupCount=3,  # Keep up to 3 backup files
+            ),
+        ],
+    )
+    update_all()
 
 
 if __name__ == "__main__":
