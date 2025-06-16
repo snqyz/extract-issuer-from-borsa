@@ -1,6 +1,7 @@
+import logging
 import os
 import socket
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
 from pathlib import Path
 
 import pandas as pd
@@ -14,14 +15,15 @@ BASE_FOLDER = Path(__file__).parent
 UPDATE_INTERVAL_SEC = 0.5 * 3600
 IS_AUTHORIZED_FOR_UPDATE = socket.gethostname() == "CHNTXD0056"
 
+logger = logging.getLogger(__name__)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+)
+
 
 def run_update():
-    if date.today().weekday() >= 5:
-        print("Update skipped on weekends.")
-        return
-    if datetime.now().hour <= 8 or datetime.now().hour >= 18:
-        print("Update skipped outside of working hours (8:00 - 20:00).")
-        return
     import main
 
     main.update_all()
@@ -29,7 +31,13 @@ def run_update():
 
 def start_scheduler():
     scheduler = BackgroundScheduler()
-    job = scheduler.add_job(run_update, "interval", seconds=UPDATE_INTERVAL_SEC)
+    job = scheduler.add_job(
+        run_update,
+        "cron",
+        minute="1,31",
+        hour="8-18",
+        day_of_week="mon-fri",
+    )
     scheduler.start()
     print("Scheduler started.")
     return scheduler, job

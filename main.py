@@ -540,6 +540,7 @@ def summarize_csvs(input_folder: Path, output_folder: Path) -> None:
                 header=1,
                 parse_dates=[1, 2, 3],
                 date_format="ISO8601",
+                dtype={18: str},
             )
         input_df["DayEvent"] = input_df["TradingDateTime"].dt.date
         input_df = (
@@ -576,6 +577,8 @@ def download_file(save_folder: Path) -> None:
     logger.info("Downloading newest file...")
     response = requests.post(url, data=data, timeout=60)
 
+    response.raise_for_status()
+
     with zip_path.open("wb") as f:
         f.write(response.content)
     logger.info("Download completed")
@@ -592,15 +595,16 @@ def download_file(save_folder: Path) -> None:
                 header=1,
                 parse_dates=[1, 2, 3],
                 date_format="ISO8601",
+                dtype={18: str},
             )["TradingDateTime"]
             .dt.strftime("%Y-%m-%d")
             .drop_duplicates()
         )
-        logger.info("Found the following days in the file: %s", all_days.tolist())
-        for day in all_days:
-            dst_path = save_folder / f"{day}.zip"
-            shutil.copy(zip_path, dst_path)
-            logger.info("Copied file to %s", dst_path.relative_to(BASE_FOLDER))
+    logger.info("Found the following days in the file: %s", all_days.tolist())
+    for day in all_days:
+        dst_path = save_folder / f"{day}.zip"
+        shutil.copy(zip_path, dst_path)
+        logger.info("Copied file to %s", dst_path.relative_to(BASE_FOLDER))
 
     zip_path.unlink(missing_ok=True)
 
