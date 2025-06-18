@@ -1282,7 +1282,7 @@ STMPA,STMicroelectronics N.V.
 STOXX 600 AUTO&P,STOXX 600 AUTO&P
 STOXX 600 HEALTH,STOXX 600 HEALTH
 STOXX 600 INDEX,STOXX 600 INDEX
-STOXX 600 OIL & GAS,STOXX 600 OIL & GAS
+STOXX 600 OIL & GAS,STOXX Europe 600 Oil & Gas
 STOXX ASIA,STOXX ASIA
 STOXX EU600 AUTO&PAR,STOXX EU600 AUTO&PAR
 STOXX Europe 600 Basic Resources,STOXX Europe 600 Basic Resources
@@ -2741,3 +2741,22 @@ BP SONDRIO,BP SONDRIO
 GILEAD SCI,"Gilead Sciences, Inc."
 Vont 4X L MIB,Vont 4X L MIB
 TXI,Texas Instruments Incorporated
+4XL DAX,4XL DAX
+Mitsubishi Ufj Financial,Mitsubishi Ufj Financial
+Philip Morris,Philip Morris
+S&P 500 Futures ER,S&P 500 Futures ER
+S&P 10Y US T-Note Fut ER,S&P 10Y US T-Note Fut ER
+CureVac,CureVac
+First Solutions Quant Best Europe,First Solutions Quant Best Europe
+SOL SPA,SOL SPA
+State Street,State Street
+Rambus,Rambus
+ICE BRENT 10/25,ICE BRENT 10/25
+SSE,SSE
+ISTOXX EUROPE 600 OIL & GAS FUT LEV LONG,STOXX Europe 600 Oil & Gas
+First Solutions Victory,First Solutions Victory
+Bloomberg Eurozone DM Top 10 Oil & Gas Price Return,Bloomberg Eurozone DM Top 10 Oil & Gas Price Return
+Vont 3X L ISP V2,Vont 3X L ISP V2
+iQIYI,iQIYI
+Vont 2X L ABNB,Vont 2X L ABNB
+Vont 5X L NFLX V5,Vont 5X L NFLX V5
