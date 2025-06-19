@@ -11,6 +11,7 @@ from collections.abc import Sequence
 from datetime import date, datetime
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
+from typing import TypedDict
 
 import pandas as pd
 import requests
@@ -32,6 +33,30 @@ URLS = [
     "https://live.euronext.com/en/ajax/getFactsheetInfoBlock/WARRT/{}-{}/fs_generalinfo_warrants_block",
     "https://live.euronext.com/en/ajax/getFactsheetInfoBlock/WARRT/{}-{}/fs_underlying_block",
 ]
+FORCE_OFFLINE = False
+
+Product = TypedDict(
+    "Product",
+    {
+        "ISIN": str,
+        "Nome": str | None,
+        "Strategy": str | None,
+        "EUSIPA Code": str | None,
+        "EUSIPA Name": str | None,
+        "Issue Price": str | None,
+        "Emittente": str | None,
+        "Issue Date": date | None,
+        "Expiry Date": date | None,
+        "Sottostanti": str | None,
+        "Coupon PA": float | None,
+        "Coupon Frequency": str | None,
+        "Autocall Frequency": str | None,
+        "Autocall First Date": date | None,
+        "Autocall Decrement": float | None,
+        "Autocall Initial Trigger": float | None,
+        "Barrier": float | None,
+    },
+)
 
 
 class TqdmLoggingHandler(logging.Handler):
@@ -58,16 +83,12 @@ def load_from_csv_to_db(csv_path: Path) -> dict[str, dict[str, str]]:
     isin_data: dict[str, dict[str, str]] = {}
     logger.info("Loading ISINs metadata to memory...")
     if not csv_path.exists():
-        csv_path.write_text(
-            "ISIN,Nome,Strategy,EUSIPA Code,EUSIPA Name,Issue Price,Emittente,Issue Date,Expiry Date,Sottostanti,Coupon P.A.,Coupon Frequency,Autocall Frequency,Autocall First Date,Autocall Decrement,Autocall Initial Trigger,Autocall Minimum Trigger\n",
-            encoding="utf-8-sig",
-        )
         return isin_data
 
     with csv_path.open(newline="", encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=",")
         for row in reader:
-            isin = row.pop("ISIN")
+            isin = row["ISIN"]
             isin_data[isin] = row
     logger.info("Loaded ISINs metadata to memory")
     return isin_data
@@ -158,6 +179,38 @@ def determine_frequency(dates: Sequence[date]) -> str:
     return f"Irregular (most common diff: {common_diff_days} days)"
 
 
+def get_barriera(soup: BeautifulSoup) -> str | None:
+    try:
+        titolo_barriera = soup.find(
+            "h3",
+            class_="panel-title",
+            string=lambda text: text and "barriera" in text.lower(),
+        )
+        barrier = (
+            titolo_barriera.find_parent("div", class_="panel panel-default")
+            .find("table")
+            .find(
+                "td",
+            )
+            .get_text(strip=True)
+            .replace("%", "")
+            .replace(",", ".")
+            .replace(
+                "&nbsp;",
+                "",
+            )
+            .strip()
+        )
+        return int(barrier)
+    except Exception as e:
+        logger.info(
+            "Error extracting barrier: %s, %s",
+            repr(e),
+            repr(titolo_barriera),
+        )
+        return None
+
+
 def parse_cd(soup: BeautifulSoup) -> dict[str, str | None]:
     sottostanti = get_sottostanti(soup)
     # --- 1. Derive Coupon P.A. ---
@@ -177,7 +230,7 @@ def parse_cd(soup: BeautifulSoup) -> dict[str, str | None]:
         string=lambda text: text and "date rilevamento" in text.lower(),
     )
     if date_relevamento_title is None:
-        return {"sottostanti": sottostanti}
+        return {"Sottostanti": sottostanti}
 
     date_relevamento_panel = date_relevamento_title.find_parent(
         "div",
@@ -303,16 +356,16 @@ def parse_cd(soup: BeautifulSoup) -> dict[str, str | None]:
         autocall_frequency = determine_frequency(autocall_dates)
 
     return {
-        "sottostanti": sottostanti,
-        "coupon_pa": (
+        "Sottostanti": sottostanti,
+        "Coupon PA": (
             round(coupon_pa, 2) if isinstance(coupon_pa, (float, int)) else None
         ),
-        "coupon_frequency": coupon_frequency,
-        "autocall_frequency": autocall_frequency,
-        "autocall_first_date": autocall_dates[0] if autocall_dates else None,
-        "autocall_decrement": autocall_decrement,
-        "autocall_initial_trigger": initial_autocall_trigger,
-        "autocall_minimum_trigger": minimum_autocall_trigger,
+        "Coupon Frequency": coupon_frequency,
+        "Autocall Frequency": autocall_frequency,
+        "Autocall First Date": autocall_dates[0] if autocall_dates else None,
+        "Autocall Decrement": autocall_decrement,
+        "Autocall Initial Trigger": initial_autocall_trigger,
+        "Barrier": get_barriera(soup) or minimum_autocall_trigger,
     }
 
 
@@ -354,6 +407,8 @@ def extract_from_cd(isin: str) -> tuple[dict[str, str | None], bool]:
     made_request = False
     if file.exists():
         soup = BeautifulSoup(file.read_text(encoding="utf-8"), "lxml")
+    elif FORCE_OFFLINE:
+        return {}, made_request
     else:
         try:
             r = requests.get(
@@ -397,7 +452,7 @@ def extract_data_for_isin(
     isin: str,
     mkt: str,
     already_loaded: dict[str, dict[str, str]],
-) -> dict[str, str] | None:
+) -> Product | None:
     if isin.strip() in already_loaded:
         return already_loaded[isin]
 
@@ -407,6 +462,8 @@ def extract_data_for_isin(
     t = None
     if file.exists():
         soup = BeautifulSoup(file.read_text(encoding="utf-8"), "lxml")
+    elif FORCE_OFFLINE:
+        return None
     else:
         whole_data = ""
         for url_to_fill in URLS:
@@ -428,35 +485,36 @@ def extract_data_for_isin(
         t = default_wait_time_gen()
         time.sleep(t)
 
-    val = {
-        "nome": extract_from_title(soup, "Product"),
-        "strategy": extract_from_title(soup, "Strategy"),
-        "eusipa_code": extract_from_title(soup, "EUSIPA Code"),
-        "eusipa_name": extract_from_title(soup, "EUSIPA Name"),
-        "issue_price": extract_from_title(soup, "Issue Price"),
-        "emittente": extract_from_title(
+    val: Product = {
+        "ISIN": isin,
+        "Nome": extract_from_title(soup, "Product"),
+        "Strategy": extract_from_title(soup, "Strategy"),
+        "EUSIPA Code": extract_from_title(soup, "EUSIPA Code"),
+        "EUSIPA Name": extract_from_title(soup, "EUSIPA Name"),
+        "Issue Price": extract_from_title(soup, "Issue Price"),
+        "Emittente": extract_from_title(
             soup,
             ["Nom de l'émetteur", "Issuer Name", "Nom émetteur"],
         ),
-        "issue_date": extract_from_title(
+        "Issue Date": extract_from_title(
             soup,
             "Issue Date",
             datetime_format="%d/%m/%Y",
         ),
-        "expiry_date": extract_from_title(
+        "Expiry Date": extract_from_title(
             soup,
             "Expiry Date",
             datetime_format="%d/%m/%Y",
         ),
     }
-    if val["eusipa_code"]:  # and val["eusipa_code"].startswith("1"):
+    if val["EUSIPA Code"]:  # and val["EUSIPA_Code"].startswith("1"):
         data, made_cd_request = extract_from_cd(isin)
         val.update(data)
         if made_cd_request is True and t is None:
             time.sleep(default_wait_time_gen())
 
-    if not val.get("sottostanti"):
-        val["sottostanti"] = extract_from_title(soup, "Name")
+    if not val.get("Sottostanti"):
+        val["Sottostanti"] = extract_from_title(soup, "Name")
 
     # tqdm.write(f"{isin}: {val}")
 
@@ -472,8 +530,16 @@ def write_csv_to_isin_info(
     isins_to_write = [
         (isin, mkt) for isin, mkt in isin_and_mkt if isin not in old_isins
     ]
-    with isin_info_path.open(mode="a", newline="", encoding="utf-8-sig") as file:
-        writer = csv.writer(file)
+    file_exists = isin_info_path.exists()
+    with isin_info_path.open(mode="a+", newline="", encoding="utf-8-sig") as file:
+        writer = csv.DictWriter(
+            file,
+            fieldnames=[
+                key.replace("_", " ") for key in Product.__annotations__.keys()
+            ],
+        )
+        if not file_exists:
+            writer.writeheader()
         for isin, mkt in tqdm(
             isins_to_write,
             bar_format="{l_bar}{bar}| {n:,}/{total:,} [{elapsed}<{remaining}, {rate_fmt}]",
@@ -485,7 +551,7 @@ def write_csv_to_isin_info(
             )
             if output is None:
                 continue
-            writer.writerow([isin, *output.values()])
+            writer.writerow(output)
 
 
 def update_mappings(
@@ -723,7 +789,8 @@ def update_all() -> None:
     intermediate_folder.mkdir(parents=True, exist_ok=True)
 
     # 1. download newest file, saves the .zip in 'input_csv' with name as day
-    download_file(save_folder=input_folder)
+    if not FORCE_OFFLINE:
+        download_file(save_folder=input_folder)
 
     # 2. summarize CSVs and extract market (ETLX or SEDX)
     summarize_csvs(input_folder=input_folder, output_folder=intermediate_folder)

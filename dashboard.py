@@ -2,12 +2,14 @@ import logging
 import os
 import socket
 from datetime import datetime, timedelta
+from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 from apscheduler.schedulers.background import BackgroundScheduler
+from tqdm import tqdm
 
 st.set_page_config(page_title="ISIN Dashboard", page_icon="📊", layout="wide")
 
@@ -17,9 +19,32 @@ IS_AUTHORIZED_FOR_UPDATE = socket.gethostname() == "CHNTXD0056"
 
 logger = logging.getLogger(__name__)
 
+
+class TqdmLoggingHandler(logging.Handler):
+    def __init__(self) -> None:
+        super().__init__()
+
+    def emit(self, record: logging.LogRecord) -> None:
+        try:
+            msg = self.format(record)
+            tqdm.write(msg)  # Use tqdm.write instead of print
+            self.flush()
+        except Exception:
+            self.handleError(record)
+
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        TqdmLoggingHandler(),
+        RotatingFileHandler(
+            BASE_FOLDER / "app.log",
+            maxBytes=3 * 1024 * 1024,
+            backupCount=3,
+            encoding="utf-8",
+        ),
+    ],
 )
 
 
@@ -31,15 +56,18 @@ def run_update():
 
 def start_scheduler():
     scheduler = BackgroundScheduler()
+    job_id = "update_job"
     job = scheduler.add_job(
         run_update,
         "cron",
         minute="1,31",
         hour="8-18",
         day_of_week="mon-fri",
+        id=job_id,
+        replace_existing=True,
     )
     scheduler.start()
-    print("Scheduler started.")
+    logger.info("Scheduler started. %s", scheduler.get_jobs())
     return scheduler, job
 
 
@@ -52,7 +80,7 @@ if "scheduler_started" not in st.session_state and IS_AUTHORIZED_FOR_UPDATE:
 
 @st.cache_data
 def load_csv(filename: str, modified_time: float, **kwargs) -> pd.DataFrame:
-    print("Loading CSV:", filename)
+    logger.info("Loading CSV: %s", filename)
     path = BASE_FOLDER / filename
     if path.exists():
         return pd.read_csv(path, encoding="utf-8-sig", **kwargs)
